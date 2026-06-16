@@ -1,0 +1,32 @@
+---
+import { localize, ui } from '@content/i18n';
+import type { Lang, ModuleSession } from '@content/programme';
+
+type Props = {
+  lang: Lang;
+  modules: ModuleSession[];
+};
+
+const { lang, modules } = Astro.props;
+---
+
+<div class="module-grid">
+  {
+    modules.map((module) => (
+      <article class="module-card">
+        <div class="tag-row">
+          <span class="tag">{localize(module.audience, lang)}</span>
+          <span class="tag">{localize(module.period, lang)}</span>
+          {module.lessons && <span class="tag">{module.lessons}</span>}
+        </div>
+        <h3>{localize(module.title, lang)}</h3>
+        <p>
+          <strong>{localize(ui.facilitators, lang)}:</strong> {localize(module.facilitators, lang)}
+        </p>
+        <p>
+          <strong>{localize(ui.abstract, lang)}:</strong> {localize(module.abstract, lang)}
+        </p>
+      </article>
+    ))
+  }
+</div>

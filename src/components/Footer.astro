@@ -1,0 +1,21 @@
+---
+import { localize } from '@content/i18n';
+import { workshop, type Lang } from '@content/programme';
+
+type Props = {
+  lang: Lang;
+};
+
+const { lang } = Astro.props;
+---
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <h2>{localize(workshop.projectName, lang)}</h2>
+    <p>{localize(workshop.statusNote, lang)}</p>
+    <p>
+      {localize(workshop.title, lang)} · {localize(workshop.dateRange, lang)} · {localize(workshop.venue, lang)}
+    </p>
+  </div>
+  <div class="footer-bar" aria-hidden="true"></div>
+</footer>

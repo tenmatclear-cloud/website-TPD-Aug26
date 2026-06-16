@@ -1,0 +1,38 @@
+---
+import { localize, ui } from '@content/i18n';
+import type { Lang, Session } from '@content/programme';
+
+type Props = {
+  lang: Lang;
+  sessions: Session[];
+};
+
+const { lang, sessions } = Astro.props;
+---
+
+<div class="timeline">
+  {
+    sessions.map((session) => (
+      <article class="timeline-item">
+        <div class="time-block">
+          {session.time}
+          {session.duration && <span>{session.duration}</span>}
+        </div>
+        <div>
+          <h3>{localize(session.title, lang)}</h3>
+          {session.speakers && (
+            <p>
+              <strong>{localize(ui.speakers, lang)}:</strong> {localize(session.speakers, lang)}
+            </p>
+          )}
+          {session.abstract && (
+            <p>
+              <strong>{localize(ui.abstract, lang)}:</strong> {localize(session.abstract, lang)}
+            </p>
+          )}
+          {session.note && <p>{localize(session.note, lang)}</p>}
+        </div>
+      </article>
+    ))
+  }
+</div>

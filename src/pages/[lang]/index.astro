@@ -1,0 +1,71 @@
+---
+import Hero from '@components/Hero.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { localize, pageTitles, pathFor, ui } from '@content/i18n';
+import { daySummaries, languages, objectives, workshop, type Lang } from '@content/programme';
+
+export function getStaticPaths() {
+  return languages.map(({ code }) => ({ params: { lang: code } }));
+}
+
+const lang = Astro.params.lang as Lang;
+---
+
+<BaseLayout
+  title={`${localize(pageTitles.home, lang)} | ${localize(workshop.projectName, lang)}`}
+  description={localize(workshop.heroIntro, lang)}
+  lang={lang}
+>
+  <Hero lang={lang} />
+
+  <div class="content-shell">
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow" style="color: var(--color-primary); border-color: var(--color-border);">
+            {localize(ui.learningObjectives, lang)}
+          </span>
+          <h2>{localize(ui.learningObjectives, lang)}</h2>
+        </div>
+      </div>
+      <ul class="objectives">
+        {objectives.map((objective) => <li>{localize(objective, lang)}</li>)}
+      </ul>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow" style="color: var(--color-primary); border-color: var(--color-border);">
+            {localize(ui.scheduleAtGlance, lang)}
+          </span>
+          <h2>{localize(ui.scheduleAtGlance, lang)}</h2>
+        </div>
+      </div>
+
+      <div class="grid">
+        {
+          daySummaries.map((summary, index) => (
+            <a
+              class="card"
+              style={`--accent: ${index === 0 ? 'var(--color-accent-orange)' : index === 1 ? 'var(--color-accent-green)' : 'var(--color-accent-yellow)'}`}
+              href={pathFor(lang, `day-${summary.day}`)}
+            >
+              <span class="meta">
+                {localize(ui.day, lang)} {summary.day}
+              </span>
+              <h3>{localize(summary.date, lang)}</h3>
+              <p>
+                <strong>{localize(ui.time, lang)}:</strong> {localize(summary.time, lang)}
+              </p>
+              <p>
+                <strong>{localize(ui.audience, lang)}:</strong> {localize(summary.audience, lang)}
+              </p>
+              <p>{localize(summary.focus, lang)}</p>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+  </div>
+</BaseLayout>

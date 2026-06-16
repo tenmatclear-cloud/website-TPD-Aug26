@@ -1,0 +1,131 @@
+---
+import DayAgenda from '@components/DayAgenda.astro';
+import ModuleGrid from '@components/ModuleGrid.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { localize, pageTitles, ui } from '@content/i18n';
+import {
+  day1Goals,
+  day1Sessions,
+  dayDeepDiveInfo,
+  daySummaries,
+  languages,
+  moduleSessionsByDay,
+  workshop,
+  type Lang,
+} from '@content/programme';
+
+export function getStaticPaths() {
+  const days = [1, 2, 3] as const;
+  return languages.flatMap(({ code }) => days.map((day) => ({ params: { lang: code, day: String(day) } })));
+}
+
+const lang = Astro.params.lang as Lang;
+const day = Number(Astro.params.day) as 1 | 2 | 3;
+const summary = daySummaries.find((item) => item.day === day);
+
+if (!summary) {
+  throw new Error(`Unknown programme day: ${Astro.params.day}`);
+}
+
+const titleKey = `day-${day}`;
+const isDayOne = day === 1;
+---
+
+<BaseLayout
+  title={`${localize(pageTitles[titleKey], lang)} | ${localize(workshop.projectName, lang)}`}
+  description={localize(summary.focus, lang)}
+  lang={lang}
+  currentPath={`day-${day}`}
+>
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">
+          {localize(ui.day, lang)} {day}
+        </span>
+        <h1>{localize(pageTitles[titleKey], lang)}</h1>
+        <p>{localize(summary.focus, lang)}</p>
+      </div>
+      <aside class="hero-panel">
+        <dl>
+          <div>
+            <dt>{localize(ui.date, lang)}</dt>
+            <dd>{localize(summary.date, lang)}</dd>
+          </div>
+          <div>
+            <dt>{localize(ui.time, lang)}</dt>
+            <dd>{localize(summary.time, lang)}</dd>
+          </div>
+          <div>
+            <dt>{localize(ui.audience, lang)}</dt>
+            <dd>{localize(summary.audience, lang)}</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <div class="content-shell">
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow" style="color: var(--color-primary); border-color: var(--color-border);">
+            {localize(ui.goals, lang)}
+          </span>
+          <h2>{localize(ui.goals, lang)}</h2>
+        </div>
+      </div>
+      <ul class="objectives">
+        {(isDayOne ? day1Goals : dayDeepDiveInfo.goals).map((goal) => <li>{localize(goal, lang)}</li>)}
+      </ul>
+    </section>
+
+    {
+      isDayOne ? (
+        <section class="section">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow" style="color: var(--color-primary); border-color: var(--color-border);">
+                {localize(ui.scheduleAtGlance, lang)}
+              </span>
+              <h2>{localize(pageTitles['day-1'], lang)}</h2>
+            </div>
+          </div>
+          <DayAgenda lang={lang} sessions={day1Sessions} />
+        </section>
+      ) : (
+        <>
+          <section class="split-section">
+            <div>
+              <h2>{localize(ui.time, lang)}</h2>
+              <div class="info-list" style="margin-top: 22px;">
+                {dayDeepDiveInfo.schedule.map((item) => (
+                  <div class="info-item">
+                    <h3>{item.time}</h3>
+                    <p>{localize(item.label, lang)}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div class="dark">
+              <h2>{localize(ui.modules, lang)}</h2>
+              <p>{localize(summary.focus, lang)}</p>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow" style="color: var(--color-primary); border-color: var(--color-border);">
+                  {localize(ui.modules, lang)}
+                </span>
+                <h2>{localize(pageTitles[titleKey], lang)}</h2>
+              </div>
+            </div>
+            <ModuleGrid lang={lang} modules={moduleSessionsByDay[day]} />
+          </section>
+        </>
+      )
+    }
+  </div>
+</BaseLayout>

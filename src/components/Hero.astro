@@ -1,0 +1,41 @@
+---
+import { localize, pathFor, ui } from '@content/i18n';
+import { workshop, type Lang } from '@content/programme';
+
+type Props = {
+  lang: Lang;
+};
+
+const { lang } = Astro.props;
+---
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">{localize(workshop.projectName, lang)}</span>
+      <h1>{localize(workshop.title, lang)}</h1>
+      <p>{localize(workshop.heroIntro, lang)}</p>
+      <div class="hero-actions">
+        <a class="button primary" href={pathFor(lang, 'day-1')}>{localize(ui.viewProgramme, lang)}</a>
+        <a class="button ghost" href={pathFor(lang, 'logistics')}>{localize(ui.logistics, lang)}</a>
+      </div>
+    </div>
+
+    <aside class="hero-panel" aria-label="Workshop summary">
+      <dl>
+        <div>
+          <dt>{localize(ui.date, lang)}</dt>
+          <dd>{localize(workshop.dateRange, lang)}</dd>
+        </div>
+        <div>
+          <dt>{localize(ui.venue, lang)}</dt>
+          <dd>{localize(workshop.venue, lang)}</dd>
+        </div>
+        <div>
+          <dt>{localize(ui.draft, lang)}</dt>
+          <dd>{localize(workshop.statusNote, lang)}</dd>
+        </div>
+      </dl>
+    </aside>
+  </div>
+</section>
