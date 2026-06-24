@@ -2,13 +2,21 @@
 import Hero from '@components/Hero.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { localize, pageTitles, pathFor, ui } from '@content/i18n';
-import { daySummaries, languages, objectives, workshop, type Lang } from '@content/programme';
+import {
+  daySummaries,
+  languages,
+  objectives,
+  whoShouldAttend,
+  workshop,
+  type Lang,
+} from '@content/programme';
 
 export function getStaticPaths() {
   return languages.map(({ code }) => ({ params: { lang: code } }));
 }
 
 const lang = Astro.params.lang as Lang;
+const accents = ['var(--color-accent-orange)', 'var(--color-accent-green)', 'var(--color-accent-yellow)'];
 ---
 
 <BaseLayout
@@ -46,11 +54,7 @@ const lang = Astro.params.lang as Lang;
       <div class="grid">
         {
           daySummaries.map((summary, index) => (
-            <a
-              class="card"
-              style={`--accent: ${index === 0 ? 'var(--color-accent-orange)' : index === 1 ? 'var(--color-accent-green)' : 'var(--color-accent-yellow)'}`}
-              href={pathFor(lang, `day-${summary.day}`)}
-            >
+            <a class="card" style={`--accent: ${accents[index % accents.length]}`} href={pathFor(lang, `day-${summary.day}`)}>
               <span class="meta">
                 {localize(ui.day, lang)} {summary.day}
               </span>
@@ -59,10 +63,34 @@ const lang = Astro.params.lang as Lang;
                 <strong>{localize(ui.time, lang)}:</strong> {localize(summary.time, lang)}
               </p>
               <p>
+                <strong>{localize(ui.venue, lang)}:</strong> {localize(workshop.venue, lang)}
+              </p>
+              <p>
                 <strong>{localize(ui.audience, lang)}:</strong> {localize(summary.audience, lang)}
               </p>
               <p>{localize(summary.focus, lang)}</p>
             </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow" style="color: var(--color-primary); border-color: var(--color-border);">
+            {localize(whoShouldAttend.heading, lang)}
+          </span>
+          <h2>{localize(whoShouldAttend.heading, lang)}</h2>
+        </div>
+      </div>
+      <div class="info-list">
+        {
+          whoShouldAttend.items.map((item) => (
+            <article class="info-item">
+              <h3>{localize(item.title, lang)}</h3>
+              <p>{localize(item.body, lang)}</p>
+            </article>
           ))
         }
       </div>

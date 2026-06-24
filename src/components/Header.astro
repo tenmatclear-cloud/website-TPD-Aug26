@@ -13,9 +13,12 @@ const normalizedPath = currentPath.replace(/^\/|\/$/g, '');
 
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href={pathFor(lang)} aria-label={localize(workshop.projectName, lang)}>
-      {localize(workshop.projectName, lang)}
-      <span>{localize(workshop.title, lang)}</span>
+    <a class="brand-link" href={pathFor(lang)} aria-label={localize(workshop.projectName, lang)}>
+      <span class="brand-logo"><img src="/brand/goai-mark.png" alt="JC GoAI" width="40" height="40" /></span>
+      <span class="brand">
+        {localize(workshop.projectName, lang)}
+        <span>{localize(workshop.title, lang)}</span>
+      </span>
     </a>
 
     <nav class="nav" aria-label="Main navigation">

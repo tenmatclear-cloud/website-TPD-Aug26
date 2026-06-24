@@ -1,0 +1,11 @@
+/* ==========================================================================
+   JC GoAI Design System — global stylesheet entry point.
+   Consumers link THIS file. It is an @import manifest only — no rules here.
+   Order: fonts → tokens (colors, type, spacing) → base reset/elements.
+   ========================================================================== */
+
+@import "tokens/fonts.css";
+@import "tokens/colors.css";
+@import "tokens/typography.css";
+@import "tokens/spacing.css";
+@import "tokens/base.css";

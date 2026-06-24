@@ -1,0 +1,25 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Accent colours" subtitle="Energy & semantic section coding — one per component" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../../styles.css" />
+<style>
+  body { margin: 0; padding: 18px 20px; background: var(--surface-card); font-family: var(--font-body); }
+  .swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .sw { display: grid; gap: 8px; }
+  .chip { height: 70px; border-radius: 14px; display: flex; align-items: flex-end; padding: 8px 10px; }
+  .role { font: 800 0.66rem/1 var(--font-heading); letter-spacing: .05em; text-transform: uppercase; }
+  .name { font: 700 0.82rem/1.2 var(--font-heading); color: var(--text-strong); }
+  .hex { font: 500 0.74rem/1.2 var(--font-body); color: var(--text-muted); text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="swatches">
+  <div class="sw"><div class="chip" style="background:var(--color-accent-orange)"><span class="role" style="color:#fff">Programme</span></div><span class="name">Orange</span><span class="hex">#FF8B12</span></div>
+  <div class="sw"><div class="chip" style="background:var(--color-accent-green)"><span class="role" style="color:#fff">Teachers</span></div><span class="name">Green</span><span class="hex">#00CD7A</span></div>
+  <div class="sw"><div class="chip" style="background:var(--color-accent-yellow)"><span class="role" style="color:var(--color-primary)">Schools / News</span></div><span class="name">Yellow</span><span class="hex">#FECF13</span></div>
+  <div class="sw"><div class="chip" style="background:var(--color-accent-gold)"><span class="role" style="color:var(--color-primary)">Highlight</span></div><span class="name">Gold</span><span class="hex">#FAD000</span></div>
+</div>
+</body>
+</html>

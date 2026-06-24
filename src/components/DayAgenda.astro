@@ -12,27 +12,52 @@ const { lang, sessions } = Astro.props;
 
 <div class="timeline">
   {
-    sessions.map((session) => (
-      <article class="timeline-item">
-        <div class="time-block">
-          {session.time}
-          {session.duration && <span>{session.duration}</span>}
+    sessions.map((session) =>
+      session.heading ? (
+        <div class="timeline-band">
+          <h3>{localize(session.heading, lang)}</h3>
+          {session.note && <span>{localize(session.note, lang)}</span>}
         </div>
-        <div>
-          <h3>{localize(session.title, lang)}</h3>
-          {session.speakers && (
-            <p>
-              <strong>{localize(ui.speakers, lang)}:</strong> {localize(session.speakers, lang)}
-            </p>
+      ) : (
+        <article class="timeline-item">
+          <div class="time-block">
+            {session.time}
+            {session.duration && <span>{session.duration}</span>}
+          </div>
+
+          {session.tracks ? (
+            <div class="track-grid">
+              {session.tracks.map((track) => (
+                <div class="track">
+                  <span class="tag">{localize(track.audience, lang)}</span>
+                  <h3>{localize(track.title, lang)}</h3>
+                  {track.speakers && (
+                    <p>
+                      <strong>{localize(ui.speakers, lang)}:</strong> {localize(track.speakers, lang)}
+                    </p>
+                  )}
+                  {track.abstract && <p>{localize(track.abstract, lang)}</p>}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div>
+              <h3>{session.title && localize(session.title, lang)}</h3>
+              {session.speakers && (
+                <p>
+                  <strong>{localize(ui.speakers, lang)}:</strong> {localize(session.speakers, lang)}
+                </p>
+              )}
+              {session.abstract && (
+                <p>
+                  <strong>{localize(ui.abstract, lang)}:</strong> {localize(session.abstract, lang)}
+                </p>
+              )}
+              {session.note && <p class="muted-note">{localize(session.note, lang)}</p>}
+            </div>
           )}
-          {session.abstract && (
-            <p>
-              <strong>{localize(ui.abstract, lang)}:</strong> {localize(session.abstract, lang)}
-            </p>
-          )}
-          {session.note && <p>{localize(session.note, lang)}</p>}
-        </div>
-      </article>
-    ))
+        </article>
+      )
+    )
   }
 </div>

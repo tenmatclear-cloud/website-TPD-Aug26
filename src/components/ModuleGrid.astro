@@ -16,16 +16,18 @@ const { lang, modules } = Astro.props;
       <article class="module-card">
         <div class="tag-row">
           <span class="tag">{localize(module.audience, lang)}</span>
-          <span class="tag">{localize(module.period, lang)}</span>
-          {module.lessons && <span class="tag">{module.lessons}</span>}
+          {module.lessons && <span class="tag tag-soft">{localize(module.lessons, lang)}</span>}
         </div>
         <h3>{localize(module.title, lang)}</h3>
-        <p>
-          <strong>{localize(ui.facilitators, lang)}:</strong> {localize(module.facilitators, lang)}
-        </p>
-        <p>
-          <strong>{localize(ui.abstract, lang)}:</strong> {localize(module.abstract, lang)}
-        </p>
+        {module.abstract && <p>{localize(module.abstract, lang)}</p>}
+        <div class="facilitators">
+          <span class="facilitators-label">{localize(ui.facilitators, lang)}</span>
+          <ul>
+            {module.facilitators.map((name) => (
+              <li>{name}</li>
+            ))}
+          </ul>
+        </div>
       </article>
     ))
   }

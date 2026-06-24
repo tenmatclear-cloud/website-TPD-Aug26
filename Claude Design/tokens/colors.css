@@ -1,0 +1,57 @@
+/* ==========================================================================
+   JC GoAI — Color tokens
+   Deep navy authority + bright accent colours + clean neutrals.
+   Base palette first, then semantic aliases that the components consume.
+   ========================================================================== */
+
+:root {
+  /* ---- Brand / blues ---------------------------------------------------- */
+  --color-primary: #022169;        /* Brand navy — titles, CTAs, dark sections */
+  --color-hero-bg: #04246f;        /* Hero navy (a touch lighter than primary) */
+  --color-accent-blue: #0473ea;    /* Secondary blue, footer gradient end       */
+  --color-bg-light: #e8f0ff;       /* Light blue tint — loading / soft surfaces  */
+  --color-soft-blue-1: #d0e0ff;    /* Supporting light blue                      */
+  --color-soft-blue-2: #f0f4ff;    /* Supporting light blue                      */
+
+  /* ---- Accents ---------------------------------------------------------- */
+  --color-accent-orange: #ff8b12;  /* Programme / event tags                     */
+  --color-accent-green: #00cd7a;   /* Teacher co-creation / objectives           */
+  --color-accent-yellow: #fecf13;  /* Schools / news / the split-stat section    */
+  --color-accent-gold: #fad000;    /* Header CTA text, hero highlight (on navy)  */
+
+  /* ---- Neutrals --------------------------------------------------------- */
+  --color-white: #ffffff;
+  --color-text-primary: #0d121d;   /* Body copy, nav links                       */
+  --color-text-secondary: #5e646d; /* Muted descriptions                         */
+  --color-border: #e8e8e8;         /* Hairline borders, dividers                 */
+  --color-bg-gray: #f5f5f5;        /* Light gray surface (mobile menu)           */
+  --color-page: #f7f9ff;           /* App / page background                      */
+
+  /* ---- Semantic aliases (prefer these in components) -------------------- */
+  --surface-page: var(--color-page);
+  --surface-card: var(--color-white);
+  --surface-card-soft: #fbfcff;    /* Faint blue-white card fill (modules, info) */
+  --surface-dark: var(--color-primary);
+  --surface-hero: var(--color-hero-bg);
+
+  --text-strong: var(--color-primary);   /* Headings on light surfaces */
+  --text-body: var(--color-text-primary);
+  --text-muted: var(--color-text-secondary);
+  --text-on-dark: var(--color-white);
+  --text-on-dark-muted: rgb(255 255 255 / 0.85);
+  --text-highlight: var(--color-accent-gold); /* Highlight text on navy */
+
+  --border-hairline: var(--color-border);
+  --border-on-dark: rgb(255 255 255 / 0.22);
+
+  /* ---- Accent role map (semantic colour-coding) ------------------------- */
+  --accent-programme: var(--color-accent-orange); /* Programme / events */
+  --accent-teachers: var(--color-accent-green);   /* Teachers / objectives */
+  --accent-schools: var(--color-accent-yellow);   /* Schools / news */
+
+  /* ---- Signature gradients --------------------------------------------- */
+  --gradient-hero: radial-gradient(circle at 80% 20%, rgb(4 115 234 / 0.35), transparent 28%),
+    linear-gradient(135deg, var(--color-hero-bg), var(--color-primary));
+  --gradient-split: linear-gradient(to right, var(--color-accent-yellow) 0 42%, var(--color-primary) 42% 100%);
+  --gradient-footer-bar: linear-gradient(270deg, var(--color-primary), var(--color-accent-blue));
+}

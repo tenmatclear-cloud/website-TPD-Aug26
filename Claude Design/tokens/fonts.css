@@ -1,0 +1,19 @@
+/* ==========================================================================
+   JC GoAI — Webfonts
+   --------------------------------------------------------------------------
+   SUBSTITUTION NOTE: The JC GoAI brand uses two commercial typefaces —
+   Galano Grotesque (display/headings) and Gotham (body). Neither is free /
+   webfont-licensable, so this system substitutes the closest Google Fonts:
+
+     • Galano Grotesque  →  Montserrat  (geometric grotesque, same friendly
+                                          rounded-but-precise character)
+     • Gotham            →  Manrope     (clean geometric body face; Manrope is
+                                          already loaded by the brand site as a
+                                          supplementary face)
+
+   If you have the licensed Galano Grotesque + Gotham web kits, drop the
+   woff2 files into assets/fonts/ and replace the @import below with local
+   @font-face rules pointing at them — the token names never change.
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap");

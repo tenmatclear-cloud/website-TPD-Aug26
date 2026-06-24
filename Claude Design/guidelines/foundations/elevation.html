@@ -1,0 +1,22 @@
+<!-- @dsCard group="Brand" viewport="700x180" name="Elevation & cards" subtitle="Borders + colour blocks over heavy shadow" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../../styles.css" />
+<style>
+  body { margin: 0; padding: 22px 24px; background: var(--surface-page); display: flex; gap: 20px; align-items: center; font-family: var(--font-body); }
+  .demo { flex: 1; padding: 18px; border-radius: var(--radius-card); background: var(--surface-card); }
+  .hairline { border: 1px solid var(--color-border); }
+  .soft { box-shadow: var(--shadow-soft); }
+  .hover { box-shadow: var(--shadow-card-hover); }
+  h4 { margin: 0 0 4px; font: 700 0.95rem/1.2 var(--font-heading); color: var(--text-strong); }
+  p { margin: 0; font-size: 0.78rem; color: var(--text-muted); }
+</style>
+</head>
+<body>
+  <div class="demo hairline"><h4>Hairline</h4><p>Default card — 1px border, no shadow</p></div>
+  <div class="demo soft"><h4>Soft</h4><p>Floating section panel</p></div>
+  <div class="demo hover"><h4>Hover</h4><p>Card lift on interaction</p></div>
+</body>
+</html>

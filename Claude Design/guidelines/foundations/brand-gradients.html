@@ -1,0 +1,21 @@
+<!-- @dsCard group="Brand" viewport="700x200" name="Signature gradients" subtitle="Hero glow, the 50/50 split, and the footer bar" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../../styles.css" />
+<style>
+  body { margin: 0; padding: 20px; background: var(--surface-card); display: grid; gap: 14px; font-family: var(--font-body); }
+  .band { border-radius: var(--radius-md); padding: 14px 18px; display: flex; align-items: flex-end; min-height: 48px; }
+  .cap { font: 800 0.72rem/1.2 var(--font-heading); letter-spacing: .04em; text-transform: uppercase; }
+  .hero { background: var(--gradient-hero); min-height: 64px; }
+  .split { background: var(--gradient-split); min-height: 64px; }
+  .bar { background: var(--gradient-footer-bar); min-height: 22px; }
+</style>
+</head>
+<body>
+  <div class="band hero"><span class="cap" style="color:var(--color-accent-gold)">Hero — radial glow over navy</span></div>
+  <div class="band split"><span class="cap" style="color:var(--color-primary)">Impact split — yellow 42% / navy</span></div>
+  <div class="band bar"></div>
+</body>
+</html>

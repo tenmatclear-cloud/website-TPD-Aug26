@@ -1,0 +1,51 @@
+/* ==========================================================================
+   JC GoAI — Spacing, layout, radius & elevation tokens
+   The brand is built on soft rounded geometry, colour blocks and hairline
+   borders rather than heavy shadows. Radii are large; elevation is subtle.
+   ========================================================================== */
+
+:root {
+  /* ---- Spacing scale (4px base) ---------------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* ---- Section rhythm --------------------------------------------------- */
+  --space-section-y: clamp(44px, 7vw, 76px);  /* Section inner padding   */
+  --space-section-gap: 28px;                  /* Gap between sections     */
+  --space-card-pad: 24px;                     /* Card padding             */
+
+  /* ---- Layout ----------------------------------------------------------- */
+  --max-width: 1280px;
+  --gutter: clamp(20px, 5vw, 40px); /* @kind spacing */
+  --header-height: 72px;
+
+  /* ---- Corner radii (soft, generous) ------------------------------------ */
+  --radius-hero: 40px;     /* Hero bottom corners            */
+  --radius-content: 32px;  /* Content-shell / section panels */
+  --radius-card: 28px;     /* Cards                          */
+  --radius-md: 24px;       /* Inner panels, tags-as-chips    */
+  --radius-sm: 18px;       /* Small inset blocks             */
+  --radius-button: 999px;  /* Pill buttons & tags            */
+
+  /* ---- Elevation (used sparingly) --------------------------------------- */
+  --shadow-soft: 0 20px 60px rgb(2 33 105 / 0.08);   /* Floating section panels */
+  --shadow-card-hover: 0 12px 32px rgb(2 33 105 / 0.12);
+
+  /* ---- Borders ---------------------------------------------------------- */
+  --border-width-accent: 7px;  /* Left accent bar on feature cards */
+
+  /* ---- Motion ----------------------------------------------------------- */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1); /* @kind other */
+  --duration-fast: 0.2s; /* @kind other */
+  --duration-base: 0.3s; /* @kind other */
+  --duration-slow: 0.8s; /* @kind other */
+}

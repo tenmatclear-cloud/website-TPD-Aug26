@@ -1,0 +1,29 @@
+<!-- @dsCard group="Spacing" viewport="700x170" name="Spacing scale" subtitle="4px base — section rhythm built on these" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../../styles.css" />
+<style>
+  body { margin: 0; padding: 20px 24px; background: var(--surface-card); font-family: var(--font-body); }
+  .scale { display: flex; align-items: flex-end; gap: 16px; }
+  .item { display: grid; gap: 8px; justify-items: center; }
+  .bar { background: var(--color-accent-blue); border-radius: 4px; width: 100%; }
+  .tok { font: 700 0.72rem/1 var(--font-heading); color: var(--text-strong); }
+  .val { font: 500 0.68rem/1 var(--font-body); color: var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="scale">
+  <div class="item"><div class="bar" style="width:8px;height:8px"></div><span class="tok">2</span><span class="val">8</span></div>
+  <div class="item"><div class="bar" style="width:12px;height:12px"></div><span class="tok">3</span><span class="val">12</span></div>
+  <div class="item"><div class="bar" style="width:16px;height:16px"></div><span class="tok">4</span><span class="val">16</span></div>
+  <div class="item"><div class="bar" style="width:24px;height:24px"></div><span class="tok">6</span><span class="val">24</span></div>
+  <div class="item"><div class="bar" style="width:32px;height:32px"></div><span class="tok">8</span><span class="val">32</span></div>
+  <div class="item"><div class="bar" style="width:40px;height:40px"></div><span class="tok">10</span><span class="val">40</span></div>
+  <div class="item"><div class="bar" style="width:48px;height:48px"></div><span class="tok">12</span><span class="val">48</span></div>
+  <div class="item"><div class="bar" style="width:64px;height:64px"></div><span class="tok">16</span><span class="val">64</span></div>
+  <div class="item"><div class="bar" style="width:80px;height:80px"></div><span class="tok">20</span><span class="val">80</span></div>
+</div>
+</body>
+</html>

@@ -11,8 +11,11 @@
   --color-text-secondary: #5e646d;
   --color-border: #e8e8e8;
   --color-bg-light: #e8f0ff;
-  --font-heading: "Galano Grotesque", "Avenir Next", system-ui, sans-serif;
-  --font-body: "Gotham", "Avenir Next", system-ui, sans-serif;
+  /* Brand typefaces (Galano Grotesque / Gotham) are commercial; per the JC GoAI
+     design system we substitute the closest free Google Fonts: Montserrat for
+     display and Manrope for body. */
+  --font-heading: "Galano Grotesque", "Montserrat", "Avenir Next", system-ui, sans-serif;
+  --font-body: "Gotham", "Manrope", "Avenir Next", system-ui, sans-serif;
   --max-width: 1280px;
   --gutter: clamp(20px, 5vw, 40px);
   --header-height: 72px;
@@ -84,6 +87,12 @@ img {
   width: min(var(--max-width), calc(100% - var(--gutter) * 2));
   min-height: var(--header-height);
   margin: 0 auto;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .brand {
@@ -443,6 +452,99 @@ h3 {
   font-weight: 900;
 }
 
+.timeline-band {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 14px;
+  margin-top: 10px;
+  padding: 14px 22px;
+  border-radius: 16px;
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.timeline-band:first-child {
+  margin-top: 0;
+}
+
+.timeline-band h3 {
+  color: var(--color-white);
+  font-size: 1.05rem;
+}
+
+.timeline-band span {
+  color: var(--color-accent-gold);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.track-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.track {
+  padding: 18px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  background: #fbfcff;
+}
+
+.track h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.track p {
+  margin: 8px 0 0;
+  color: var(--color-text-secondary);
+}
+
+.muted-note {
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.tag-soft {
+  background: var(--color-bg-light);
+}
+
+.facilitators {
+  margin-top: 4px;
+}
+
+.facilitators-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--color-primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.facilitators ul {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--color-text-secondary);
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo img {
+  height: 40px;
+  width: auto;
+}
+
 .info-list {
   display: grid;
   gap: 16px;
@@ -509,7 +611,8 @@ h3 {
   }
 
   .grid,
-  .module-grid {
+  .module-grid,
+  .track-grid {
     grid-template-columns: 1fr;
   }
 

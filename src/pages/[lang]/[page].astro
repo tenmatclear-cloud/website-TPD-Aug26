@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { localize, pageTitles, ui } from '@content/i18n';
-import { languages, logistics, resources, workshop, type Lang } from '@content/programme';
+import { languages, staticPages, workshop, type Lang } from '@content/programme';
 
 type StaticPage = 'resources' | 'logistics' | 'media';
 
@@ -12,28 +12,12 @@ export function getStaticPaths() {
 
 const lang = Astro.params.lang as Lang;
 const page = Astro.params.page as StaticPage;
-
-const introByPage = {
-  resources: ui.resourcesIntro,
-  logistics: ui.logisticsIntro,
-  media: ui.mediaIntro,
-};
-
-const contentByPage = {
-  resources,
-  logistics,
-  media: [
-    {
-      title: pageTitles.media,
-      body: ui.mediaIntro,
-    },
-  ],
-};
+const content = staticPages[page];
 ---
 
 <BaseLayout
   title={`${localize(pageTitles[page], lang)} | ${localize(workshop.projectName, lang)}`}
-  description={localize(introByPage[page], lang)}
+  description={localize(content.intro, lang)}
   lang={lang}
   currentPath={page}
 >
@@ -41,8 +25,8 @@ const contentByPage = {
     <div class="hero-inner">
       <div>
         <span class="eyebrow">{localize(workshop.projectName, lang)}</span>
-        <h1>{localize(pageTitles[page], lang)}</h1>
-        <p>{localize(introByPage[page], lang)}</p>
+        <h1>{localize(content.title, lang)}</h1>
+        <p>{localize(content.intro, lang)}</p>
       </div>
       <aside class="hero-panel">
         <dl>
@@ -64,16 +48,16 @@ const contentByPage = {
       <div class="section-header">
         <div>
           <span class="eyebrow" style="color: var(--color-primary); border-color: var(--color-border);">
-            {localize(pageTitles[page], lang)}
+            {localize(content.title, lang)}
           </span>
-          <h2>{localize(pageTitles[page], lang)}</h2>
-          <p>{localize(introByPage[page], lang)}</p>
+          <h2>{localize(content.title, lang)}</h2>
+          <p>{localize(content.intro, lang)}</p>
         </div>
       </div>
 
       <div class="info-list">
         {
-          contentByPage[page].map((item) => (
+          content.items.map((item) => (
             <article class="info-item">
               <h3>{localize(item.title, lang)}</h3>
               <p>{localize(item.body, lang)}</p>
