@@ -105,7 +105,7 @@ sessions:
         speakers: { en: "CUHK representative", zh: "香港中文大學代表" }
       - audience: { en: "Secondary Schools", zh: "中學" }
         title: { en: "Introduction to Parent Education", zh: "家長教育簡介" }
-        speakers: { en: "Mr. Tenma WONG — Instructional Designer, JC GoAI", zh: "黃天馬先生 — 賽馬會人工智能教育計劃教學設計師" }
+        speakers: { en: "Mr. Tenma WONG — Instructional Designer, JC GoAI", zh: "黃偉強先生 — 賽馬會人工智能教育計劃教學設計師" }
 
   - time: "3:40pm – 4:10pm"
     duration: "30 mins"
@@ -136,7 +136,7 @@ sessions:
     tracks:
       - audience: { en: "Primary Schools", zh: "小學" }
         title: { en: "Introduction to Parent Education", zh: "家長教育簡介" }
-        speakers: { en: "Mr. Tenma WONG — Instructional Designer, JC GoAI", zh: "黃天馬先生 — 賽馬會人工智能教育計劃教學設計師" }
+        speakers: { en: "Mr. Tenma WONG — Instructional Designer, JC GoAI", zh: "黃偉強先生 — 賽馬會人工智能教育計劃教學設計師" }
       - audience: { en: "Secondary Schools", zh: "中學" }
         title: { en: "Introduction to the GenAI Tools Platform", zh: "生成式人工智能工具平台簡介" }
         speakers: { en: "CUHK representative", zh: "香港中文大學代表" }
