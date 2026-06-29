@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/jc-goai-design-system-019a0108-0405-45a0-81fb-3fb895d58aba/styles.css">
+<script src="_ds/jc-goai-design-system-019a0108-0405-45a0-81fb-3fb895d58aba/_ds_bundle.js"></script>
+<style>
+  body { margin: 0; background: var(--surface-page); -webkit-font-smoothing: antialiased; }
+  .navlink { background: none; border: none; font: inherit; padding: 8px 0; color: var(--color-text-primary); transition: color .2s ease; cursor: pointer; }
+  .navlink:hover, .navlink[aria-current="page"] { color: var(--color-primary); font-weight: 700; }
+  .langbtn { min-width: 42px; padding: 8px 10px; border: 1px solid var(--color-border); border-radius: var(--radius-button); background: transparent; font: 800 .85rem/1 var(--font-heading); color: var(--text-body); cursor: pointer; }
+  .langbtn[aria-current="true"] { border-color: var(--color-primary); background: var(--color-primary); color: var(--color-accent-gold); }
+  @media (max-width: 900px) {
+    .heroInner, .splitSec, .g3 { grid-template-columns: 1fr !important; }
+    .splitSec { background: var(--color-primary) !important; }
+    .splitSec > .splitYellow { background: var(--color-accent-yellow) !important; }
+    .navwrap { flex-wrap: wrap; gap: 10px 14px !important; }
+  }
+</style>
+</helmet>
+
+<div style="font-family: var(--font-body); color: var(--text-body);">
+
+  <!-- ===== Header ===== -->
+  <header style="position: sticky; top: 0; z-index: 100; min-height: var(--header-height); border-bottom: 1px solid var(--color-border); background: rgb(255 255 255 / 0.96); backdrop-filter: blur(18px);">
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 24px; width: min(var(--max-width), calc(100% - var(--gutter) * 2)); min-height: var(--header-height); margin: 0 auto;">
+      <button onClick="{{ goHome }}" style="display: flex; align-items: center; gap: 12px; cursor: pointer; background: none; border: none; padding: 0;">
+        <img src="assets/goai-mark.png" alt="JC GoAI" style="height: 30px; width: auto; display: block;">
+        <span style="display: grid; line-height: 1.05; text-align: left;">
+          <strong style="font: 800 1.05rem/1 var(--font-heading); color: var(--color-primary);">JC GoAI</strong>
+          <em style="font: 600 .7rem/1.3 var(--font-body); font-style: normal; color: var(--text-muted);">{{ title }}</em>
+        </span>
+      </button>
+
+      <nav class="navwrap" aria-label="Main navigation" style="display: flex; align-items: center; gap: 18px; font-size: .95rem;">
+        <button class="navlink" onClick="{{ goHome }}" aria-current="{{ homeCur }}">{{ navHome }}</button>
+        <button class="navlink" onClick="{{ goDay1 }}" aria-current="{{ day1Cur }}">{{ navDay1 }}</button>
+        <button class="navlink" onClick="{{ goHome }}">{{ navDay2 }}</button>
+        <button class="navlink" onClick="{{ goHome }}">{{ navDay3 }}</button>
+        <button class="navlink" onClick="{{ goHome }}">{{ navResources }}</button>
+        <button class="navlink" onClick="{{ goHome }}">{{ navLogistics }}</button>
+        <button class="navlink" onClick="{{ goHome }}">{{ navMedia }}</button>
+      </nav>
+
+      <div role="group" aria-label="Language" style="display: flex; gap: 6px;">
+        <button class="langbtn" aria-current="{{ enCur }}" onClick="{{ setEn }}">EN</button>
+        <button class="langbtn" aria-current="{{ zhCur }}" onClick="{{ setZh }}">繁</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <sc-if value="{{ isHome }}" hint-placeholder-val="{{ yes }}">
+    <!-- ===== Hero ===== -->
+    <section style="overflow: hidden; border-radius: 0 0 var(--radius-hero) var(--radius-hero); background: var(--gradient-hero); color: var(--color-white);">
+      <div class="heroInner" style="display: grid; grid-template-columns: minmax(0,1.25fr) minmax(280px,0.75fr); gap: clamp(32px,6vw,80px); width: min(var(--max-width), calc(100% - var(--gutter) * 2)); margin: 0 auto; padding: clamp(56px,9vw,104px) 0 clamp(72px,11vw,124px);">
+        <div>
+          <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.Eyebrow" on-dark="{{ yes }}" bordered="{{ yes }}" hint-size="auto,30px">{{ project }}</x-import>
+          <h1 style="margin: 18px 0 0; color: #fff; max-width: 760px; font-family: var(--font-heading); font-weight: 800; line-height: 1.1; font-size: clamp(2.5rem,7vw,4.9rem);">{{ title }}</h1>
+          <p style="max-width: 720px; margin: 20px 0 0; color: var(--text-on-dark-muted); font-size: var(--text-lead);">{{ heroIntro }}</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px;">
+            <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.Button" variant="primary" show-arrow="{{ yes }}" onClick="{{ goProgramme }}" hint-size="auto,44px">{{ uiViewProgramme }}</x-import>
+            <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.Button" variant="ghost" onClick="{{ goTakeaways }}" hint-size="auto,44px">{{ uiLogistics }}</x-import>
+          </div>
+        </div>
+        <aside aria-label="Workshop summary" style="align-self: end; padding: 28px; border: 1px solid var(--border-on-dark); border-radius: 34px; background: rgb(255 255 255 / 0.12);">
+          <dl style="display: grid; gap: 18px; margin: 0;">
+            <div>
+              <dt style="color: var(--color-accent-gold); font: 800 .78rem/1 var(--font-heading); letter-spacing: .08em; text-transform: uppercase;">{{ uiDate }}</dt>
+              <dd style="margin: 4px 0 0; font-size: 1.05rem; font-weight: 700;">{{ dateRange }}</dd>
+            </div>
+            <div>
+              <dt style="color: var(--color-accent-gold); font: 800 .78rem/1 var(--font-heading); letter-spacing: .08em; text-transform: uppercase;">{{ uiVenue }}</dt>
+              <dd style="margin: 4px 0 0; font-size: 1.05rem; font-weight: 700;">{{ venue }}</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <div style="position: relative; z-index: 10; width: min(var(--max-width), calc(100% - var(--gutter) * 2)); margin: -48px auto 0; padding-bottom: 80px; display: grid; gap: 28px;">
+
+      <!-- Feature cards -->
+      <section id="programme" style="padding: clamp(44px,7vw,76px); border-radius: var(--radius-content); background: var(--surface-card); box-shadow: var(--shadow-soft);">
+        <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 28px; flex-wrap: wrap;">
+          <div>
+            <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.Eyebrow" hint-size="auto,20px">{{ whatToExpect }}</x-import>
+            <h2 style="margin: 10px 0 0; color: var(--color-primary); font-family: var(--font-heading); font-weight: 800; line-height: 1.12; font-size: clamp(2rem,4vw,3rem);">{{ threeDays }}</h2>
+          </div>
+          <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.Button" variant="ghostDark" show-arrow="{{ yes }}" onClick="{{ goProgramme }}" hint-size="auto,44px">{{ uiViewProgramme }}</x-import>
+        </div>
+        <div class="g3" style="display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px;">
+          <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.Card" accent="programme" meta="{{ feat1Meta }}" title="{{ feat1Title }}" description="{{ feat1Desc }}" hint-size="100%,220px"></x-import>
+          <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.Card" accent="teachers" meta="{{ feat2Meta }}" title="{{ feat2Title }}" description="{{ feat2Desc }}" hint-size="100%,220px"></x-import>
+          <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.Card" accent="schools" meta="{{ feat3Meta }}" title="{{ feat3Title }}" description="{{ feat3Desc }}" hint-size="100%,220px"></x-import>
+        </div>
+      </section>
+
+      <!-- Split impact stats -->
+      <section class="splitSec" style="display: grid; grid-template-columns: 0.9fr 1.1fr; overflow: hidden; border-radius: var(--radius-content); color: var(--color-white); background: var(--gradient-split);">
+        <div class="splitYellow" style="padding: clamp(36px,6vw,60px);">
+          <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.Eyebrow" hint-size="auto,20px">{{ impactEyebrow }}</x-import>
+          <h2 style="margin: 12px 0 0; color: var(--color-primary); font-family: var(--font-heading); font-weight: 800; line-height: 1.12; font-size: clamp(2rem,4vw,3rem);">{{ impactTitle }}</h2>
+        </div>
+        <div style="padding: clamp(36px,6vw,60px);">
+          <div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 26px 20px;">
+            <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.StatBlock" value="3" label="{{ stat1 }}" on-dark="{{ yes }}" hint-size="auto,70px"></x-import>
+            <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.StatBlock" value="20+" label="{{ stat2 }}" on-dark="{{ yes }}" hint-size="auto,70px"></x-import>
+            <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.StatBlock" value="P4–S3" label="{{ stat3 }}" on-dark="{{ yes }}" hint-size="auto,70px"></x-import>
+            <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.StatBlock" value="EN · 繁" label="{{ stat4 }}" on-dark="{{ yes }}" hint-size="auto,70px"></x-import>
+          </div>
+        </div>
+      </section>
+
+      <!-- Objectives / takeaways -->
+      <section id="takeaways" style="padding: clamp(44px,7vw,76px); border-radius: var(--radius-content); background: var(--surface-card); box-shadow: var(--shadow-soft);">
+        <div style="margin-bottom: 28px;">
+          <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.Eyebrow" hint-size="auto,20px">{{ objEyebrow }}</x-import>
+          <h2 style="margin: 10px 0 0; color: var(--color-primary); font-family: var(--font-heading); font-weight: 800; line-height: 1.12; font-size: clamp(2rem,4vw,3rem);">{{ takeawaysTitle }}</h2>
+        </div>
+        <div style="display: grid; gap: 14px;">
+          <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.InfoPanel" variant="accent" hint-size="100%,70px">{{ obj1 }}</x-import>
+          <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.InfoPanel" variant="accent" hint-size="100%,70px">{{ obj2 }}</x-import>
+          <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.InfoPanel" variant="accent" hint-size="100%,70px">{{ obj3 }}</x-import>
+        </div>
+      </section>
+
+    </div>
+    </sc-if>
+
+    <!-- ===== Day 1 programme ===== -->
+    <sc-if value="{{ isDay1 }}">
+    <div style="position: relative; z-index: 10; width: min(var(--max-width), calc(100% - var(--gutter) * 2)); margin: 40px auto 0; padding-bottom: 80px;">
+      <section style="padding: clamp(44px,7vw,76px); border-radius: var(--radius-content); background: var(--surface-card); box-shadow: var(--shadow-soft);">
+        <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 28px; flex-wrap: wrap;">
+          <div>
+            <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.Eyebrow" hint-size="auto,20px">{{ day1Date }}</x-import>
+            <h2 style="margin: 10px 0 0; color: var(--color-primary); font-family: var(--font-heading); font-weight: 800; line-height: 1.12; font-size: clamp(2rem,4vw,3rem);">{{ day1Title }}</h2>
+          </div>
+          <x-import component-from-global-scope="JCGoAIDesignSystem_019a01.Tag" tone="programme" hint-size="auto,28px">{{ day1Audience }}</x-import>
+        </div>
+        <p style="margin: -10px 0 26px; max-width: 72ch; color: var(--text-muted); font-size: var(--text-lead);">{{ day1Intro }}</p>
+        <div>
+          <sc-for list="{{ day1Rows }}" as="r" hint-placeholder-count="6">
+            <sc-if value="{{ r.isBand }}">
+              <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin: 24px 0 6px; padding: 14px 22px; border-radius: 16px; background: var(--color-primary); color: var(--color-white);">
+                <h3 style="margin: 0; color: var(--color-white); font-size: 1.05rem; font-family: var(--font-heading); font-weight: 800;">{{ r.heading }}</h3>
+                <span style="color: var(--color-accent-gold); font-size: .82rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase;">{{ r.note }}</span>
+              </div>
+            </sc-if>
+            <sc-if value="{{ r.isSession }}">
+              <div style="display: grid; grid-template-columns: 170px 1fr; gap: 20px; padding: 22px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--surface-card); margin-bottom: 14px;">
+                <div style="color: var(--color-primary); font-family: var(--font-heading); font-weight: 900;">{{ r.time }}<span style="display: block; margin-top: 2px; color: var(--text-muted); font-size: .85rem; font-weight: 700;">{{ r.duration }}</span></div>
+                <div>
+                  <h3 style="margin: 0; font-size: 1.18rem;">{{ r.title }}</h3>
+                  <sc-if value="{{ r.speakers }}"><p style="margin: 8px 0 0; color: var(--color-primary); font-weight: 600;">{{ r.speakers }}</p></sc-if>
+                  <sc-if value="{{ r.abstract }}"><p style="margin: 8px 0 0; color: var(--text-muted);">{{ r.abstract }}</p></sc-if>
+                  <sc-if value="{{ r.note }}"><span style="display: inline-flex; margin-top: 12px; padding: 5px 11px; border-radius: var(--radius-button); background: var(--color-bg-light); color: var(--color-primary); font: 700 .8rem/1.2 var(--font-body);">{{ r.note }}</span></sc-if>
+                </div>
+              </div>
+            </sc-if>
+            <sc-if value="{{ r.isTracks }}">
+              <div style="display: grid; grid-template-columns: 170px 1fr; gap: 20px; padding: 22px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--surface-card); margin-bottom: 14px;">
+                <div style="color: var(--color-primary); font-family: var(--font-heading); font-weight: 900;">{{ r.time }}<span style="display: block; margin-top: 2px; color: var(--text-muted); font-size: .85rem; font-weight: 700;">{{ r.duration }}</span></div>
+                <div style="display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px;">
+                  <sc-for list="{{ r.tracks }}" as="tk" hint-placeholder-count="2">
+                    <div style="padding: 16px 18px; border: 1px solid var(--color-border); border-radius: 16px; background: var(--surface-card-soft);">
+                      <span style="display: inline-flex; padding: 3px 10px; border-radius: 999px; background: var(--color-bg-light); color: var(--color-primary); font: 800 .7rem/1 var(--font-heading); letter-spacing: .04em; text-transform: uppercase;">{{ tk.audience }}</span>
+                      <h3 style="margin: 8px 0 0; font-size: 1.02rem;">{{ tk.title }}</h3>
+                      <sc-if value="{{ tk.speakers }}"><p style="margin: 6px 0 0; color: var(--color-primary); font-weight: 600; font-size: .92rem;">{{ tk.speakers }}</p></sc-if>
+                      <sc-if value="{{ tk.abstract }}"><p style="margin: 6px 0 0; color: var(--text-muted); font-size: .9rem;">{{ tk.abstract }}</p></sc-if>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+          </sc-for>
+        </div>
+      </section>
+    </div>
+    </sc-if>
+
+    <!-- ===== Footer ===== -->
+    <footer style="margin-top: 70px; background: var(--surface-card);">
+      <div style="width: min(var(--max-width), calc(100% - var(--gutter) * 2)); margin: 0 auto; padding: 44px 0;">
+        <img src="assets/goai-logo.png" alt="JC GoAI" style="height: 66px; width: auto; display: block;">
+        <p style="max-width: 760px; margin: 16px 0 0; color: var(--text-muted); font-size: .9rem;">{{ title }} · {{ dateRange }} · {{ venue }}</p>
+      </div>
+      <div aria-hidden="true" style="height: 16px; background: var(--gradient-footer-bar);"></div>
+    </footer>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { lang: 'en', page: 'home' };
+  L(en, zh) { return { en, zh }; }
+  t(o) { const l = this.state.lang; return o[l] ?? o.en; }
+  goPage(p) { this.setState({ page: p }); window.scrollTo({ top: 0 }); }
+  buildDay1() {
+    const t = (o) => this.t(o);
+    const L = (en, zh) => ({ en, zh });
+    const d = (n) => L(n + ' mins', n + '分鐘');
+    const S = (time, duration, title, speakers, abstract, note) => ({ isSession: true, time, duration: t(duration), title: t(title), speakers: speakers ? t(speakers) : undefined, abstract: abstract ? t(abstract) : undefined, note: note ? t(note) : undefined });
+    const B = (heading, note) => ({ isBand: true, heading: t(heading), note: note ? t(note) : undefined });
+    const TR = (time, duration, tracks) => ({ isTracks: true, time, duration: t(duration), tracks: tracks.map(k => ({ audience: t(k.a), title: t(k.t), speakers: k.s ? t(k.s) : undefined, abstract: k.ab ? t(k.ab) : undefined })) });
+    return [
+      S('8:45am – 9:15am', d(30), L('Registration', '登記')),
+      B(L('AM Session — Building the Foundation for AI Education', '上午環節 — 建立人工智能教育的基礎'), L('Conducted in English', '以英語進行')),
+      S('9:15am – 9:25am', d(10), L('Welcoming Message', '歡迎辭'), L('Ir. Daniel LAI, BBS, JP — Programme Director of JC GoAI', '黎達強工程師，BBS，JP — 賽馬會人工智能教育計劃總監')),
+      S('9:25am – 9:50am', d(25), L('JC GoAI: Overview of Learning and Teaching Resources and Design Principles', '賽馬會人工智能教育計劃：學與教資源及設計原則概覽'), L('Prof. MENG Mei Ling, Helen — Co-Principal Investigator of JC GoAI; Patrick Huen Wing Ming Professor of Systems Engineering & Engineering Management, CUHK', '蒙美玲教授 — 賽馬會人工智能教育計劃共同首席研究員；香港中文大學禤永明系統工程與工程管理學講座教授'), L(`(Tentative) This session provides a comprehensive overview of the Project's multifaceted approach to advancing AI education. Prof. Meng will delineate the foundational design principles of our L&T Resources, detailing how they span diverse disciplines to support teachers in integrating AI meaningfully into practice. Participants will gain insights into the resource structure — both "AI Foundations" and "AI + Subjects" modules — and the pedagogical frameworks that keep these resources academically rigorous yet practically feasible for the classroom.`, `（暫定）本環節全面概覽計劃推動人工智能教育的多元取向。蒙教授將闡述學與教資源的基礎設計原則，說明資源如何橫跨不同學科，協助教師有意義地將人工智能融入教學。參加者將了解資源結構（包括「人工智能基礎」及「人工智能＋學科」模組），以及確保資源兼具學術嚴謹與課堂可行性的教學框架。`)),
+      S('9:50am – 10:20am', d(30), L('EDB Sharing on Blueprint for Digital Education in Hong Kong', '教育局分享：香港數字教育藍圖'), L('Ms. LAM Wing Yee, Sierra — Chief Curriculum Development Officer (Technology Education), Education Bureau, HKSAR', '林詠儀女士 — 香港特別行政區教育局課程發展主任（科技教育）')),
+      S('10:20am – 11:00am', d(40), L('Global Trends, Practices, and Future Developments in AI Education', '人工智能教育的全球趨勢、實踐及未來發展'), L('Prof. Cynthia BREAZEAL — Co-Principal Investigator of JC GoAI; Director of MIT Responsible AI for Social Empowerment and Education (RAISE) Initiative', 'Cynthia BREAZEAL 教授 — 賽馬會人工智能教育計劃共同首席研究員；麻省理工學院「負責任人工智能促進社會賦能與教育（RAISE）」計劃總監'), L(`(Tentative) Prof. Breazeal explores the evolving global landscape of educational AI applications. Participants will be inspired by exemplary international practices and gain a clearer understanding of how to transform teaching and learning with AI, ensuring schools are prepared to navigate and embrace the technological shifts ahead.`, `（暫定）Breazeal 教授將探討教育人工智能應用不斷演變的全球面貌。參加者將從卓越的國際實踐中獲得啟發，更清晰地理解如何以人工智能轉化學與教，讓學校準備好迎接未來的科技轉變。`), L('Tentative title', '暫定題目')),
+      S('11:00am – 11:40am', d(40), L('Networking Break', '交流小休'), null, null, L('Light refreshments will be provided.', '將提供簡便茶點。')),
+      S('11:40am – 12:35pm', d(55), L('The Great AI Exchange: Cultivating International Perspectives for Local Success', '人工智能教育交流：以國際視野促進本地實踐'), L('Introductory presentations by Dr. Andrés F. SALAZAR GÓMEZ (MIT RAISE), Dr. Eric KLOPFER (MIT), and Prof. CHAI Ching Sing (CUHK). Panel moderated by a CUHK or MIT representative, with Prof. MENG Mei Ling Helen, Prof. CHAI Ching Sing, Prof. Cynthia BREAZEAL, Dr. Andrés F. SALAZAR GÓMEZ, and Dr. Eric KLOPFER.', '引言報告：Andrés F. SALAZAR GÓMEZ 博士（麻省理工 RAISE）、Eric KLOPFER 博士（麻省理工）及謝錫金教授（香港中文大學）。專題討論由香港中文大學或麻省理工代表主持，嘉賓包括蒙美玲教授、謝錫金教授、Cynthia BREAZEAL 教授、Andrés F. SALAZAR GÓMEZ 博士及 Eric KLOPFER 博士。'), L(`This high-level session bridges global research with Hong Kong's implementation realities. Following short research presentations, a moderated panel synthesises international evidence with local case studies — identifying universal best practices and addressing the unique challenges of the local landscape. By facilitating direct exchange between global experts and local researchers, the session keeps the Project's goals grounded in both academic rigour and practical feasibility.`, `本高層次環節連結全球研究與香港的推行實況。在簡短的研究報告後，由主持人帶領的專題討論將綜合國際證據與本地案例，歸納普遍適用的最佳實踐，並回應本地獨有的挑戰。透過促成全球專家與本地研究人員的直接交流，本環節確保計劃目標兼顧學術嚴謹與實踐可行。`)),
+      S('12:35pm – 12:45pm', d(10), L("Appreciation for Project's Peer Facilitators", '答謝計劃同儕促進者'), null, null, L('Includes certificate presentation and group photo.', '包括證書頒發及大合照。')),
+      S('12:45pm – 2:00pm', d(75), L('Lunch', '午膳')),
+      B(L('PM Session — Mastering Classroom Implementation', '下午環節 — 掌握課堂實踐'), L('Conducted in Cantonese', '以廣東話進行')),
+      S('2:00pm – 2:45pm', d(45), L('Successful Implementation Cases and Good Practices of AI Applications in L&T', '人工智能融入學與教的成功實踐案例及良好示範'), L('Teacher representatives', '教師代表'), L(`Representatives from pilot schools share authentic evidence of classroom impact, showcasing student projects and "lessons learned" from their implementation journeys. By highlighting both the successes and the hurdles of integrating AI into L&T, the session offers a grounded, peer-to-peer perspective on what works.`, `試點學校代表分享具體的課堂成效，展示學生作品並分享推行過程中的「經驗與教訓」。透過呈現人工智能融入學與教的成功與挑戰，本環節提供貼地的同儕視角，說明哪些做法行之有效。`)),
+      S('2:45pm – 3:30pm', d(45), L('Whole-school Approach to AI Applications', '全校參與的人工智能應用'), L('School principals', '學校校長'), L(`Cultivating a future-ready school ecosystem requires visionary leadership and holistic coordination. School principals share successful strategic frameworks and actionable insights on adopting a whole-school approach to AI integration — covering teacher empowerment, student and parent support, and resource allocation — offering school leaders a high-level roadmap to prepare all stakeholders for the future of education.`, `培育面向未來的校園生態，需要具遠見的領導及全面的統籌。學校校長將分享推行全校參與人工智能的成功策略框架及可行建議，涵蓋教師增能、學生與家長支援及資源分配，為學校領導提供高層次藍圖，協助各持份者迎接教育的未來。`)),
+      TR('3:30pm – 3:40pm', d(10), [
+        { a: L('Primary Schools', '小學'), t: L('Introduction to the GenAI Tools Platform', '生成式人工智能工具平台簡介'), s: L('CUHK representative', '香港中文大學代表') },
+        { a: L('Secondary Schools', '中學'), t: L('Introduction to Parent Education', '家長教育簡介'), s: L('Mr. Tenma WONG — Instructional Designer, JC GoAI', '黃偉強先生 — 賽馬會人工智能教育計劃教學設計師') },
+      ]),
+      TR('3:40pm – 4:10pm', d(30), [
+        { a: L('Primary Schools', '小學'), t: L('Math & Science Education × AI: Strategies for Meaningful Integration', '數學與科學教育 × 人工智能：有意義融合的策略'), s: L('Subject Experts of JC GoAI', '賽馬會人工智能教育計劃學科專家'), ab: L(`How JC GoAI curriculum resources leverage AI to deepen mathematical and scientific understanding. We explore how AI tools are strategically embedded to enhance problem-solving, data analysis, scientific inquiry, and logical reasoning — ensuring AI serves as a powerful scaffold for these subjects.`, `本環節展示計劃課程資源如何運用人工智能深化數學與科學理解，探討如何策略性地嵌入人工智能工具，提升解難、數據分析、科學探究及邏輯推理能力，讓人工智能成為這些學科的有力支架。`) },
+        { a: L('Secondary Schools', '中學'), t: L('Language Education × AI: Strategies for Meaningful Integration', '語文教育 × 人工智能：有意義融合的策略'), s: L('Subject Experts of JC GoAI', '賽馬會人工智能教育計劃學科專家'), ab: L(`How JC GoAI L&T resources integrate AI to support language proficiency. We showcase strategies that use AI to facilitate writing, reading, and communication — ensuring AI serves as a scaffold for developing critical literacy and creative expression.`, `本環節展示計劃學與教資源如何融入人工智能以支援語文能力，呈現運用人工智能促進寫作、閱讀及溝通的策略，讓人工智能成為培養批判素養與創意表達的支架。`) },
+      ]),
+      S('4:10pm – 4:40pm', d(30), L('The Power of Peer Coaching: Transforming AI Education through Shared Expertise', '同儕教練的力量：以共享專業轉化人工智能教育'), L('Peer Facilitators of JC GoAI', '賽馬會人工智能教育計劃同儕促進者'), L(`Celebrating the evolution from resource adoption to teacher-led innovation. Experienced peer facilitators share how they support pilot school teachers through collaborative coaching — showing how teachers can adapt ready-made lessons to suit their students, or develop entirely new AI-integrated lessons from scratch. This "bottom-up" approach highlights the teacher as an innovator.`, `本環節彰顯由採用資源邁向教師主導創新的演進。資深同儕促進者分享如何透過協作教練支援試點學校教師，示範教師如何調適既有課節以切合學生需要，甚至從零開始設計全新的人工智能融入課節。這種「由下而上」的取向突顯教師作為創新者的角色。`)),
+      TR('4:40pm – 4:50pm', d(10), [
+        { a: L('Primary Schools', '小學'), t: L('Introduction to Parent Education', '家長教育簡介'), s: L('Mr. Tenma WONG — Instructional Designer, JC GoAI', '黃偉強先生 — 賽馬會人工智能教育計劃教學設計師') },
+        { a: L('Secondary Schools', '中學'), t: L('Introduction to the GenAI Tools Platform', '生成式人工智能工具平台簡介'), s: L('CUHK representative', '香港中文大學代表') },
+      ]),
+      S('4:50pm – 4:55pm', d(5), L('Wrap-up', '總結')),
+    ];
+  }
+  scrollTo(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+  renderVals() {
+    const L = this.L.bind(this), t = this.t.bind(this);
+    const lang = this.state.lang;
+    const page = this.state.page;
+    return {
+      yes: true, h30: 30, h66: 66,
+      setEn: () => this.setState({ lang: 'en' }),
+      setZh: () => this.setState({ lang: 'zh' }),
+      enCur: lang === 'en' ? 'true' : undefined,
+      zhCur: lang === 'zh' ? 'true' : undefined,
+      isHome: page === 'home',
+      isDay1: page === 'day-1',
+      homeCur: page === 'home' ? 'page' : undefined,
+      day1Cur: page === 'day-1' ? 'page' : undefined,
+      goHome: () => this.goPage('home'),
+      goDay1: () => this.goPage('day-1'),
+      goProgramme: () => { if (this.state.page !== 'home') { this.goPage('home'); } else { this.scrollTo('programme'); } },
+      goTakeaways: () => { if (this.state.page !== 'home') { this.goPage('home'); } else { this.scrollTo('takeaways'); } },
+
+      day1Date: t(L('26 August 2026 · Wednesday', '2026年8月26日 · 星期三')),
+      day1Title: t(L('Day 1 — Schedule at a glance', '第一日 — 日程概覽')),
+      day1Audience: t(L('All schools', '所有學校')),
+      day1Intro: t(L('Day 1 serves as the foundational training session, blending theoretical frameworks with practical sharing.', '第一日為基礎培訓環節，結合理論框架與實踐分享。')),
+      day1Rows: this.buildDay1(),
+
+      navHome: t(L('Home', '首頁')),
+      navDay1: t(L('Day 1', '第一日')),
+      navDay2: t(L('Day 2', '第二日')),
+      navDay3: t(L('Day 3', '第三日')),
+      navResources: t(L('Resources', '資源')),
+      navLogistics: t(L('Logistics', '活動須知')),
+      navMedia: t(L('Media', '相片及錄影')),
+
+      project: t(L('JC GoAI Project', '賽馬會人工智能教育計劃')),
+      title: t(L('Teacher Professional Development Workshop', '教師專業發展工作坊')),
+      dateRange: t(L('26–28 August 2026', '2026年8月26日至28日')),
+      venue: t(L('The Chinese University of Hong Kong', '香港中文大學')),
+      heroIntro: t(L(
+        'A three-day guide for participating principals and teachers to explore AI learning and teaching resources, pedagogy, implementation cases, and subject-specific modules.',
+        '為參與校長及教師而設的三日導覽，涵蓋人工智能學與教資源、教學法、實踐案例及不同科目的專題模組。')),
+      uiViewProgramme: t(L('View programme', '瀏覽日程')),
+      uiLogistics: t(L('Logistics', '活動須知')),
+      uiDate: t(L('Date', '日期')),
+      uiVenue: t(L('Venue', '地點')),
+
+      whatToExpect: t(L('What to expect', '活動內容')),
+      threeDays: t(L('Three days, one community', '三日，一個社群')),
+      feat1Meta: t(L('Our Programme', '計劃內容')),
+      feat1Title: t(L('Three-day guide', '三日導覽')),
+      feat1Desc: t(L('Framework, pedagogy, international and local perspectives, and authentic implementation cases.', '涵蓋框架、教學法、國際及本地觀點，以及真實實踐案例。')),
+      feat2Meta: t(L('Teacher Co-creation', '教師共創')),
+      feat2Title: t(L('Peer coaching', '同儕教練')),
+      feat2Desc: t(L('Collaborative lesson design with local trainers and MIT facilitators across subjects.', '與本地培訓導師及麻省理工促進者跨科協作設計課節。')),
+      feat3Meta: t(L('Our Schools', '參與學校')),
+      feat3Title: t(L('Pilot evidence', '試點實證')),
+      feat3Desc: t(L('Authentic classroom impact shared by pilot schools, their teachers and students.', '由試點學校、教師及學生分享真實課堂成效。')),
+
+      impactEyebrow: t(L('Impact at a glance', '成效概覽')),
+      impactTitle: t(L('Built for Hong Kong classrooms', '為香港課堂而設')),
+      stat1: t(L('Workshop days', '工作坊日數')),
+      stat2: t(L('Subject modules', '學科模組')),
+      stat3: t(L('Year levels', '適用年級')),
+      stat4: t(L('Bilingual delivery', '雙語進行')),
+
+      objEyebrow: t(L('Learning objectives', '學習目標')),
+      takeawaysTitle: t(L("What you'll take away", '你的收穫')),
+      obj1: t(L("Develop a deeper understanding of JC GoAI AI learning and teaching resources and the design principles behind them.", '深入了解賽馬會人工智能教育計劃的人工智能學與教資源及其設計原則。')),
+      obj2: t(L('Gain confidence, strategies, and practical skills for implementing the AI curriculum effectively.', '建立有效推行人工智能課程所需的信心、策略及實務技巧。')),
+      obj3: t(L('Collaborate with international and local experts, teachers, and peers through demonstrations, hands-on activities, and focused discussions.', '透過教學示範、實作活動及專題討論，與國際及本地專家、教師和同儕交流協作。')),
+    };
+  }
+}
+</script>
+</body>
+</html>

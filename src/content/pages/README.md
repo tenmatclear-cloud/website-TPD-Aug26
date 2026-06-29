@@ -5,7 +5,7 @@ You can update the site by editing these files only. **No code changes are neede
 
 | File | Controls |
 |---|---|
-| `home.md` | Workshop name, dates, venue, the intro paragraph, learning objectives, the three "schedule at a glance" day cards, and "who should attend". Also feeds the header & footer. |
+| `home.md` | Workshop name, dates, venue, the intro paragraph, the three feature cards ("Three days, one community"), the impact stats, the takeaways ("What you'll take away"), and the day summaries used by the Day 1–3 page headers. Also feeds the header & footer. |
 | `day-1.md` | Day 1 goals and the full session-by-session programme. |
 | `day-2.md` | Day 2 goals, daily timetable, and the primary-school module list. |
 | `day-3.md` | Day 3 goals, daily timetable, and the secondary + TechEd module list. |
@@ -74,6 +74,38 @@ so they are not translated.
     facilitators:
       - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
       - "Ms. YIU Po Fun (Ling To Catholic Primary School)"
+```
+
+### Home page feature cards, impact stats, and takeaways
+`home.md` groups the home-page sections under `features:`, `impact:`, and `takeaways:`.
+The `accent` on a feature card is a keyword (`programme` = orange, `teachers` = green,
+`schools` = yellow) — pick the meaning, the colour is applied for you.
+
+```yaml
+features:
+  eyebrow: { en: "What to expect", zh: "活動內容" }
+  title: { en: "Three days, one community", zh: "三日，一個社群" }
+  items:
+    - accent: programme
+      meta: { en: "Our Programme", zh: "計劃內容" }
+      title: { en: "Three-day guide", zh: "三日導覽" }
+      desc:
+        en: "Framework, pedagogy, international and local perspectives, and authentic implementation cases."
+        zh: "涵蓋框架、教學法、國際及本地觀點，以及真實實踐案例。"
+
+impact:
+  eyebrow: { en: "Impact at a glance", zh: "成效概覽" }
+  title: { en: "Built for Hong Kong classrooms", zh: "為香港課堂而設" }
+  stats:
+    - value: "3"
+      label: { en: "Workshop days", zh: "工作坊日數" }
+
+takeaways:
+  eyebrow: { en: "Learning objectives", zh: "學習目標" }
+  title: { en: "What you'll take away", zh: "你的收穫" }
+  items:
+    - en: "Develop a deeper understanding of JC GoAI AI learning and teaching resources and the design principles behind them."
+      zh: "深入了解賽馬會人工智能教育計劃的人工智能學與教資源及其設計原則。"
 ```
 
 ## After editing

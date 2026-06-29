@@ -18,7 +18,6 @@ export const ui: Record<string, LocalizedText> = {
   skipToContent: { en: 'Skip to main content', zh: '跳至主要內容' },
   viewProgramme: { en: 'View programme', zh: '瀏覽日程' },
   logistics: { en: 'Logistics', zh: '活動須知' },
-  draft: { en: 'Draft', zh: '草擬' },
   learningObjectives: { en: 'Learning objectives', zh: '學習目標' },
   scheduleAtGlance: { en: 'Schedule at a glance', zh: '日程概覽' },
   audience: { en: 'Audience', zh: '對象' },

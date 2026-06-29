@@ -3,10 +3,11 @@ import Hero from '@components/Hero.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { localize, pageTitles, pathFor, ui } from '@content/i18n';
 import {
-  daySummaries,
+  featureAccents,
+  features,
+  impact,
   languages,
-  objectives,
-  whoShouldAttend,
+  takeaways,
   workshop,
   type Lang,
 } from '@content/programme';
@@ -16,7 +17,6 @@ export function getStaticPaths() {
 }
 
 const lang = Astro.params.lang as Lang;
-const accents = ['var(--color-accent-orange)', 'var(--color-accent-green)', 'var(--color-accent-yellow)'];
 ---
 
 <BaseLayout
@@ -27,73 +27,60 @@ const accents = ['var(--color-accent-orange)', 'var(--color-accent-green)', 'var
   <Hero lang={lang} />
 
   <div class="content-shell">
-    <section class="section">
+    <!-- Feature cards: Three days, one community -->
+    <section id="programme" class="section">
       <div class="section-header">
         <div>
-          <span class="eyebrow" style="color: var(--color-primary); border-color: var(--color-border);">
-            {localize(ui.learningObjectives, lang)}
-          </span>
-          <h2>{localize(ui.learningObjectives, lang)}</h2>
+          <span class="eyebrow eyebrow-dark">{localize(features.eyebrow, lang)}</span>
+          <h2>{localize(features.title, lang)}</h2>
         </div>
-      </div>
-      <ul class="objectives">
-        {objectives.map((objective) => <li>{localize(objective, lang)}</li>)}
-      </ul>
-    </section>
-
-    <section class="section">
-      <div class="section-header">
-        <div>
-          <span class="eyebrow" style="color: var(--color-primary); border-color: var(--color-border);">
-            {localize(ui.scheduleAtGlance, lang)}
-          </span>
-          <h2>{localize(ui.scheduleAtGlance, lang)}</h2>
-        </div>
+        <a class="button ghost-dark" href={pathFor(lang, 'day-1')}>{localize(ui.viewProgramme, lang)}</a>
       </div>
 
       <div class="grid">
         {
-          daySummaries.map((summary, index) => (
-            <a class="card" style={`--accent: ${accents[index % accents.length]}`} href={pathFor(lang, `day-${summary.day}`)}>
-              <span class="meta">
-                {localize(ui.day, lang)} {summary.day}
-              </span>
-              <h3>{localize(summary.date, lang)}</h3>
-              <p>
-                <strong>{localize(ui.time, lang)}:</strong> {localize(summary.time, lang)}
-              </p>
-              <p>
-                <strong>{localize(ui.venue, lang)}:</strong> {localize(workshop.venue, lang)}
-              </p>
-              <p>
-                <strong>{localize(ui.audience, lang)}:</strong> {localize(summary.audience, lang)}
-              </p>
-              <p>{localize(summary.focus, lang)}</p>
-            </a>
+          features.items.map((card) => (
+            <article class="card" style={`--accent: ${featureAccents[card.accent]}`}>
+              <span class="meta">{localize(card.meta, lang)}</span>
+              <h3>{localize(card.title, lang)}</h3>
+              <p>{localize(card.desc, lang)}</p>
+            </article>
           ))
         }
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-header">
-        <div>
-          <span class="eyebrow" style="color: var(--color-primary); border-color: var(--color-border);">
-            {localize(whoShouldAttend.heading, lang)}
-          </span>
-          <h2>{localize(whoShouldAttend.heading, lang)}</h2>
+    <!-- Impact at a glance: yellow / navy split -->
+    <section class="split-section">
+      <div>
+        <span class="eyebrow eyebrow-dark">{localize(impact.eyebrow, lang)}</span>
+        <h2>{localize(impact.title, lang)}</h2>
+      </div>
+      <div class="dark">
+        <div class="stat-grid">
+          {
+            impact.stats.map((stat) => (
+              <div class="stat">
+                <span class="stat-value">{stat.value}</span>
+                <span class="stat-label">{localize(stat.label, lang)}</span>
+              </div>
+            ))
+          }
         </div>
       </div>
-      <div class="info-list">
-        {
-          whoShouldAttend.items.map((item) => (
-            <article class="info-item">
-              <h3>{localize(item.title, lang)}</h3>
-              <p>{localize(item.body, lang)}</p>
-            </article>
-          ))
-        }
+    </section>
+
+    <!-- Takeaways: What you'll take away -->
+    <section id="takeaways" class="section">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow eyebrow-dark">{localize(takeaways.eyebrow, lang)}</span>
+          <h2>{localize(takeaways.title, lang)}</h2>
+        </div>
       </div>
+      <ul class="objectives">
+        {takeaways.items.map((item) => <li>{localize(item, lang)}</li>)}
+      </ul>
     </section>
   </div>
 </BaseLayout>

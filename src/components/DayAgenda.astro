@@ -53,7 +53,7 @@ const { lang, sessions } = Astro.props;
                   <strong>{localize(ui.abstract, lang)}:</strong> {localize(session.abstract, lang)}
                 </p>
               )}
-              {session.note && <p class="muted-note">{localize(session.note, lang)}</p>}
+              {session.note && <span class="note-pill">{localize(session.note, lang)}</span>}
             </div>
           )}
         </article>

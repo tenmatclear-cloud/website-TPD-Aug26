@@ -53,10 +53,47 @@ export type ScheduleBlock = { time: string; label: LocalizedText };
 
 export type InfoItem = { title: LocalizedText; body: LocalizedText };
 
+export type FeatureAccent = 'programme' | 'teachers' | 'schools';
+
+export type FeatureCard = {
+  accent: FeatureAccent;
+  meta: LocalizedText;
+  title: LocalizedText;
+  desc: LocalizedText;
+};
+
+export type ImpactStat = { value: string; label: LocalizedText };
+
+export type FeatureSection = {
+  eyebrow: LocalizedText;
+  title: LocalizedText;
+  items: FeatureCard[];
+};
+
+export type ImpactSection = {
+  eyebrow: LocalizedText;
+  title: LocalizedText;
+  stats: ImpactStat[];
+};
+
+export type TakeawaysSection = {
+  eyebrow: LocalizedText;
+  title: LocalizedText;
+  items: LocalizedText[];
+};
+
 export const languages: { code: Lang; label: string; shortLabel: string }[] = [
   { code: 'en', label: 'English', shortLabel: 'EN' },
   { code: 'zh-hk', label: '繁體中文', shortLabel: '繁' },
 ];
+
+// Maps a feature card's semantic accent name to its colour token. Keeping the
+// mapping here (not in the markdown) means editors pick a meaning, not a hex.
+export const featureAccents: Record<FeatureAccent, string> = {
+  programme: 'var(--color-accent-orange)',
+  teachers: 'var(--color-accent-green)',
+  schools: 'var(--color-accent-yellow)',
+};
 
 // ---- Load the markdown frontmatter ----------------------------------------
 const pageModules = import.meta.glob<{ frontmatter: Record<string, unknown> }>('./pages/*.md', {
@@ -83,17 +120,13 @@ export const workshop = {
   dateRange: home.dateRange as LocalizedText,
   venue: home.venue as LocalizedText,
   heroIntro: home.heroIntro as LocalizedText,
-  statusNote: home.statusNote as LocalizedText,
 };
 
-export const objectives = home.objectives as LocalizedText[];
+export const features = home.features as FeatureSection;
+export const impact = home.impact as ImpactSection;
+export const takeaways = home.takeaways as TakeawaysSection;
 
 export const daySummaries = home.days as DaySummary[];
-
-export const whoShouldAttend = home.whoShouldAttend as {
-  heading: LocalizedText;
-  items: InfoItem[];
-};
 
 // ---- Per-day programme -----------------------------------------------------
 export type ProgrammeDay = {

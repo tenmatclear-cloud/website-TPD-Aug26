@@ -8,5 +8,7 @@
       "@layouts/*": ["src/layouts/*"],
       "@styles/*": ["src/styles/*"]
     }
-  }
+  },
+  "include": ["src/**/*", "astro.config.mjs", "**/*.astro"],
+  "exclude": ["dist", "node_modules", "TPD_ClaudeDesign_v2", "doc"]
 }

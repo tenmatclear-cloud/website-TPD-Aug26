@@ -6,8 +6,8 @@
 title: { en: "Resources", zh: "資源" }
 
 intro:
-  en: "Access details will be updated as workshop materials and online course links become available."
-  zh: "工作坊材料及網上課程連結備妥後，本頁會更新相關存取資料。"
+  en: "Access details for workshop materials and online course links will be shared here."
+  zh: "工作坊材料及網上課程連結的存取資料將於本頁發布。"
 
 items:
   - title: { en: "Teaching and Learning Resources", zh: "學與教資源" }
@@ -20,6 +20,6 @@ items:
       zh: "請參閱計劃團隊於工作坊前發出的登入指引及課程密碼。"
   - title: { en: "Important Resource Note", zh: "資源使用重要提示" }
     body:
-      en: "Draft resources are provided for professional development purposes and should not be published or distributed outside eligible participating schools."
-      zh: "草擬資源只供專業發展用途，不應向合資格參與學校以外的人士或機構發布或分發。"
+      en: "These resources are provided for professional development purposes and should not be published or distributed outside eligible participating schools."
+      zh: "本資源只供專業發展用途，不應向合資格參與學校以外的人士或機構發布或分發。"
 ---

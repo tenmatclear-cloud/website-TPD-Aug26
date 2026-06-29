@@ -16,21 +16,58 @@ heroIntro:
   en: "A three-day guide for participating principals and teachers to explore AI learning and teaching resources, pedagogy, implementation cases, and subject-specific modules."
   zh: "為參與校長及教師而設的三日導覽，涵蓋人工智能學與教資源、教學法、實踐案例及不同科目的專題模組。"
 
-# Honest draft notice shown on the hero panel and in the footer.
-statusNote:
-  en: "Programme details are based on the 23 June 2026 draft and will be updated as sessions are confirmed."
-  zh: "活動資料根據2026年6月23日草擬日程整理，待環節確認後會持續更新。"
+# ---- Feature cards (Home page, "Three days, one community") ----------------
+# accent maps to a left colour bar: programme = orange, teachers = green, schools = yellow
+features:
+  eyebrow: { en: "What to expect", zh: "活動內容" }
+  title: { en: "Three days, one community", zh: "三日，一個社群" }
+  items:
+    - accent: programme
+      meta: { en: "Our Programme", zh: "計劃內容" }
+      title: { en: "Three-day guide", zh: "三日導覽" }
+      desc:
+        en: "Framework, pedagogy, international and local perspectives, and authentic implementation cases."
+        zh: "涵蓋框架、教學法、國際及本地觀點，以及真實實踐案例。"
+    - accent: teachers
+      meta: { en: "Teacher Co-creation", zh: "教師共創" }
+      title: { en: "Peer coaching", zh: "同儕教練" }
+      desc:
+        en: "Collaborative lesson design with local trainers and MIT facilitators across subjects."
+        zh: "與本地培訓導師及麻省理工促進者跨科協作設計課節。"
+    - accent: schools
+      meta: { en: "Our Schools", zh: "參與學校" }
+      title: { en: "Pilot evidence", zh: "試點實證" }
+      desc:
+        en: "Authentic classroom impact shared by pilot schools, their teachers and students."
+        zh: "由試點學校、教師及學生分享真實課堂成效。"
 
-# ---- Learning objectives (Home page) ---------------------------------------
-objectives:
-  - en: "Develop a deeper understanding of JC GoAI's AI learning and teaching (L&T) Resources and its underlying design principles."
-    zh: "深入了解賽馬會人工智能教育計劃的人工智能學與教資源及其背後的設計原則。"
-  - en: "Gain insights into JC GoAI's AI pedagogical approaches while building confidence, strategies, and skills to implement the AI curriculum effectively."
-    zh: "認識計劃的人工智能教學取向，並建立有效推行人工智能課程所需的信心、策略及技巧。"
-  - en: "Collaborate with international and local educational experts and fellow teachers through teaching demonstrations, hands-on activities, and focused discussions to develop innovative approaches for integrating AI into teaching and learning."
-    zh: "透過教學示範、實作活動及專題討論，與國際及本地教育專家和教師同儕協作，發展將人工智能融入學與教的創新方法。"
+# ---- Impact at a glance (Home page, yellow/navy split section) -------------
+impact:
+  eyebrow: { en: "Impact at a glance", zh: "成效概覽" }
+  title: { en: "Built for Hong Kong classrooms", zh: "為香港課堂而設" }
+  stats:
+    - value: "3"
+      label: { en: "Workshop days", zh: "工作坊日數" }
+    - value: "20+"
+      label: { en: "Subject modules", zh: "學科模組" }
+    - value: "P4–S3"
+      label: { en: "Year levels", zh: "適用年級" }
+    - value: "EN · 繁"
+      label: { en: "Bilingual delivery", zh: "雙語進行" }
 
-# ---- Schedule at a glance (the three day cards on the Home page) ------------
+# ---- Takeaways (Home page, "What you'll take away" InfoPanels) -------------
+takeaways:
+  eyebrow: { en: "Learning objectives", zh: "學習目標" }
+  title: { en: "What you'll take away", zh: "你的收穫" }
+  items:
+    - en: "Develop a deeper understanding of JC GoAI AI learning and teaching resources and the design principles behind them."
+      zh: "深入了解賽馬會人工智能教育計劃的人工智能學與教資源及其設計原則。"
+    - en: "Gain confidence, strategies, and practical skills for implementing the AI curriculum effectively."
+      zh: "建立有效推行人工智能課程所需的信心、策略及實務技巧。"
+    - en: "Collaborate with international and local experts, teachers, and peers through demonstrations, hands-on activities, and focused discussions."
+      zh: "透過教學示範、實作活動及專題討論，與國際及本地專家、教師和同儕交流協作。"
+
+# ---- Schedule at a glance (used by the Day 1–3 page headers) ---------------
 days:
   - day: 1
     date: { en: "26 August 2026 (Wednesday)", zh: "2026年8月26日（星期三）" }
@@ -53,17 +90,4 @@ days:
     focus:
       en: "Continuation of the \"AI + TechEd\" and \"AI + Subjects\" deep dive, covering secondary subject modules."
       zh: "延續「人工智能＋科技教育」及「人工智能＋學科」的深入探討，並涵蓋中學學科模組。"
-
-# ---- Who should attend (info section under the schedule) --------------------
-whoShouldAttend:
-  heading: { en: "Who should attend?", zh: "誰應出席？" }
-  items:
-    - title: { en: "Principals & teacher representatives", zh: "校長及教師代表" }
-      body:
-        en: "School principals and teacher representatives are welcome. Each network school is allocated a minimum of 3 guaranteed quotas; remaining seats will be opened to the network school community on a first-come, first-served basis."
-        zh: "歡迎校長及教師代表出席。每所網絡學校最少獲分配3個保證名額，餘下名額將以先到先得方式開放予網絡學校社群。"
-    - title: { en: "One representative per module", zh: "每個模組一名代表" }
-      body:
-        en: "For the Day 2–3 deep dives, each school sends one teacher as a representative for each subject module it joins."
-        zh: "就第二及第三日的專題探討，每所學校就其參與的每個學科模組派出一名教師代表。"
 ---

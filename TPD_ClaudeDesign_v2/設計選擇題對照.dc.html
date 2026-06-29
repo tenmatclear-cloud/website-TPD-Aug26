@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/jc-goai-design-system-019a0108-0405-45a0-81fb-3fb895d58aba/styles.css">
+<style>
+  body { margin: 0; background: var(--surface-page); -webkit-font-smoothing: antialiased; }
+  .opt:has(input:checked) { border-color: var(--color-primary) !important; box-shadow: 0 0 0 3px rgb(2 33 105 / 0.16), var(--shadow-soft) !important; }
+  .opt:has(input:checked) .opt-badge { background: var(--color-primary); color: var(--color-accent-gold); }
+  .opt input { accent-color: var(--color-primary); }
+</style>
+</helmet>
+
+<div style="font-family: var(--font-body); color: var(--text-body); padding: 0 0 80px;">
+
+  <!-- ===== Intro band ===== -->
+  <header style="background: var(--gradient-hero); color: #fff; border-radius: 0 0 var(--radius-hero) var(--radius-hero); padding: clamp(40px,6vw,72px) clamp(20px,5vw,40px) clamp(56px,8vw,92px);">
+    <div style="max-width: 1180px; margin: 0 auto;">
+      <span style="display:inline-flex; align-items:center; gap:8px; padding:6px 14px; border:1px solid rgb(255 255 255 / .35); border-radius:999px; color: var(--color-accent-gold); font:800 .82rem/1 var(--font-heading); letter-spacing:.08em; text-transform:uppercase;">JC GoAI · TPD Workshop</span>
+      <h1 style="font-family: var(--font-heading); font-weight:800; line-height:1.1; font-size: clamp(2.1rem,5vw,3.6rem); margin: 18px 0 0; max-width: 18ch; color:#fff;">兩個設計，一份選擇題</h1>
+      <p style="max-width: 60ch; margin: 18px 0 0; font-size: clamp(1rem,2vw,1.18rem); color: rgb(255 255 255 / .9);">同一個 TPD 工作坊網站，有兩個設計版本。逐題比較每個區塊的 <strong style="color:#fff;">選項 A</strong> 與 <strong style="color:#fff;">選項 B</strong>，點選你偏好的一邊；選完把組合告訴我，我就輸出最終定稿頁面。</p>
+
+      <div style="display:flex; flex-wrap:wrap; gap:14px; margin-top:28px;">
+        <div style="display:flex; align-items:center; gap:10px; padding:12px 16px; border-radius:16px; background: rgb(255 255 255 / .12); border:1px solid rgb(255 255 255 / .2);">
+          <span style="display:grid; place-items:center; width:30px; height:30px; border-radius:999px; background:#fff; color:var(--color-primary); font:900 1rem/1 var(--font-heading);">A</span>
+          <span style="font-size:.95rem;"><strong style="color:#fff;">Astro 原始碼網站</strong><br><span style="color:rgb(255 255 255 / .75); font-size:.85rem;">正式生產版 · 資訊導向</span></span>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px; padding:12px 16px; border-radius:16px; background: rgb(255 255 255 / .12); border:1px solid rgb(255 255 255 / .2);">
+          <span style="display:grid; place-items:center; width:30px; height:30px; border-radius:999px; background:var(--color-accent-gold); color:var(--color-primary); font:900 1rem/1 var(--font-heading);">B</span>
+          <span style="font-size:.95rem;"><strong style="color:#fff;">Claude Design UI kit 版本</strong><br><span style="color:rgb(255 255 255 / .75); font-size:.85rem;">重製版 · 行銷／品牌導向</span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main style="max-width: 1180px; margin: -36px auto 0; padding: 0 clamp(16px,4vw,32px); position:relative; z-index:5; display:grid; gap: 28px;">
+
+    <!-- ===== Q1 Header ===== -->
+    <section style="background:#fff; border-radius: var(--radius-content); box-shadow: var(--shadow-soft); padding: clamp(24px,4vw,44px);">
+      <div style="display:flex; align-items:center; gap:14px; margin-bottom:6px;">
+        <span style="display:grid; place-items:center; width:40px; height:40px; border-radius:999px; background:var(--color-primary); color:var(--color-accent-gold); font:900 1.1rem/1 var(--font-heading);">1</span>
+        <h2 style="margin:0; font-family:var(--font-heading); font-weight:800; color:var(--color-primary); font-size: clamp(1.4rem,3vw,2rem);">Header／導覽列</h2>
+      </div>
+      <p style="margin:0 0 22px 54px; color:var(--text-muted); max-width:70ch;">差異：A 品牌副標為機構全稱、導覽多一項 <strong style="color:var(--color-primary);">Media</strong>、語言用描邊膠囊；B 副標為工作坊全名、無 Media、語言用切換按鈕。</p>
+
+      <div style="display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:18px;">
+        <!-- Option A -->
+        <label class="opt" style="display:block; border:1.5px solid var(--color-border); border-radius:22px; padding:16px; cursor:pointer; transition: box-shadow .15s, border-color .15s;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+            <span class="opt-badge" style="display:inline-flex; align-items:center; gap:7px; padding:5px 12px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 .8rem/1 var(--font-heading);">選項 A · Astro</span>
+            <input type="radio" name="q1" onChange="{{ on.q1A }}" style="width:20px; height:20px;">
+          </div>
+          <div style="border:1px solid var(--color-border); border-radius:14px; overflow:hidden;">
+            <div style="background:#fff; padding:11px 14px; display:flex; align-items:center; justify-content:space-between; gap:10px;">
+              <div style="display:flex; align-items:center; gap:8px;">
+                <img src="assets/goai-mark.png" alt="" style="height:22px; width:auto;">
+                <span style="display:grid; line-height:1.1;"><strong style="font:800 12px/1 var(--font-heading); color:var(--color-primary);">JC GoAI Project</strong><span style="font:700 6.5px/1.3 var(--font-body); letter-spacing:.05em; text-transform:uppercase; color:var(--text-muted);">Teacher Professional Development Workshop</span></span>
+              </div>
+              <div style="display:flex; gap:5px;">
+                <span style="padding:4px 7px; border:1px solid var(--color-primary); border-radius:999px; background:var(--color-primary); color:var(--color-accent-gold); font:800 8px/1 var(--font-heading);">EN</span>
+                <span style="padding:4px 7px; border:1px solid var(--color-border); border-radius:999px; color:var(--text-body); font:800 8px/1 var(--font-heading);">繁</span>
+              </div>
+            </div>
+            <div style="background:#fff; border-top:1px solid var(--color-border); padding:8px 14px; display:flex; gap:11px; font:700 9px/1 var(--font-body); color:var(--text-body);">
+              <span style="color:var(--color-primary); font-weight:800;">Home</span><span>Day 1</span><span>Day 2</span><span>Day 3</span><span>Resources</span><span>Logistics</span><span style="color:var(--color-accent-orange);">Media</span>
+            </div>
+          </div>
+          <ul style="margin:14px 0 0; padding-left:18px; color:var(--text-muted); font-size:.86rem; line-height:1.7;">
+            <li>導覽含 <strong style="color:var(--color-primary);">Media（相片及錄影）</strong></li>
+            <li>副標＝機構全稱，全大寫</li>
+            <li>語言切換為描邊膠囊</li>
+          </ul>
+        </label>
+
+        <!-- Option B -->
+        <label class="opt" style="display:block; border:1.5px solid var(--color-border); border-radius:22px; padding:16px; cursor:pointer; transition: box-shadow .15s, border-color .15s;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+            <span class="opt-badge" style="display:inline-flex; align-items:center; gap:7px; padding:5px 12px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 .8rem/1 var(--font-heading);">選項 B · UI kit</span>
+            <input type="radio" name="q1" onChange="{{ on.q1B }}" style="width:20px; height:20px;">
+          </div>
+          <div style="border:1px solid var(--color-border); border-radius:14px; overflow:hidden;">
+            <div style="background:#fff; padding:11px 14px; display:flex; align-items:center; justify-content:space-between; gap:10px;">
+              <div style="display:flex; align-items:center; gap:8px;">
+                <img src="assets/goai-mark.png" alt="" style="height:22px; width:auto;">
+                <span style="display:grid; line-height:1.1;"><strong style="font:800 12px/1 var(--font-heading); color:var(--color-primary);">JC GoAI</strong><span style="font:600 7px/1.3 var(--font-body); color:var(--text-muted);">Teacher Professional Development Workshop</span></span>
+              </div>
+              <div style="display:flex; gap:5px;">
+                <span style="padding:4px 8px; border-radius:999px; background:var(--color-primary); color:var(--color-accent-gold); font:800 8px/1 var(--font-heading);">EN</span>
+                <span style="padding:4px 8px; border-radius:999px; color:var(--text-body); font:800 8px/1 var(--font-heading);">繁</span>
+              </div>
+            </div>
+            <div style="background:#fff; border-top:1px solid var(--color-border); padding:8px 14px; display:flex; gap:12px; font:700 9px/1 var(--font-body); color:var(--text-body);">
+              <span style="color:var(--color-primary); font-weight:800;">Home</span><span>Day 1</span><span>Day 2</span><span>Day 3</span><span>Resources</span><span>Logistics</span>
+            </div>
+          </div>
+          <ul style="margin:14px 0 0; padding-left:18px; color:var(--text-muted); font-size:.86rem; line-height:1.7;">
+            <li>導覽 6 項，<strong style="color:var(--color-primary);">無 Media</strong></li>
+            <li>副標＝工作坊全名，正常大小寫</li>
+            <li>語言切換為填色按鈕</li>
+          </ul>
+        </label>
+      </div>
+    </section>
+
+    <!-- ===== Q2 Feature cards ===== -->
+    <section style="background:#fff; border-radius: var(--radius-content); box-shadow: var(--shadow-soft); padding: clamp(24px,4vw,44px);">
+      <div style="display:flex; align-items:center; gap:14px; margin-bottom:6px;">
+        <span style="display:grid; place-items:center; width:40px; height:40px; border-radius:999px; background:var(--color-primary); color:var(--color-accent-gold); font:900 1.1rem/1 var(--font-heading);">2</span>
+        <h2 style="margin:0; font-family:var(--font-heading); font-weight:800; color:var(--color-primary); font-size: clamp(1.4rem,3vw,2rem);">特色卡片區</h2>
+      </div>
+      <p style="margin:0 0 22px 54px; color:var(--text-muted); max-width:70ch;">差異：A 是「日程概覽」的三張<strong style="color:var(--color-primary);">日期卡</strong>（資訊密集、可點入每日）；B 是「三日，一個社群」的三張<strong style="color:var(--color-primary);">主題特色卡</strong>（行銷語氣的價值主張）。</p>
+
+      <div style="display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:18px;">
+        <!-- A: schedule cards -->
+        <label class="opt" style="display:block; border:1.5px solid var(--color-border); border-radius:22px; padding:16px; cursor:pointer; transition: box-shadow .15s, border-color .15s;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+            <span class="opt-badge" style="display:inline-flex; padding:5px 12px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 .8rem/1 var(--font-heading);">選項 A · Astro</span>
+            <input type="radio" name="q2" onChange="{{ on.q2A }}" style="width:20px; height:20px;">
+          </div>
+          <div style="font:800 .72rem/1 var(--font-heading); color:var(--color-primary); margin:2px 0 10px;">Schedule at a glance</div>
+          <div style="display:grid; grid-template-columns: repeat(3,1fr); gap:8px;">
+            <div style="position:relative; overflow:hidden; border:1px solid var(--color-border); border-radius:12px; background:#fff; padding:10px 9px 10px 13px;"><span style="position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--accent-programme);"></span><span style="display:inline-block; padding:2px 7px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 7px/1 var(--font-heading);">Day 1</span><div style="font:800 9px/1.2 var(--font-heading); color:var(--color-primary); margin-top:6px;">26 Aug</div><div style="font-size:7.5px; color:var(--text-muted); margin-top:3px; line-height:1.4;">All schools · Resources & cases</div></div>
+            <div style="position:relative; overflow:hidden; border:1px solid var(--color-border); border-radius:12px; background:#fff; padding:10px 9px 10px 13px;"><span style="position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--accent-teachers);"></span><span style="display:inline-block; padding:2px 7px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 7px/1 var(--font-heading);">Day 2</span><div style="font:800 9px/1.2 var(--font-heading); color:var(--color-primary); margin-top:6px;">27 Aug</div><div style="font-size:7.5px; color:var(--text-muted); margin-top:3px; line-height:1.4;">Primary only · Subject deep dive</div></div>
+            <div style="position:relative; overflow:hidden; border:1px solid var(--color-border); border-radius:12px; background:#fff; padding:10px 9px 10px 13px;"><span style="position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--accent-schools);"></span><span style="display:inline-block; padding:2px 7px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 7px/1 var(--font-heading);">Day 3</span><div style="font:800 9px/1.2 var(--font-heading); color:var(--color-primary); margin-top:6px;">28 Aug</div><div style="font-size:7.5px; color:var(--text-muted); margin-top:3px; line-height:1.4;">All schools · Secondary modules</div></div>
+          </div>
+          <ul style="margin:14px 0 0; padding-left:18px; color:var(--text-muted); font-size:.86rem; line-height:1.7;">
+            <li>逐日日程，資訊密集</li>
+            <li>整張卡可點入該日</li>
+          </ul>
+        </label>
+
+        <!-- B: feature cards -->
+        <label class="opt" style="display:block; border:1.5px solid var(--color-border); border-radius:22px; padding:16px; cursor:pointer; transition: box-shadow .15s, border-color .15s;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+            <span class="opt-badge" style="display:inline-flex; padding:5px 12px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 .8rem/1 var(--font-heading);">選項 B · UI kit</span>
+            <input type="radio" name="q2" onChange="{{ on.q2B }}" style="width:20px; height:20px;">
+          </div>
+          <div style="font:800 .72rem/1 var(--font-heading); color:var(--color-primary); margin:2px 0 10px;">Three days, one community</div>
+          <div style="display:grid; grid-template-columns: repeat(3,1fr); gap:8px;">
+            <div style="position:relative; overflow:hidden; border:1px solid var(--color-border); border-radius:12px; background:#fff; padding:10px 9px 10px 13px;"><span style="position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--accent-programme);"></span><span style="display:inline-block; padding:2px 7px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 7px/1 var(--font-heading);">Our Programme</span><div style="font:800 9.5px/1.2 var(--font-heading); color:var(--color-primary); margin-top:6px;">Three-day guide</div><div style="font-size:7.5px; color:var(--text-muted); margin-top:3px; line-height:1.4;">Framework, pedagogy, cases.</div></div>
+            <div style="position:relative; overflow:hidden; border:1px solid var(--color-border); border-radius:12px; background:#fff; padding:10px 9px 10px 13px;"><span style="position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--accent-teachers);"></span><span style="display:inline-block; padding:2px 7px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 7px/1 var(--font-heading);">Co-creation</span><div style="font:800 9.5px/1.2 var(--font-heading); color:var(--color-primary); margin-top:6px;">Peer coaching</div><div style="font-size:7.5px; color:var(--text-muted); margin-top:3px; line-height:1.4;">Collaborative lesson design.</div></div>
+            <div style="position:relative; overflow:hidden; border:1px solid var(--color-border); border-radius:12px; background:#fff; padding:10px 9px 10px 13px;"><span style="position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--accent-schools);"></span><span style="display:inline-block; padding:2px 7px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 7px/1 var(--font-heading);">Our Schools</span><div style="font:800 9.5px/1.2 var(--font-heading); color:var(--color-primary); margin-top:6px;">Pilot evidence</div><div style="font-size:7.5px; color:var(--text-muted); margin-top:3px; line-height:1.4;">Authentic classroom impact.</div></div>
+          </div>
+          <ul style="margin:14px 0 0; padding-left:18px; color:var(--text-muted); font-size:.86rem; line-height:1.7;">
+            <li>主題式價值主張</li>
+            <li>行銷語氣，重品牌印象</li>
+          </ul>
+        </label>
+      </div>
+    </section>
+
+    <!-- ===== Q3 Stats / Impact ===== -->
+    <section style="background:#fff; border-radius: var(--radius-content); box-shadow: var(--shadow-soft); padding: clamp(24px,4vw,44px);">
+      <div style="display:flex; align-items:center; gap:14px; margin-bottom:6px;">
+        <span style="display:grid; place-items:center; width:40px; height:40px; border-radius:999px; background:var(--color-primary); color:var(--color-accent-gold); font:900 1.1rem/1 var(--font-heading);">3</span>
+        <h2 style="margin:0; font-family:var(--font-heading); font-weight:800; color:var(--color-primary); font-size: clamp(1.4rem,3vw,2rem);">數據／Impact 區塊</h2>
+      </div>
+      <p style="margin:0 0 22px 54px; color:var(--text-muted); max-width:70ch;">差異：A <strong style="color:var(--color-primary);">沒有</strong>數據區，改以「學習目標」清單＋「誰應出席」呈現；B 保留品牌標誌性的<strong style="color:var(--color-primary);">黃／藍 50:50 數據區</strong>。</p>
+
+      <div style="display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:18px;">
+        <!-- A: objectives instead -->
+        <label class="opt" style="display:block; border:1.5px solid var(--color-border); border-radius:22px; padding:16px; cursor:pointer; transition: box-shadow .15s, border-color .15s;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+            <span class="opt-badge" style="display:inline-flex; padding:5px 12px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 .8rem/1 var(--font-heading);">選項 A · Astro</span>
+            <input type="radio" name="q3" onChange="{{ on.q3A }}" style="width:20px; height:20px;">
+          </div>
+          <div style="font:800 .72rem/1 var(--font-heading); color:var(--color-primary); margin:2px 0 10px;">Learning objectives</div>
+          <div style="display:grid; gap:8px;">
+            <div style="padding:11px 13px; border-left:5px solid var(--color-accent-green); border-radius:12px; background:#f8fbff; font-size:8.5px; line-height:1.5; color:var(--text-body);">Understand the L&amp;T Resources and the design principles behind them.</div>
+            <div style="padding:11px 13px; border-left:5px solid var(--color-accent-green); border-radius:12px; background:#f8fbff; font-size:8.5px; line-height:1.5; color:var(--text-body);">Build confidence, strategies and skills to implement the AI curriculum.</div>
+          </div>
+          <ul style="margin:14px 0 0; padding-left:18px; color:var(--text-muted); font-size:.86rem; line-height:1.7;">
+            <li>無數據條，節奏平穩全白</li>
+            <li>以目標＋出席對象代替</li>
+          </ul>
+        </label>
+
+        <!-- B: split stats -->
+        <label class="opt" style="display:block; border:1.5px solid var(--color-border); border-radius:22px; padding:16px; cursor:pointer; transition: box-shadow .15s, border-color .15s;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+            <span class="opt-badge" style="display:inline-flex; padding:5px 12px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 .8rem/1 var(--font-heading);">選項 B · UI kit</span>
+            <input type="radio" name="q3" onChange="{{ on.q3B }}" style="width:20px; height:20px;">
+          </div>
+          <div style="font:800 .72rem/1 var(--font-heading); color:var(--color-primary); margin:2px 0 10px;">Impact at a glance</div>
+          <div style="display:grid; grid-template-columns:.9fr 1.1fr; border-radius:12px; overflow:hidden; border:1px solid var(--color-border);">
+            <div style="background:var(--color-accent-yellow); padding:13px;">
+              <span style="font:800 6.5px/1 var(--font-heading); letter-spacing:.06em; text-transform:uppercase; color:var(--color-primary);">Impact at a glance</span>
+              <div style="font:800 11px/1.15 var(--font-heading); color:var(--color-primary); margin-top:6px;">Built for Hong Kong classrooms</div>
+            </div>
+            <div style="background:var(--color-primary); padding:13px; display:grid; grid-template-columns:1fr 1fr; gap:11px 8px; color:#fff;">
+              <div><div style="font:800 15px/1 var(--font-heading);">3</div><div style="font-size:6.5px; color:rgb(255 255 255 / .8); margin-top:2px;">Workshop days</div></div>
+              <div><div style="font:800 15px/1 var(--font-heading);">20+</div><div style="font-size:6.5px; color:rgb(255 255 255 / .8); margin-top:2px;">Subject modules</div></div>
+              <div><div style="font:800 15px/1 var(--font-heading);">P4–S3</div><div style="font-size:6.5px; color:rgb(255 255 255 / .8); margin-top:2px;">Year levels</div></div>
+              <div><div style="font:800 15px/1 var(--font-heading);">EN·繁</div><div style="font-size:6.5px; color:rgb(255 255 255 / .8); margin-top:2px;">Bilingual</div></div>
+            </div>
+          </div>
+          <ul style="margin:14px 0 0; padding-left:18px; color:var(--text-muted); font-size:.86rem; line-height:1.7;">
+            <li>品牌標誌性的彩色數據條</li>
+            <li>打斷白底節奏，視覺重點強</li>
+          </ul>
+        </label>
+      </div>
+    </section>
+
+    <!-- ===== Q4 Footer ===== -->
+    <section style="background:#fff; border-radius: var(--radius-content); box-shadow: var(--shadow-soft); padding: clamp(24px,4vw,44px);">
+      <div style="display:flex; align-items:center; gap:14px; margin-bottom:6px;">
+        <span style="display:grid; place-items:center; width:40px; height:40px; border-radius:999px; background:var(--color-primary); color:var(--color-accent-gold); font:900 1.1rem/1 var(--font-heading);">4</span>
+        <h2 style="margin:0; font-family:var(--font-heading); font-weight:800; color:var(--color-primary); font-size: clamp(1.4rem,3vw,2rem);">Footer</h2>
+      </div>
+      <p style="margin:0 0 22px 54px; color:var(--text-muted); max-width:70ch;">差異：A 為<strong style="color:var(--color-primary);">純文字</strong>頁尾（文字品牌名）；B 用完整 <strong style="color:var(--color-primary);">GOAI Logo 圖樣</strong>，品牌感更強。兩者皆有底部 16px 漸層條。</p>
+
+      <div style="display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:18px;">
+        <!-- A -->
+        <label class="opt" style="display:block; border:1.5px solid var(--color-border); border-radius:22px; padding:16px; cursor:pointer; transition: box-shadow .15s, border-color .15s;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+            <span class="opt-badge" style="display:inline-flex; padding:5px 12px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 .8rem/1 var(--font-heading);">選項 A · Astro</span>
+            <input type="radio" name="q4" onChange="{{ on.q4A }}" style="width:20px; height:20px;">
+          </div>
+          <div style="border:1px solid var(--color-border); border-radius:14px; overflow:hidden;">
+            <div style="background:#fff; padding:16px 16px 18px;">
+              <div style="font:800 15px/1.1 var(--font-heading); color:var(--color-primary);">JC GoAI Project</div>
+              <div style="font-size:8px; color:var(--text-muted); margin-top:8px; line-height:1.5; max-width:42ch;">Programme details are based on the draft and will be updated as sessions are confirmed.</div>
+              <div style="font-size:7.5px; color:var(--text-muted); margin-top:6px;">Teacher Professional Development Workshop · 26–28 Aug 2026 · CUHK</div>
+            </div>
+            <div style="height:9px; background:var(--gradient-footer-bar);"></div>
+          </div>
+          <ul style="margin:14px 0 0; padding-left:18px; color:var(--text-muted); font-size:.86rem; line-height:1.7;">
+            <li>文字品牌名，極簡</li>
+            <li>輕量、載入快</li>
+          </ul>
+        </label>
+
+        <!-- B -->
+        <label class="opt" style="display:block; border:1.5px solid var(--color-border); border-radius:22px; padding:16px; cursor:pointer; transition: box-shadow .15s, border-color .15s;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+            <span class="opt-badge" style="display:inline-flex; padding:5px 12px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 .8rem/1 var(--font-heading);">選項 B · UI kit</span>
+            <input type="radio" name="q4" onChange="{{ on.q4B }}" style="width:20px; height:20px;">
+          </div>
+          <div style="border:1px solid var(--color-border); border-radius:14px; overflow:hidden;">
+            <div style="background:#fff; padding:16px 16px 18px;">
+              <img src="assets/goai-logo.png" alt="JC GoAI" style="height:34px; width:auto;">
+              <div style="font-size:8px; color:var(--text-muted); margin-top:10px; line-height:1.5; max-width:42ch;">Programme details are based on the draft and will be updated as sessions are confirmed.</div>
+              <div style="font-size:7.5px; color:var(--text-muted); margin-top:6px;">Teacher Professional Development Workshop · 26–28 Aug 2026 · CUHK</div>
+            </div>
+            <div style="height:9px; background:var(--gradient-footer-bar);"></div>
+          </div>
+          <ul style="margin:14px 0 0; padding-left:18px; color:var(--text-muted); font-size:.86rem; line-height:1.7;">
+            <li>完整 Logo lockup 圖</li>
+            <li>品牌印象更完整</li>
+          </ul>
+        </label>
+      </div>
+    </section>
+
+    <!-- ===== Q5 Whole-page layout ===== -->
+    <section style="background:#fff; border-radius: var(--radius-content); box-shadow: var(--shadow-soft); padding: clamp(24px,4vw,44px);">
+      <div style="display:flex; align-items:center; gap:14px; margin-bottom:6px;">
+        <span style="display:grid; place-items:center; width:40px; height:40px; border-radius:999px; background:var(--color-primary); color:var(--color-accent-gold); font:900 1.1rem/1 var(--font-heading);">5</span>
+        <h2 style="margin:0; font-family:var(--font-heading); font-weight:800; color:var(--color-primary); font-size: clamp(1.4rem,3vw,2rem);">整頁版面排版</h2>
+      </div>
+      <p style="margin:0 0 22px 54px; color:var(--text-muted); max-width:70ch;">差異：A 全為白色區塊、節奏平穩、資訊導向；B 在白底中插入一條全寬彩色數據區，對比更強、行銷感更重。這題決定首頁的<strong style="color:var(--color-primary);">整體骨架與順序</strong>。</p>
+
+      <div style="display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:18px;">
+        <!-- A layout -->
+        <label class="opt" style="display:block; border:1.5px solid var(--color-border); border-radius:22px; padding:16px; cursor:pointer; transition: box-shadow .15s, border-color .15s;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+            <span class="opt-badge" style="display:inline-flex; padding:5px 12px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 .8rem/1 var(--font-heading);">選項 A · Astro</span>
+            <input type="radio" name="q5" onChange="{{ on.q5A }}" style="width:20px; height:20px;">
+          </div>
+          <div style="display:grid; gap:5px; background:var(--surface-page); padding:10px; border-radius:12px;">
+            <div style="height:30px; border-radius:8px 8px 12px 12px; background:var(--gradient-hero); display:flex; align-items:center; padding-left:10px; color:#fff; font:800 8px/1 var(--font-heading);">Hero</div>
+            <div style="height:18px; border-radius:8px; background:#fff; border:1px solid var(--color-border); display:flex; align-items:center; padding-left:10px; font:700 7.5px/1 var(--font-body); color:var(--text-body);">Learning objectives</div>
+            <div style="height:18px; border-radius:8px; background:#fff; border:1px solid var(--color-border); display:flex; align-items:center; padding-left:10px; font:700 7.5px/1 var(--font-body); color:var(--text-body);">Schedule cards</div>
+            <div style="height:18px; border-radius:8px; background:#fff; border:1px solid var(--color-border); display:flex; align-items:center; padding-left:10px; font:700 7.5px/1 var(--font-body); color:var(--text-body);">Who should attend</div>
+            <div style="height:9px; border-radius:8px; background:var(--gradient-footer-bar);"></div>
+          </div>
+          <ul style="margin:14px 0 0; padding-left:18px; color:var(--text-muted); font-size:.86rem; line-height:1.7;">
+            <li>全白區塊，節奏平穩</li>
+            <li>資訊／實用導向</li>
+          </ul>
+        </label>
+
+        <!-- B layout -->
+        <label class="opt" style="display:block; border:1.5px solid var(--color-border); border-radius:22px; padding:16px; cursor:pointer; transition: box-shadow .15s, border-color .15s;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
+            <span class="opt-badge" style="display:inline-flex; padding:5px 12px; border-radius:999px; background:var(--color-bg-light); color:var(--color-primary); font:800 .8rem/1 var(--font-heading);">選項 B · UI kit</span>
+            <input type="radio" name="q5" onChange="{{ on.q5B }}" style="width:20px; height:20px;">
+          </div>
+          <div style="display:grid; gap:5px; background:var(--surface-page); padding:10px; border-radius:12px;">
+            <div style="height:30px; border-radius:8px 8px 12px 12px; background:var(--gradient-hero); display:flex; align-items:center; padding-left:10px; color:#fff; font:800 8px/1 var(--font-heading);">Hero</div>
+            <div style="height:18px; border-radius:8px; background:#fff; border:1px solid var(--color-border); display:flex; align-items:center; padding-left:10px; font:700 7.5px/1 var(--font-body); color:var(--text-body);">Feature cards</div>
+            <div style="height:18px; border-radius:8px; background:var(--gradient-split); display:flex; align-items:center; padding-left:10px; font:800 7.5px/1 var(--font-heading); color:var(--color-primary);">Impact stats（彩色全寬）</div>
+            <div style="height:18px; border-radius:8px; background:#fff; border:1px solid var(--color-border); display:flex; align-items:center; padding-left:10px; font:700 7.5px/1 var(--font-body); color:var(--text-body);">What you'll take away</div>
+            <div style="height:9px; border-radius:8px; background:var(--gradient-footer-bar);"></div>
+          </div>
+          <ul style="margin:14px 0 0; padding-left:18px; color:var(--text-muted); font-size:.86rem; line-height:1.7;">
+            <li>插入彩色數據區，對比強</li>
+            <li>品牌／行銷導向</li>
+          </ul>
+        </label>
+      </div>
+    </section>
+
+    <!-- ===== Summary ===== -->
+    <section style="background:var(--color-primary); color:#fff; border-radius: var(--radius-content); box-shadow: var(--shadow-soft); padding: clamp(26px,4vw,44px); overflow:hidden;">
+      <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px;">
+        <div>
+          <span style="font:800 .78rem/1 var(--font-heading); letter-spacing:.08em; text-transform:uppercase; color:var(--color-accent-gold);">你的組合 · {{ count }} / {{ total }}</span>
+          <h2 style="margin:8px 0 0; font-family:var(--font-heading); font-weight:800; color:#fff; font-size: clamp(1.4rem,3vw,2rem);">選完了嗎？</h2>
+        </div>
+      </div>
+      <div style="margin-top:18px; padding:18px 20px; border-radius:18px; background:rgb(255 255 255 / .1); border:1px solid rgb(255 255 255 / .2); font-size:1.02rem; line-height:1.6; min-height:1.6em;">{{ summaryText }}</div>
+      <p style="margin:18px 0 0; color:rgb(255 255 255 / .82); max-width:70ch;">把你的組合（例如「導覽列 A、特色卡片 B、數據區 B、Footer B、整頁版面 A」）回覆給我，我就依此<strong style="color:#fff;">輸出最終定稿頁面</strong>。也可以直接說「全部 A」「全部 B」或「幫我決定」。</p>
+    </section>
+
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { picks: {} };
+  pick(q, v) { this.setState(s => ({ picks: { ...s.picks, [q]: v } })); }
+  renderVals() {
+    const labels = { q1: '導覽列', q2: '特色卡片', q3: '數據區', q4: 'Footer', q5: '整頁版面' };
+    const names = { A: 'A · Astro', B: 'B · UI kit' };
+    const order = ['q1', 'q2', 'q3', 'q4', 'q5'];
+    const p = this.state.picks;
+    const done = order.filter(q => p[q]);
+    const summaryText = done.length
+      ? done.map(q => labels[q] + '：' + names[p[q]]).join('　·　')
+      : '（在每題點選 A 或 B，這裡會即時顯示你的組合）';
+    const on = {};
+    order.forEach(q => { on[q + 'A'] = () => this.pick(q, 'A'); on[q + 'B'] = () => this.pick(q, 'B'); });
+    return { on, summaryText, count: done.length, total: order.length };
+  }
+}
+</script>
+</body>
+</html>
