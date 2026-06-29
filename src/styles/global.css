@@ -193,6 +193,13 @@ img {
   color: var(--color-primary);
 }
 
+/* Breathing room between an eyebrow pill and the heading beneath it (site-wide). */
+.eyebrow + h1,
+.eyebrow + h2,
+.eyebrow + h3 {
+  margin-top: 20px;
+}
+
 h1,
 h2,
 h3 {
@@ -580,7 +587,6 @@ h3 {
 }
 
 .footer-inner p {
-  max-width: 760px;
   margin: 12px 0 0;
   color: var(--color-text-secondary);
 }
