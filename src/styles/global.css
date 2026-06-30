@@ -156,6 +156,7 @@ img {
 /* Mobile menu toggle + off-canvas drawer. Hidden on desktop, revealed <= 980px. */
 .menu-toggle {
   display: none;
+  flex-shrink: 0;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
@@ -638,12 +639,16 @@ h3 {
 
 .brand-logo {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
 }
 
 .brand-logo img {
+  display: block;
+  flex-shrink: 0;
   height: 30px;
   width: auto;
+  max-width: none;
 }
 
 .info-list {
@@ -770,6 +775,24 @@ h3 {
     justify-content: space-between;
     gap: 12px;
     padding: 0;
+  }
+
+  .brand-link {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .brand {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .brand span {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
   }
 
   .header-inner > .nav {
