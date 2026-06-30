@@ -36,6 +36,6 @@ const { title, description, lang, currentPath = '' } = Astro.props;
     <main id="main">
       <slot />
     </main>
-    <Footer lang={lang} />
+    <Footer lang={lang} currentPath={currentPath} />
   </body>
 </html>

@@ -1,12 +1,14 @@
 ---
-import { localize } from '@content/i18n';
-import { workshop, type Lang } from '@content/programme';
+import { localize, pathFor, ui } from '@content/i18n';
+import { languages, workshop, type Lang } from '@content/programme';
 
 type Props = {
   lang: Lang;
+  currentPath?: string;
 };
 
-const { lang } = Astro.props;
+const { lang, currentPath = '' } = Astro.props;
+const normalizedPath = currentPath.replace(/^\/|\/$/g, '');
 ---
 
 <footer class="site-footer">
@@ -15,6 +17,19 @@ const { lang } = Astro.props;
     <p>
       {localize(workshop.title, lang)} · {localize(workshop.dateRange, lang)} · {localize(workshop.venue, lang)}
     </p>
+    <div class="footer-language" aria-label={localize(ui.language, lang)}>
+      {
+        languages.map((language) => (
+          <a
+            href={pathFor(language.code, normalizedPath)}
+            lang={language.code === 'zh-hk' ? 'zh-Hant-HK' : 'en'}
+            aria-current={language.code === lang ? 'true' : undefined}
+          >
+            {language.shortLabel}
+          </a>
+        ))
+      }
+    </div>
   </div>
   <div class="footer-bar" aria-hidden="true"></div>
 </footer>
