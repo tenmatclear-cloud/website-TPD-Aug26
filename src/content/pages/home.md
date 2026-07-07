@@ -61,12 +61,12 @@ takeaways:
   eyebrow: { en: "Learning objectives", zh: "學習目標" }
   title: { en: "What you'll take away", zh: "你的收穫" }
   items:
-    - en: "Develop a deeper understanding of JC GoAI AI learning and teaching resources and the design principles behind them."
-      zh: "深入了解賽馬會人工智能教育計劃的人工智能學與教資源及其設計原則。"
-    - en: "Gain confidence, strategies, and practical skills for implementing the AI L&T resources effectively."
-      zh: "建立有效推行人工智能學與教資源所需的信心、策略及實務技巧。"
-    - en: "Collaborate with international and local experts, teachers, and peers through demonstrations, hands-on activities, and focused discussions."
-      zh: "透過教學示範、實作活動及專題討論，與國際及本地專家、教師和同儕交流協作。"
+    - en: "Develop a deeper understanding of JC GoAI's AI learning and teaching (L&T) Resources and its underlying design principles."
+      zh: "深入了解賽馬會人工智能教育計劃的人工智能學與教（L&T）資源及其背後的設計原則。"
+    - en: "Gain insights into JC GoAI's AI pedagogical approaches while building confidence, strategies, and skills to implement the AI L&T resources effectively."
+      zh: "深入了解賽馬會人工智能教育計劃的人工智能教學取向，並建立有效推行人工智能學與教資源所需的信心、策略及技巧。"
+    - en: "Collaborate with international and local educational experts, as well as fellow teachers, through teaching demonstrations, practical hands-on activities, and focused discussions to develop innovative approaches for integrating AI into teaching and learning."
+      zh: "透過教學示範、實作活動及專題討論，與國際及本地教育專家及同儕教師協作，探索將人工智能融入學與教的創新取向。"
 
 # ---- Schedule at a glance (used by the Day 1–3 page headers) ---------------
 days:

@@ -12,8 +12,8 @@ intro:
   zh: "第二及第三日是對計劃學科專題模組的深入探討。"
 
 goals:
-  - en: "Walk through the underlying rationale of the lesson designs, illustrating how AI concepts are woven into each discipline."
-    zh: "梳理課節設計的底層理念，說明人工智能概念如何融入各學科。"
+  - en: "Lead participants through the underlying rationale of the lesson designs, illustrating how AI concepts are woven into respective disciplines."
+    zh: "帶領參加者了解課節設計的底層理念，說明人工智能概念如何融入各學科。"
   - en: "Explore common implementation challenges and collaborate on practical solutions to ensure smooth lesson delivery."
     zh: "探討常見的推行挑戰，並共同尋找切實可行的方案，確保課堂順利推展。"
 

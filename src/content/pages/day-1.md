@@ -14,10 +14,10 @@ intro:
   zh: "第一日為基礎培訓環節，結合理論框架與實踐分享。"
 
 goals:
-  - en: "Gain a deeper understanding of the JC GoAI Project's multifaceted approach to advancing AI education — covering L&T Resources, the GenAI Tools Platform, school support, teacher community, and parent engagement."
-    zh: "深入了解賽馬會人工智能教育計劃推動人工智能教育的多元取向，涵蓋學與教資源、生成式人工智能工具平台、學校支援、教師社群及家長參與。"
-  - en: "Find inspiration in international research and the latest trends in educational AI applications, alongside research on the AI education landscape in Hong Kong."
-    zh: "從國際研究及教育人工智能應用的最新趨勢中獲得啟發，並結合對香港人工智能教育環境的研究。"
+  - en: "Enable participants to gain a deeper understanding of the JC GoAI Project's multifaceted approach to advancing AI education, covering L&T Resources, GenAI Tools Platform, school support, teacher community and parent engagement, etc."
+    zh: "讓參加者深入了解賽馬會人工智能教育計劃推動人工智能教育的多元取向，涵蓋學與教資源、生成式人工智能工具平台、學校支援、教師社群及家長參與等。"
+  - en: "Inspire educators by presenting international research and the latest trends in educational AI applications, alongside specific research on the AI education landscape in Hong Kong."
+    zh: "透過國際研究、教育人工智能應用的最新趨勢，以及香港人工智能教育環境的專項研究，啟發教育工作者。"
   - en: "Explore AI-integrated lesson design principles and successful implementation strategies through authentic case sharing from the Project's support teachers."
     zh: "透過計劃支援教師的真實案例分享，探索人工智能融入課堂的設計原則及成功推行策略。"
 
