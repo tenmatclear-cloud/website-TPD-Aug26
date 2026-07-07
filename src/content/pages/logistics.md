@@ -27,7 +27,12 @@ items:
       en: "Lunch arrangements will be confirmed. Participants may also use campus canteens and restaurants."
       zh: "午膳安排有待確認。參加者亦可自行使用校園飯堂及餐廳。"
   - title: { en: "Enquiry", zh: "查詢" }
-    body:
-      en: "Primary school contact: Ms. Vanessa Kiu, vanessakiu@cuhk.edu.hk. Secondary school contact: Ms. Didy Wan, didywan@cuhk.edu.hk."
-      zh: "小學查詢：Ms. Vanessa Kiu，vanessakiu@cuhk.edu.hk。中學查詢：Ms. Didy Wan，didywan@cuhk.edu.hk。"
+    variant: highlight
+    columns:
+      - label: { en: "Primary Schools", zh: "小學" }
+        name: "Ms. Vanessa Kiu"
+        email: "vanessakiu@cuhk.edu.hk"
+      - label: { en: "Secondary Schools", zh: "中學" }
+        name: "Ms. Didy Wan"
+        email: "didywan@cuhk.edu.hk"
 ---

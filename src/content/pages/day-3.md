@@ -27,6 +27,7 @@ modules:
   - title: { en: "TechEd P4", zh: "科技教育 小四" }
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 7–12", zh: "第7至12課" }
+    room: "WMY 407"
     facilitators:
       - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
       - "Ms. YIU Po Fun (Ling To Catholic Primary School)"
@@ -34,6 +35,7 @@ modules:
   - title: { en: "TechEd P5", zh: "科技教育 小五" }
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 7–12", zh: "第7至12課" }
+    room: "WMY 502 / WMY 504"
     facilitators:
       - "Mr. Philip TAN (MIT RAISE)"
       - "Ms. CHENG Yuen Ting (St. Mary's Canossian School)"
@@ -43,6 +45,7 @@ modules:
   - title: { en: "TechEd P6", zh: "科技教育 小六" }
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 7–12", zh: "第7至12課" }
+    room: "WMY 402 / WMY 404"
     facilitators:
       - "Mr. Selim TEZEL (MIT RAISE)"
       - "Mr. CHOW Tsz Chun (HKUGA Primary School)"
@@ -51,6 +54,7 @@ modules:
 
   - title: { en: "Chinese S1", zh: "中國語文 中一" }
     audience: { en: "Secondary", zh: "中學" }
+    room: "YIA 502"
     facilitators:
       - "Prof. POON Ming Kay (CUHK)"
       - "Mr. HO Chun Kit (Tak Sun Secondary School)"
@@ -58,6 +62,7 @@ modules:
 
   - title: { en: "Citizenship, Economics and Society S1", zh: "公民、經濟與社會 中一" }
     audience: { en: "Secondary", zh: "中學" }
+    room: "WMY 507"
     facilitators:
       - "Ms. Allison POSEY (MIT RAISE)"
       - "Dr. HUNG Chiu Lung (QESOSA Tong Kwok Wah Secondary School)"
@@ -65,6 +70,7 @@ modules:
 
   - title: { en: "Math S2", zh: "數學 中二" }
     audience: { en: "Secondary", zh: "中學" }
+    room: "YIA 503"
     facilitators:
       - "Mr. Robert PARK (MIT RAISE)"
       - "Mr. HA Chi Hung (True Light School of Hong Kong)"
@@ -72,6 +78,7 @@ modules:
 
   - title: { en: "Science S2", zh: "科學科 中二" }
     audience: { en: "Secondary", zh: "中學" }
+    room: "WMY 506"
     facilitators:
       - "Ms. Sarah WHARTON (MIT RAISE)"
       - "Mr. Brendan DOHERTY (Diocesan Girls' School)"
@@ -79,6 +86,7 @@ modules:
 
   - title: { en: "English S3", zh: "英國語文 中三" }
     audience: { en: "Secondary", zh: "中學" }
+    room: "WMY 505"
     facilitators:
       - "Mr. John MASLA (MIT RAISE)"
       - "Mr. LAI Yat Kin (Salesian English School)"
@@ -86,6 +94,7 @@ modules:
 
   - title: { en: "Visual Arts S3 + Project", zh: "視覺藝術 中三＋專題" }
     audience: { en: "Secondary", zh: "中學" }
+    room: "WMY 406"
     facilitators:
       - "Dr. Andrés Felipe SALAZAR GÓMEZ (MIT RAISE)"
       - "Mr. SIU Kam Kuen (Wah Yan College, Hong Kong)"

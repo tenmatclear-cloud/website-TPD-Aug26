@@ -37,6 +37,7 @@ export type ModuleSession = {
   title: LocalizedText;
   audience: LocalizedText;
   lessons?: LocalizedText;
+  room?: string;
   facilitators: string[];
   abstract?: LocalizedText;
 };
@@ -51,12 +52,19 @@ export type DaySummary = {
 
 export type ScheduleBlock = { time: string; label: LocalizedText };
 
+export type InfoColumn = {
+  label: LocalizedText;
+  name: string;
+  email?: string;
+};
+
 export type InfoItem = {
   title: LocalizedText;
-  body: LocalizedText;
+  body?: LocalizedText;
+  columns?: InfoColumn[];
   href?: string;
   linkLabel?: LocalizedText;
-  variant?: 'warning';
+  variant?: 'warning' | 'highlight';
 };
 
 export type FeatureAccent = 'programme' | 'teachers' | 'schools';

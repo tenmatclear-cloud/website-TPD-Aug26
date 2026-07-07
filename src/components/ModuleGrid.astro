@@ -14,9 +14,23 @@ const { lang, modules } = Astro.props;
   {
     modules.map((module) => (
       <article class="module-card">
-        <div class="tag-row">
-          <span class="tag">{localize(module.audience, lang)}</span>
-          {module.lessons && <span class="tag tag-soft">{localize(module.lessons, lang)}</span>}
+        <div class="module-card-top">
+          <div class="tag-row">
+            <span class="tag">{localize(module.audience, lang)}</span>
+            {module.lessons && <span class="tag tag-soft">{localize(module.lessons, lang)}</span>}
+          </div>
+          {module.room && (
+            <span
+              class:list={[
+                'module-room',
+                module.room.includes('YIA') && !module.room.includes('WMY') && 'module-room--yia',
+              ]}
+            >
+              {module.room.split(' / ').map((part) => (
+                <span class="module-room-part">{part}</span>
+              ))}
+            </span>
+          )}
         </div>
         <h3>{localize(module.title, lang)}</h3>
         {module.abstract && <p>{localize(module.abstract, lang)}</p>}

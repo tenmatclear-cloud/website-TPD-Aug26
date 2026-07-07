@@ -45,19 +45,34 @@ const content = staticPages[page];
 
   <div class="content-shell">
     <section class="section">
-      <div class="section-header">
-        <div>
-          <h2>{localize(content.title, lang)}</h2>
-          <p>{localize(content.intro, lang)}</p>
-        </div>
-      </div>
-
       <div class="info-list">
         {
           content.items.map((item) => (
-            <article class:list={['info-item', item.variant === 'warning' && 'info-item-warning']}>
+            <article
+              class:list={[
+                'info-item',
+                item.variant === 'warning' && 'info-item-warning',
+                item.variant === 'highlight' && 'info-item-highlight',
+              ]}
+            >
               <h3>{localize(item.title, lang)}</h3>
-              <p>{localize(item.body, lang)}</p>
+              {item.columns ? (
+                <div class="info-columns">
+                  {item.columns.map((column) => (
+                    <div class="info-column">
+                      <p class="info-column-label">{localize(column.label, lang)}</p>
+                      <p class="info-column-name">{column.name}</p>
+                      {column.email && (
+                        <a class="info-column-email" href={`mailto:${column.email}`}>
+                          {column.email}
+                        </a>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                item.body && <p>{localize(item.body, lang)}</p>
+              )}
               {item.linkLabel && (
                 item.href ? (
                   <a class="resource-link" href={item.href} target="_blank" rel="noopener noreferrer">

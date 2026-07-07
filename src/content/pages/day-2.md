@@ -3,7 +3,8 @@
 #  DAY 2 — 27 August 2026 (Thursday) · Primary schools only
 #  Intensive deep dive into subject-specific modules.
 #  Each module is one "- " item under `modules:`. `facilitators` is a plain
-#  list of names (shown the same in both languages). See README.md.
+#  list of names (shown the same in both languages). `room` is the venue code.
+#  See README.md.
 # ============================================================================
 
 intro:
@@ -29,6 +30,7 @@ modules:
   - title: { en: "TechEd P4", zh: "科技教育 小四" }
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 1–6", zh: "第1至6課" }
+    room: "WMY 407"
     facilitators:
       - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
       - "Ms. YIU Po Fun (Ling To Catholic Primary School)"
@@ -36,6 +38,7 @@ modules:
   - title: { en: "TechEd P5", zh: "科技教育 小五" }
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 1–6", zh: "第1至6課" }
+    room: "WMY 502 / WMY 504"
     facilitators:
       - "Mr. Philip TAN (MIT RAISE)"
       - "Ms. CHENG Yuen Ting (St. Mary's Canossian School)"
@@ -45,6 +48,7 @@ modules:
   - title: { en: "TechEd P6", zh: "科技教育 小六" }
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 1–6", zh: "第1至6課" }
+    room: "WMY 402 / WMY 404"
     facilitators:
       - "Mr. Selim TEZEL (MIT RAISE)"
       - "Mr. CHOW Tsz Chun (HKUGA Primary School)"
@@ -53,12 +57,14 @@ modules:
 
   - title: { en: "Humanities P4", zh: "人文科 小四" }
     audience: { en: "Primary", zh: "小學" }
+    room: "WMY 405"
     facilitators:
       - "Dr. Andrés Felipe SALAZAR GÓMEZ (MIT RAISE)"
       - "Mr. WONG Chun Kei (Ling To Catholic Primary School)"
 
   - title: { en: "Science P4", zh: "科學科 小四" }
     audience: { en: "Primary", zh: "小學" }
+    room: "WMY 408"
     facilitators:
       - "Ms. Allison POSEY & Ms. Sarah WHARTON (MIT RAISE)"
       - "Ms. LI Ting Ting (The Salvation Army Tin Ka Ping School)"
@@ -66,12 +72,14 @@ modules:
 
   - title: { en: "Chinese P5", zh: "中國語文 小五" }
     audience: { en: "Primary", zh: "小學" }
+    room: "WMY 403"
     facilitators:
       - "Prof. POON Ming Kay (CUHK)"
       - "Mr. HO Wai Kit (Tuen Mun Catholic Secondary School)"
 
   - title: { en: "Math P5", zh: "數學 小五" }
     audience: { en: "Primary", zh: "小學" }
+    room: "WMY 406"
     facilitators:
       - "Mr. Robert PARK (MIT RAISE)"
       - "Ms. TANG Pui Yuk (Sham Shui Po Government Primary School)"
@@ -79,6 +87,7 @@ modules:
 
   - title: { en: "English P6", zh: "英國語文 小六" }
     audience: { en: "Primary", zh: "小學" }
+    room: "WMY 506"
     facilitators:
       - "Mr. John MASLA (MIT RAISE)"
       - "Mr. CHU Jason (Yaumati Catholic Primary School)"
