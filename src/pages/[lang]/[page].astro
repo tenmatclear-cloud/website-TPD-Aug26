@@ -13,6 +13,7 @@ export function getStaticPaths() {
 const lang = Astro.params.lang as Lang;
 const page = Astro.params.page as StaticPage;
 const content = staticPages[page];
+const showWorkshopMeta = page === 'media';
 ---
 
 <BaseLayout
@@ -22,24 +23,28 @@ const content = staticPages[page];
   currentPath={page}
 >
   <section class="hero">
-    <div class="hero-inner">
+    <div class:list={['hero-inner', !showWorkshopMeta && 'hero-inner--solo']}>
       <div>
         <span class="eyebrow">{localize(workshop.projectName, lang)}</span>
         <h1>{localize(content.title, lang)}</h1>
         <p>{localize(content.intro, lang)}</p>
       </div>
-      <aside class="hero-panel">
-        <dl>
-          <div>
-            <dt>{localize(ui.date, lang)}</dt>
-            <dd>{localize(workshop.dateRange, lang)}</dd>
-          </div>
-          <div>
-            <dt>{localize(ui.venue, lang)}</dt>
-            <dd>{localize(workshop.venue, lang)}</dd>
-          </div>
-        </dl>
-      </aside>
+      {
+        showWorkshopMeta && (
+          <aside class="hero-panel">
+            <dl>
+              <div>
+                <dt>{localize(ui.date, lang)}</dt>
+                <dd>{localize(workshop.dateRange, lang)}</dd>
+              </div>
+              <div>
+                <dt>{localize(ui.venue, lang)}</dt>
+                <dd>{localize(workshop.venue, lang)}</dd>
+              </div>
+            </dl>
+          </aside>
+        )
+      }
     </div>
   </section>
 

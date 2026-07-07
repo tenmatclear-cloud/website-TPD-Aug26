@@ -10,13 +10,13 @@ intro:
   zh: "立即開始：在此存取賽馬會人工智能教育計劃的學與教資源、網上課程及預習模組。"
 
 items:
-  - title: { en: "Teaching and Learning Resources", zh: "學與教資源" }
+  - title: { en: "Learning and Teaching Resources", zh: "學與教資源" }
     body:
-      en: "Resources will be uploaded as they become available. Please use your registered school email for access when links are shared."
-      zh: "資源會在備妥後陸續上載。連結發放後，請使用已登記的學校電郵登入。"
+      en: "More resources will be uploaded as they become available. Please use your registered email for access."
+      zh: "更多資源會在備妥後陸續上載。請使用已登記的電郵登入。"
     links:
       - href: "https://drive.google.com/drive/folders/1Cte8fkfYWXrk-lf_I-K1uXa276NcZ-UU?usp=drive_link"
-        linkLabel: { en: "Full suite of AI resources (Coming soon)", zh: "全套人工智能資源（即將推出）" }
+        linkLabel: { en: "Full suite of AI resources (Update Ongoing)", zh: "全套人工智能資源（持續更新）" }
       - href: "https://forms.gle/pCVSXUm1CPbek1ev8"
         linkLabel: { en: "Link to Google Form", zh: "Google 表格連結" }
         note:

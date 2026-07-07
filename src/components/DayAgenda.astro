@@ -16,7 +16,24 @@ const { lang, sessions } = Astro.props;
       session.heading ? (
         <div class="timeline-band">
           <h3>{localize(session.heading, lang)}</h3>
-          {session.note && <span>{localize(session.note, lang)}</span>}
+          {(session.note || session.room) && (
+            <div class="timeline-band-footer">
+              {session.note && (
+                <span class="timeline-band-note">{localize(session.note, lang)}</span>
+              )}
+              {session.room && (
+                <span
+                  class:list={[
+                    'module-room',
+                    'timeline-band-room',
+                    session.room.startsWith('LT') && 'module-room--yia',
+                  ]}
+                >
+                  <span class="module-room-part">{session.room}</span>
+                </span>
+              )}
+            </div>
+          )}
         </div>
       ) : (
         <article class="timeline-item">

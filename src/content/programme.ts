@@ -30,6 +30,7 @@ export type Session = {
   note?: LocalizedText;
   // A divider band row:
   heading?: LocalizedText;
+  room?: string;
   // A split (parallel Primary / Secondary) row:
   tracks?: Track[];
 };

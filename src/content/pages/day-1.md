@@ -28,6 +28,7 @@ sessions:
 
   - heading: { en: "AM Session — Building the Foundation for AI Education", zh: "上午環節 — 建立人工智能教育的基礎" }
     note: { en: "Conducted in English", zh: "以英語進行" }
+    room: "LT1"
 
   - time: "9:15am – 9:25am"
     duration: "10 mins"

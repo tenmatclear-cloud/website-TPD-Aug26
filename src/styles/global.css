@@ -261,6 +261,15 @@ img {
   padding: clamp(64px, 10vw, 112px) 0 clamp(84px, 12vw, 136px);
 }
 
+.hero-inner--solo {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.hero-inner--solo > div {
+  width: 100%;
+  max-width: none;
+}
+
 .eyebrow {
   display: inline-flex;
   width: fit-content;
@@ -318,6 +327,11 @@ h3 {
   margin: 22px 0 0;
   color: rgb(255 255 255 / 0.88);
   font-size: clamp(1.05rem, 2vw, 1.25rem);
+}
+
+.hero .hero-inner--solo h1,
+.hero .hero-inner--solo p {
+  max-width: none;
 }
 
 .hero-actions,
@@ -665,11 +679,11 @@ h3 {
 
 .timeline-band {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 6px 14px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
   margin-top: 10px;
-  padding: 14px 22px;
+  padding: 16px 22px;
   border-radius: 16px;
   background: var(--color-primary);
   color: var(--color-white);
@@ -684,12 +698,27 @@ h3 {
   font-size: 1.05rem;
 }
 
-.timeline-band span {
+.timeline-band-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.timeline-band-note {
+  flex: 1 1 auto;
+  min-width: 0;
   color: var(--color-accent-gold);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.03em;
+  line-height: 1;
   text-transform: uppercase;
+}
+
+.timeline-band-room {
+  flex: 0 0 auto;
+  max-width: none;
 }
 
 .track-grid {
