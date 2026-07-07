@@ -52,8 +52,8 @@ impact:
       label: { en: "Subject modules", zh: "學科模組" }
     - value: "P4–S3"
       label: { en: "Year levels", zh: "適用年級" }
-    - value: "EN · 繁"
-      label: { en: "Bilingual delivery", zh: "雙語進行" }
+    - value: "EN"
+      label: { en: "Official language", zh: "官方語言" }
 
 # ---- Takeaways (Home page, "What you'll take away" InfoPanels) -------------
 takeaways:
@@ -62,8 +62,8 @@ takeaways:
   items:
     - en: "Develop a deeper understanding of JC GoAI AI learning and teaching resources and the design principles behind them."
       zh: "深入了解賽馬會人工智能教育計劃的人工智能學與教資源及其設計原則。"
-    - en: "Gain confidence, strategies, and practical skills for implementing the AI curriculum effectively."
-      zh: "建立有效推行人工智能課程所需的信心、策略及實務技巧。"
+    - en: "Gain confidence, strategies, and practical skills for implementing the AI L&T resources effectively."
+      zh: "建立有效推行人工智能學與教資源所需的信心、策略及實務技巧。"
     - en: "Collaborate with international and local experts, teachers, and peers through demonstrations, hands-on activities, and focused discussions."
       zh: "透過教學示範、實作活動及專題討論，與國際及本地專家、教師和同儕交流協作。"
 
@@ -81,13 +81,13 @@ days:
     time: { en: "9:30am – 4:45pm", zh: "上午9:30至下午4:45" }
     audience: { en: "Primary schools only", zh: "只限小學" }
     focus:
-      en: "Dive deep into the L&T Resources of \"AI + TechEd\" and \"AI + Subjects\" and related pedagogy."
-      zh: "深入認識「人工智能＋科技教育」及「人工智能＋學科」的學與教資源及相關教學法。"
+      en: "Dive deep into the L&T Resources of \"AI Foundations\" and \"AI + Subjects\" and related pedagogy."
+      zh: "深入認識「人工智能基礎」及「人工智能＋學科」的學與教資源及相關教學法。"
   - day: 3
     date: { en: "28 August 2026 (Friday)", zh: "2026年8月28日（星期五）" }
     time: { en: "9:30am – 4:45pm", zh: "上午9:30至下午4:45" }
     audience: { en: "All schools", zh: "所有學校" }
     focus:
-      en: "Continuation of the \"AI + TechEd\" and \"AI + Subjects\" deep dive, covering secondary subject modules."
-      zh: "延續「人工智能＋科技教育」及「人工智能＋學科」的深入探討，並涵蓋中學學科模組。"
+      en: "Continuation of the \"AI Foundations\" and \"AI + Subjects\" deep dive, covering secondary subject modules."
+      zh: "延續「人工智能基礎」及「人工智能＋學科」的深入探討，並涵蓋中學學科模組。"
 ---

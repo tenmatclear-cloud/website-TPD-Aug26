@@ -1,13 +1,13 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { localize, pageTitles, ui } from '@content/i18n';
-import { languages, staticPages, workshop, type Lang } from '@content/programme';
+import { activeLanguages, staticPages, workshop, type Lang } from '@content/programme';
 
 type StaticPage = 'resources' | 'logistics' | 'media';
 
 export function getStaticPaths() {
   const pages = ['resources', 'logistics', 'media'] as const;
-  return languages.flatMap(({ code }) => pages.map((page) => ({ params: { lang: code, page } })));
+  return activeLanguages.flatMap(({ code }) => pages.map((page) => ({ params: { lang: code, page } })));
 }
 
 const lang = Astro.params.lang as Lang;

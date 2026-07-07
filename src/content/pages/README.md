@@ -1,5 +1,8 @@
 # Editing the website content
 
+**Official language:** English (`en`). The site currently publishes English only.
+Chinese (`zh`) keys remain in the files for a future release — do not remove them.
+
 All the text on the site lives in the `.md` files in this folder — **one file per page**.
 You can update the site by editing these files only. **No code changes are needed.**
 
@@ -10,14 +13,15 @@ You can update the site by editing these files only. **No code changes are neede
 | `day-2.md` | Day 2 goals, daily timetable, and the primary-school module list. |
 | `day-3.md` | Day 3 goals, daily timetable, and the secondary + TechEd module list. |
 | `resources.md` | The Resources page. |
-| `logistics.md` | The Logistics (活動須知) page. |
+| `logistics.md` | The Logistics page. |
 | `media.md` | The Photos and Recordings page. |
 
 ## The golden rules
 
 1. Everything between the two `---` lines at the top of each file is the content.
-2. Every piece of text comes in **two languages**: `en` (English) and `zh` (繁體中文).
-   Edit the words inside the `"quotes"`. Keep both languages in sync.
+2. Every piece of text has an **English** (`en`) value — this is what the live site shows.
+   Each field also has a **Chinese** (`zh`) value kept for a future Chinese release; you may
+   leave `zh` as-is until the English copy is finalised.
    ```yaml
    title: { en: "Welcoming Message", zh: "歡迎辭" }
    ```
@@ -26,6 +30,14 @@ You can update the site by editing these files only. **No code changes are neede
 4. Keep the indentation (the leading spaces) exactly as it is. Indentation is how the
    file knows what belongs to what. Use spaces, never tabs.
 5. Lines starting with `#` are comments / notes for you — they are ignored by the site.
+
+## Enabling the Chinese site later
+
+When the English programme is final and Chinese copy is ready:
+
+1. Update the `zh` values in these `.md` files.
+2. In `src/content/programme.ts`, set `ZH_HK_ENABLED = true`.
+3. Rebuild — `/zh-hk/` pages and the language switcher will appear automatically.
 
 ## Adding or removing items in a list
 

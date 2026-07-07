@@ -3,11 +3,11 @@ import DayAgenda from '@components/DayAgenda.astro';
 import ModuleGrid from '@components/ModuleGrid.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { localize, pageTitles, ui } from '@content/i18n';
-import { daySummaries, languages, programmeDays, workshop, type Lang } from '@content/programme';
+import { daySummaries, activeLanguages, programmeDays, workshop, type Lang } from '@content/programme';
 
 export function getStaticPaths() {
   const days = [1, 2, 3] as const;
-  return languages.flatMap(({ code }) => days.map((day) => ({ params: { lang: code, day: String(day) } })));
+  return activeLanguages.flatMap(({ code }) => days.map((day) => ({ params: { lang: code, day: String(day) } })));
 }
 
 const lang = Astro.params.lang as Lang;

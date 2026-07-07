@@ -32,13 +32,12 @@ modules:
     facilitators:
       - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
       - "Ms. YIU Po Fun (Ling To Catholic Primary School)"
-      - "Mr. CHOW Tsz Chun (HKUGA Primary School)"
 
   - title: { en: "TechEd P5", zh: "科技教育 小五" }
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 1–6", zh: "第1至6課" }
     facilitators:
-      - "Philip (MIT RAISE)"
+      - "Mr. Philip TAN (MIT RAISE)"
       - "Ms. CHENG Yuen Ting (St. Mary's Canossian School)"
       - "Mr. LEE Ka Wo (Diocesan Girls' Junior School)"
       - "Mr. CHEUNG Tin Yau (CCC Ming Yin College)"
@@ -47,20 +46,21 @@ modules:
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 1–6", zh: "第1至6課" }
     facilitators:
-      - "Selim (MIT RAISE)"
+      - "Mr. Selim TEZEL (MIT RAISE)"
+      - "Mr. CHOW Tsz Chun (HKUGA Primary School)"
       - "Mr. MUNG Wai Lun (Fung Kai No.1 Primary School)"
       - "Mr. WONG Chi Yan (Fung Kai No.1 Primary School)"
 
   - title: { en: "Humanities P4", zh: "人文科 小四" }
     audience: { en: "Primary", zh: "小學" }
     facilitators:
-      - "Mr. John MASLA (MIT RAISE)"
-      - "Mr. WONG Chun Kei"
+      - "Dr. Andrés Felipe SALAZAR GÓMEZ (MIT RAISE)"
+      - "Mr. WONG Chun Kei (Ling To Catholic Primary School)"
 
   - title: { en: "Science P4", zh: "科學科 小四" }
     audience: { en: "Primary", zh: "小學" }
     facilitators:
-      - "Ms. Allison POSEY & Sarah (MIT RAISE)"
+      - "Ms. Allison POSEY & Ms. Sarah WHARTON (MIT RAISE)"
       - "Ms. LI Ting Ting (The Salvation Army Tin Ka Ping School)"
       - "Mr. SZE Yu Chun (The HKMA K S Lo College)"
 
@@ -80,7 +80,7 @@ modules:
   - title: { en: "English P6", zh: "英國語文 小六" }
     audience: { en: "Primary", zh: "小學" }
     facilitators:
-      - "Ms. Daniella DIPAOLA (MIT RAISE)"
+      - "Mr. John MASLA (MIT RAISE)"
       - "Mr. CHU Jason (Yaumati Catholic Primary School)"
       - "Ms. CHAN Wai Yan (The Salvation Army Tin Ka Ping School)"
 ---

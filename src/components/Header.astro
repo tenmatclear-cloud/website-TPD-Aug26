@@ -1,5 +1,5 @@
 ---
-import { languages, workshop, type Lang } from '@content/programme';
+import { activeLanguages, workshop, type Lang } from '@content/programme';
 import { localize, navItems, pathFor, ui } from '@content/i18n';
 
 type Props = {
@@ -10,8 +10,9 @@ type Props = {
 const { lang, currentPath } = Astro.props;
 const normalizedPath = currentPath.replace(/^\/|\/$/g, '');
 
-const openMenuLabel = lang === 'zh-hk' ? '開啟選單' : 'Open menu';
-const closeMenuLabel = lang === 'zh-hk' ? '關閉選單' : 'Close menu';
+const openMenuLabel = 'Open menu';
+const closeMenuLabel = 'Close menu';
+const showLanguageSwitcher = activeLanguages.length > 1;
 ---
 
 <header class="site-header">
@@ -38,19 +39,21 @@ const closeMenuLabel = lang === 'zh-hk' ? '關閉選單' : 'Close menu';
       }
     </nav>
 
-    <div class="language-switcher" aria-label={localize(ui.language, lang)}>
-      {
-        languages.map((language) => (
-          <a
-            href={pathFor(language.code, normalizedPath)}
-            lang={language.code === 'zh-hk' ? 'zh-Hant-HK' : 'en'}
-            aria-current={language.code === lang ? 'true' : undefined}
-          >
-            {language.shortLabel}
-          </a>
-        ))
-      }
-    </div>
+    {
+      showLanguageSwitcher && (
+        <div class="language-switcher" aria-label={localize(ui.language, lang)}>
+          {activeLanguages.map((language) => (
+            <a
+              href={pathFor(language.code, normalizedPath)}
+              lang={language.code === 'zh-hk' ? 'zh-Hant-HK' : 'en'}
+              aria-current={language.code === lang ? 'true' : undefined}
+            >
+              {language.shortLabel}
+            </a>
+          ))}
+        </div>
+      )
+    }
 
     <button
       class="menu-toggle"

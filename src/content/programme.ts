@@ -82,10 +82,18 @@ export type TakeawaysSection = {
   items: LocalizedText[];
 };
 
+// English is the official site language. Set to true when the Chinese version is ready.
+export const ZH_HK_ENABLED = false;
+
 export const languages: { code: Lang; label: string; shortLabel: string }[] = [
   { code: 'en', label: 'English', shortLabel: 'EN' },
   { code: 'zh-hk', label: '繁體中文', shortLabel: '繁' },
 ];
+
+// Languages exposed on the live site (routes + switcher). zh-hk data in .md files is kept for later.
+export const activeLanguages = ZH_HK_ENABLED
+  ? languages
+  : languages.filter(({ code }) => code === 'en');
 
 // Maps a feature card's semantic accent name to its colour token. Keeping the
 // mapping here (not in the markdown) means editors pick a meaning, not a hex.

@@ -1,6 +1,6 @@
 ---
 import { localize, pathFor, ui } from '@content/i18n';
-import { languages, workshop, type Lang } from '@content/programme';
+import { activeLanguages, workshop, type Lang } from '@content/programme';
 
 type Props = {
   lang: Lang;
@@ -9,6 +9,7 @@ type Props = {
 
 const { lang, currentPath = '' } = Astro.props;
 const normalizedPath = currentPath.replace(/^\/|\/$/g, '');
+const showLanguageSwitcher = activeLanguages.length > 1;
 ---
 
 <footer class="site-footer">
@@ -17,19 +18,21 @@ const normalizedPath = currentPath.replace(/^\/|\/$/g, '');
     <p>
       {localize(workshop.title, lang)} · {localize(workshop.dateRange, lang)} · {localize(workshop.venue, lang)}
     </p>
-    <div class="footer-language" aria-label={localize(ui.language, lang)}>
-      {
-        languages.map((language) => (
-          <a
-            href={pathFor(language.code, normalizedPath)}
-            lang={language.code === 'zh-hk' ? 'zh-Hant-HK' : 'en'}
-            aria-current={language.code === lang ? 'true' : undefined}
-          >
-            {language.shortLabel}
-          </a>
-        ))
-      }
-    </div>
+    {
+      showLanguageSwitcher && (
+        <div class="footer-language" aria-label={localize(ui.language, lang)}>
+          {activeLanguages.map((language) => (
+            <a
+              href={pathFor(language.code, normalizedPath)}
+              lang={language.code === 'zh-hk' ? 'zh-Hant-HK' : 'en'}
+              aria-current={language.code === lang ? 'true' : undefined}
+            >
+              {language.shortLabel}
+            </a>
+          ))}
+        </div>
+      )
+    }
   </div>
   <div class="footer-bar" aria-hidden="true"></div>
 </footer>

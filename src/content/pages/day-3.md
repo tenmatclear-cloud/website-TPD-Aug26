@@ -30,13 +30,12 @@ modules:
     facilitators:
       - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
       - "Ms. YIU Po Fun (Ling To Catholic Primary School)"
-      - "Mr. CHOW Tsz Chun (HKUGA Primary School)"
 
   - title: { en: "TechEd P5", zh: "科技教育 小五" }
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 7–12", zh: "第7至12課" }
     facilitators:
-      - "Philip (MIT RAISE)"
+      - "Mr. Philip TAN (MIT RAISE)"
       - "Ms. CHENG Yuen Ting (St. Mary's Canossian School)"
       - "Mr. LEE Ka Wo (Diocesan Girls' Junior School)"
       - "Mr. CHEUNG Tin Yau (CCC Ming Yin College)"
@@ -45,7 +44,8 @@ modules:
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 7–12", zh: "第7至12課" }
     facilitators:
-      - "Selim (MIT RAISE)"
+      - "Mr. Selim TEZEL (MIT RAISE)"
+      - "Mr. CHOW Tsz Chun (HKUGA Primary School)"
       - "Mr. MUNG Wai Lun (Fung Kai No.1 Primary School)"
       - "Mr. WONG Chi Yan (Fung Kai No.1 Primary School)"
 
@@ -59,7 +59,7 @@ modules:
   - title: { en: "Citizenship, Economics and Society S1", zh: "公民、經濟與社會 中一" }
     audience: { en: "Secondary", zh: "中學" }
     facilitators:
-      - "Mr. John MASLA (MIT RAISE)"
+      - "Ms. Allison POSEY (MIT RAISE)"
       - "Dr. HUNG Chiu Lung (QESOSA Tong Kwok Wah Secondary School)"
       - "Mr. YEUNG Chun Sing (Shatin Pui Ying College)"
 
@@ -73,20 +73,20 @@ modules:
   - title: { en: "Science S2", zh: "科學科 中二" }
     audience: { en: "Secondary", zh: "中學" }
     facilitators:
-      - "Ms. Allison POSEY & Sarah (MIT RAISE)"
+      - "Ms. Sarah WHARTON (MIT RAISE)"
       - "Mr. Brendan DOHERTY (Diocesan Girls' School)"
       - "Ms. CHIM Yan Ming (Lock Tao Secondary School)"
 
   - title: { en: "English S3", zh: "英國語文 中三" }
     audience: { en: "Secondary", zh: "中學" }
     facilitators:
-      - "Ms. Daniella DIPAOLA (MIT RAISE)"
+      - "Mr. John MASLA (MIT RAISE)"
       - "Mr. LAI Yat Kin (Salesian English School)"
       - "Ms. CHEUNG Wai Shan (Lock Tao Secondary School)"
 
   - title: { en: "Visual Arts S3 + Project", zh: "視覺藝術 中三＋專題" }
     audience: { en: "Secondary", zh: "中學" }
     facilitators:
-      - "Dr. Andrés Felipe Salazar GÓMEZ (MIT RAISE)"
+      - "Dr. Andrés Felipe SALAZAR GÓMEZ (MIT RAISE)"
       - "Mr. SIU Kam Kuen (Wah Yan College, Hong Kong)"
 ---
