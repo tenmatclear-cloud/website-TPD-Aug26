@@ -442,16 +442,8 @@ h3 {
   color: var(--color-text-secondary);
 }
 
-.meta {
-  display: inline-flex;
-  width: fit-content;
+.card > .tag {
   margin-bottom: 14px;
-  padding: 5px 10px;
-  border-radius: var(--radius-button);
-  background: var(--color-bg-light);
-  color: var(--color-primary);
-  font-size: 0.82rem;
-  font-weight: 800;
 }
 
 .objectives {
@@ -471,15 +463,39 @@ h3 {
 
 .split-section {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 1fr;
   overflow: hidden;
   border-radius: var(--radius-content);
-  background: linear-gradient(to right, var(--color-accent-yellow) 0 42%, var(--color-primary) 42% 100%);
-  color: var(--color-white);
+}
+
+.split-section-impact {
+  grid-template-columns: 0.9fr 1.1fr;
 }
 
 .split-section > div {
-  padding: clamp(36px, 6vw, 64px);
+  padding: clamp(24px, 4vw, 36px);
+}
+
+.split-section-intro,
+.split-section-time {
+  background: var(--color-accent-yellow);
+}
+
+.split-section .dark,
+.split-section-modules {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.split-section-modules p {
+  margin: 12px 0 0;
+}
+
+.split-section-time .info-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
 }
 
 .split-section h2 {
@@ -526,32 +542,73 @@ h3 {
 .module-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  gap: 16px;
 }
 
-.module-card {
-  display: grid;
-  gap: 12px;
-  padding: 24px;
+.module-card,
+.track {
+  padding: 18px 20px;
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-card);
+  border-radius: 20px;
   background: #fbfcff;
+}
+
+.module-card h3,
+.track h3 {
+  margin-top: 8px;
+  font-size: 1.1rem;
+}
+
+.module-card p,
+.track p {
+  margin: 8px 0 0;
+  color: var(--color-text-secondary);
+}
+
+.module-facilitators {
+  margin-top: 8px;
+}
+
+.module-facilitators p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.module-facilitators ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  color: var(--color-text-secondary);
+}
+
+.module-facilitators li + li {
+  margin-top: 4px;
 }
 
 .tag-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: center;
   gap: 8px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.tag-row-spaced {
+  margin-top: 12px;
 }
 
 .tag {
   display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
   padding: 4px 10px;
   border-radius: var(--radius-button);
   background: var(--color-accent-yellow);
   color: var(--color-primary);
   font-size: 0.78rem;
   font-weight: 900;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .timeline-band {
@@ -589,23 +646,6 @@ h3 {
   gap: 16px;
 }
 
-.track {
-  padding: 18px 20px;
-  border: 1px solid var(--color-border);
-  border-radius: 20px;
-  background: #fbfcff;
-}
-
-.track h3 {
-  margin-top: 10px;
-  font-size: 1.1rem;
-}
-
-.track p {
-  margin: 8px 0 0;
-  color: var(--color-text-secondary);
-}
-
 .muted-note {
   color: var(--color-text-secondary);
   font-style: italic;
@@ -613,28 +653,6 @@ h3 {
 
 .tag-soft {
   background: var(--color-bg-light);
-}
-
-.facilitators {
-  margin-top: 4px;
-}
-
-.facilitators-label {
-  display: block;
-  margin-bottom: 6px;
-  color: var(--color-primary);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.facilitators ul {
-  display: grid;
-  gap: 4px;
-  margin: 0;
-  padding-left: 18px;
-  color: var(--color-text-secondary);
 }
 
 .brand-logo {
@@ -666,6 +684,33 @@ h3 {
 .info-item p {
   margin: 8px 0 0;
   color: var(--color-text-secondary);
+}
+
+.resource-link {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 16px;
+  padding: 8px 14px;
+  border-radius: var(--radius-button);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.resource-link-pending {
+  background: var(--color-bg-light);
+  color: var(--color-primary);
+}
+
+.info-item-warning {
+  border-color: color-mix(in srgb, var(--color-accent-orange), var(--color-primary) 18%);
+  border-left: 8px solid var(--color-accent-orange);
+  background: #fff7eb;
+}
+
+.info-item-warning h3 {
+  color: #b34700;
 }
 
 .site-footer {
@@ -750,19 +795,6 @@ h3 {
   font-weight: 600;
 }
 
-/* Session note rendered as a pill inside a timeline item. */
-.note-pill {
-  display: inline-flex;
-  width: fit-content;
-  margin-top: 12px;
-  padding: 5px 11px;
-  border-radius: var(--radius-button);
-  background: var(--color-bg-light);
-  color: var(--color-primary);
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
 .footer-logo {
   height: 66px;
   width: auto;
@@ -845,12 +877,8 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .split-section {
-    background: var(--color-primary);
-  }
-
-  .split-section > :first-child {
-    background: var(--color-accent-yellow);
+  .split-section-time .info-list {
+    grid-template-columns: 1fr;
   }
 
   .grid,

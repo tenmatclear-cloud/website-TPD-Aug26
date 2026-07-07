@@ -51,7 +51,13 @@ export type DaySummary = {
 
 export type ScheduleBlock = { time: string; label: LocalizedText };
 
-export type InfoItem = { title: LocalizedText; body: LocalizedText };
+export type InfoItem = {
+  title: LocalizedText;
+  body: LocalizedText;
+  href?: string;
+  linkLabel?: LocalizedText;
+  variant?: 'warning';
+};
 
 export type FeatureAccent = 'programme' | 'teachers' | 'schools';
 

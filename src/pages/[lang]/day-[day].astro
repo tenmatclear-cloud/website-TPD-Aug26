@@ -32,9 +32,6 @@ const isDayOne = day === 1;
   <section class="hero">
     <div class="hero-inner">
       <div>
-        <span class="eyebrow">
-          {localize(ui.day, lang)} {day}
-        </span>
         <h1>{localize(pageTitles[titleKey], lang)}</h1>
         <p>{localize(programme.intro, lang)}</p>
       </div>
@@ -61,9 +58,6 @@ const isDayOne = day === 1;
     <section class="section">
       <div class="section-header">
         <div>
-          <span class="eyebrow" style="color: var(--color-primary); border-color: var(--color-border);">
-            {localize(ui.goals, lang)}
-          </span>
           <h2>{localize(ui.goals, lang)}</h2>
         </div>
       </div>
@@ -77,10 +71,7 @@ const isDayOne = day === 1;
         <section class="section">
           <div class="section-header">
             <div>
-              <span class="eyebrow" style="color: var(--color-primary); border-color: var(--color-border);">
-                {localize(ui.scheduleAtGlance, lang)}
-              </span>
-              <h2>{localize(pageTitles['day-1'], lang)}</h2>
+              <h2>{localize(ui.scheduleAtGlance, lang)}</h2>
             </div>
           </div>
           <DayAgenda lang={lang} sessions={programme.sessions ?? []} />
@@ -88,9 +79,13 @@ const isDayOne = day === 1;
       ) : (
         <>
           <section class="split-section">
-            <div>
+            <div class="split-section-modules dark">
+              <h2>{localize(ui.modules, lang)}</h2>
+              <p>{localize(summary.focus, lang)}</p>
+            </div>
+            <div class="split-section-time">
               <h2>{localize(ui.time, lang)}</h2>
-              <div class="info-list" style="margin-top: 22px;">
+              <div class="info-list">
                 {(programme.schedule ?? []).map((item) => (
                   <div class="info-item">
                     <h3>{item.time}</h3>
@@ -99,21 +94,9 @@ const isDayOne = day === 1;
                 ))}
               </div>
             </div>
-            <div class="dark">
-              <h2>{localize(ui.modules, lang)}</h2>
-              <p>{localize(summary.focus, lang)}</p>
-            </div>
           </section>
 
           <section class="section">
-            <div class="section-header">
-              <div>
-                <span class="eyebrow" style="color: var(--color-primary); border-color: var(--color-border);">
-                  {localize(ui.modules, lang)}
-                </span>
-                <h2>{localize(pageTitles[titleKey], lang)}</h2>
-              </div>
-            </div>
             <ModuleGrid lang={lang} modules={programme.modules ?? []} />
           </section>
         </>

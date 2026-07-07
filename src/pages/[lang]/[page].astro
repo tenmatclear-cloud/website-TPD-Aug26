@@ -47,9 +47,6 @@ const content = staticPages[page];
     <section class="section">
       <div class="section-header">
         <div>
-          <span class="eyebrow" style="color: var(--color-primary); border-color: var(--color-border);">
-            {localize(content.title, lang)}
-          </span>
           <h2>{localize(content.title, lang)}</h2>
           <p>{localize(content.intro, lang)}</p>
         </div>
@@ -58,9 +55,18 @@ const content = staticPages[page];
       <div class="info-list">
         {
           content.items.map((item) => (
-            <article class="info-item">
+            <article class:list={['info-item', item.variant === 'warning' && 'info-item-warning']}>
               <h3>{localize(item.title, lang)}</h3>
               <p>{localize(item.body, lang)}</p>
+              {item.linkLabel && (
+                item.href ? (
+                  <a class="resource-link" href={item.href} target="_blank" rel="noopener noreferrer">
+                    {localize(item.linkLabel, lang)}
+                  </a>
+                ) : (
+                  <span class="resource-link resource-link-pending">{localize(item.linkLabel, lang)}</span>
+                )
+              )}
             </article>
           ))
         }

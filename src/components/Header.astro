@@ -27,7 +27,9 @@ const showLanguageSwitcher = activeLanguages.length > 1;
 
     <nav class="nav" aria-label="Main navigation">
       {
-        navItems.map((item) => {
+        navItems
+          .filter((item) => !item.hidden)
+          .map((item) => {
           const itemPath = item.href;
           const isCurrent = itemPath === normalizedPath || (!itemPath && !normalizedPath);
           return (
@@ -78,7 +80,9 @@ const showLanguageSwitcher = activeLanguages.length > 1;
     </button>
     <nav class="nav mobile-nav" aria-label="Main navigation">
       {
-        navItems.map((item) => {
+        navItems
+          .filter((item) => !item.hidden)
+          .map((item) => {
           const itemPath = item.href;
           const isCurrent = itemPath === normalizedPath || (!itemPath && !normalizedPath);
           return (

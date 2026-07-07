@@ -4,14 +4,21 @@ import type { Lang, LocalizedText } from './programme';
 // (not "programme content"), so they live here in code. Page/programme text is
 // edited in src/content/pages/*.md instead.
 
-export const navItems = [
+export type NavItem = {
+  href: string;
+  label: LocalizedText;
+  hidden?: boolean;
+};
+
+export const navItems: NavItem[] = [
   { href: '', label: { en: 'Home', zh: '首頁' } },
   { href: 'day-1', label: { en: 'Day 1', zh: '第一日' } },
   { href: 'day-2', label: { en: 'Day 2', zh: '第二日' } },
   { href: 'day-3', label: { en: 'Day 3', zh: '第三日' } },
   { href: 'resources', label: { en: 'Resources', zh: '資源' } },
   { href: 'logistics', label: { en: 'Logistics', zh: '活動須知' } },
-  { href: 'media', label: { en: 'Media', zh: '相片及錄影' } },
+  // Remove `hidden` or set to false to show in navigation.
+  { href: 'media', label: { en: 'Media', zh: '相片及錄影' }, hidden: true },
 ];
 
 export const ui: Record<string, LocalizedText> = {

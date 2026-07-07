@@ -29,7 +29,9 @@ const { lang, sessions } = Astro.props;
             <div class="track-grid">
               {session.tracks.map((track) => (
                 <div class="track">
-                  <span class="tag">{localize(track.audience, lang)}</span>
+                  <div class="tag-row">
+                    <span class="tag">{localize(track.audience, lang)}</span>
+                  </div>
                   <h3>{localize(track.title, lang)}</h3>
                   {track.speakers && (
                     <p>
@@ -53,7 +55,11 @@ const { lang, sessions } = Astro.props;
                   <strong>{localize(ui.abstract, lang)}:</strong> {localize(session.abstract, lang)}
                 </p>
               )}
-              {session.note && <span class="note-pill">{localize(session.note, lang)}</span>}
+              {session.note && (
+                <div class="tag-row tag-row-spaced">
+                  <span class="tag tag-soft">{localize(session.note, lang)}</span>
+                </div>
+              )}
             </div>
           )}
         </article>

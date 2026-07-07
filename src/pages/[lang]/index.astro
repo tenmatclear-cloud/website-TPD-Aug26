@@ -41,7 +41,7 @@ const lang = Astro.params.lang as Lang;
         {
           features.items.map((card) => (
             <article class="card" style={`--accent: ${featureAccents[card.accent]}`}>
-              <span class="meta">{localize(card.meta, lang)}</span>
+              <span class="tag tag-soft">{localize(card.meta, lang)}</span>
               <h3>{localize(card.title, lang)}</h3>
               <p>{localize(card.desc, lang)}</p>
             </article>
@@ -51,8 +51,8 @@ const lang = Astro.params.lang as Lang;
     </section>
 
     <!-- Impact at a glance: yellow / navy split -->
-    <section class="split-section">
-      <div>
+    <section class="split-section split-section-impact">
+      <div class="split-section-intro">
         <span class="eyebrow eyebrow-dark">{localize(impact.eyebrow, lang)}</span>
         <h2>{localize(impact.title, lang)}</h2>
       </div>
