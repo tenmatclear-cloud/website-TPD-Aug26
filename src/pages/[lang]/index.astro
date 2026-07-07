@@ -1,7 +1,7 @@
 ---
 import Hero from '@components/Hero.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
-import { localize, pageTitles, pathFor, ui } from '@content/i18n';
+import { localize, pageTitles } from '@content/i18n';
 import {
   featureAccents,
   features,
@@ -33,7 +33,6 @@ const lang = Astro.params.lang as Lang;
           <span class="eyebrow eyebrow-dark">{localize(features.eyebrow, lang)}</span>
           <h2>{localize(features.title, lang)}</h2>
         </div>
-        <a class="button ghost-dark" href={pathFor(lang, 'day-1')}>{localize(ui.viewProgramme, lang)}</a>
       </div>
 
       <div class="grid">
