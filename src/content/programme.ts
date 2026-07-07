@@ -17,6 +17,7 @@ export type Track = {
   title: LocalizedText;
   speakers?: LocalizedText;
   abstract?: LocalizedText;
+  room?: string;
 };
 
 export type Session = {
@@ -42,11 +43,16 @@ export type ModuleSession = {
   abstract?: LocalizedText;
 };
 
+export type VenueSegment =
+  | { kind: 'text'; text: LocalizedText }
+  | { kind: 'link'; text: LocalizedText; url: string };
+
 export type DaySummary = {
   day: number;
   date: LocalizedText;
   time: LocalizedText;
   audience: LocalizedText;
+  venue: VenueSegment[];
   focus: LocalizedText;
 };
 
@@ -56,6 +62,13 @@ export type InfoColumn = {
   label: LocalizedText;
   name: string;
   email?: string;
+  phone?: string;
+};
+
+export type InfoLink = {
+  href?: string;
+  linkLabel: LocalizedText;
+  note?: LocalizedText;
 };
 
 export type InfoItem = {
@@ -64,6 +77,7 @@ export type InfoItem = {
   columns?: InfoColumn[];
   href?: string;
   linkLabel?: LocalizedText;
+  links?: InfoLink[];
   variant?: 'warning' | 'highlight';
 };
 
@@ -141,6 +155,7 @@ export const workshop = {
   projectName: home.projectName as LocalizedText,
   dateRange: home.dateRange as LocalizedText,
   venue: home.venue as LocalizedText,
+  audience: home.audience as LocalizedText,
   heroIntro: home.heroIntro as LocalizedText,
 };
 

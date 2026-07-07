@@ -7,38 +7,39 @@
 # ============================================================================
 
 # ---- Workshop identity (shown in the header, hero, and footer) -------------
-projectName: { en: "JC GoAI Project", zh: "賽馬會人工智能教育計劃" }
+projectName: { en: "JC GoAI", zh: "JC GoAI" }
 title: { en: "Teacher Professional Development Workshop", zh: "教師專業發展工作坊" }
 dateRange: { en: "26–28 August 2026", zh: "2026年8月26日至28日" }
 venue: { en: "The Chinese University of Hong Kong", zh: "香港中文大學" }
+audience: { en: "Open exclusively to teachers and principals from JC GoAI network schools (Cohort 1&2)", zh: "賽馬會人工智能教育計劃網絡學校（第一期及第二期）——包括小學及中學" }
 
 heroIntro:
-  en: "A three-day guide for participating principals and teachers to explore AI learning and teaching resources, pedagogy, implementation cases, and subject-specific modules."
+  en: "Empowering Hong Kong educators to integrate AI meaningfully through hands-on design, expert-led pedagogy, and collaborative peer learning."
   zh: "為參與校長及教師而設的三日導覽，涵蓋人工智能學與教資源、教學法、實踐案例及不同科目的專題模組。"
 
-# ---- Feature cards (Home page, "Three days, one community") ----------------
+# ---- Feature cards (Home page, "Building our AI-ready community") ----------------
 # accent maps to a left colour bar: programme = orange, teachers = green, schools = yellow
 features:
   eyebrow: { en: "What to expect", zh: "活動內容" }
-  title: { en: "Three days, one community", zh: "三日，一個社群" }
+  title: { en: "Building our AI-ready community", zh: "三日，一個社群" }
   items:
     - accent: programme
       meta: { en: "Our Programme", zh: "計劃內容" }
-      title: { en: "Three-day guide", zh: "三日導覽" }
+      title: { en: "Three days of AI innovation", zh: "三日導覽" }
       desc:
-        en: "Framework, pedagogy, international and local perspectives, and authentic implementation cases."
+        en: "Engage with expert-led pedagogy, comprehensive AI frameworks, and subject-specific modules designed for your classroom needs. "
         zh: "涵蓋框架、教學法、國際及本地觀點，以及真實實踐案例。"
     - accent: teachers
       meta: { en: "Teacher Co-creation", zh: "教師共創" }
-      title: { en: "Peer coaching", zh: "同儕教練" }
+      title: { en: "Collaborative Learning", zh: "同儕教練" }
       desc:
-        en: "Collaborative lesson design with local trainers and MIT facilitators across subjects."
+        en: "Hands-on workshop sessions with MIT and local facilitators to turn AI concepts into ready-to-teach lessons."
         zh: "與本地培訓導師及麻省理工促進者跨科協作設計課節。"
     - accent: schools
       meta: { en: "Our Schools", zh: "參與學校" }
-      title: { en: "Pilot evidence", zh: "試點實證" }
+      title: { en: "Classroom Success Stories", zh: "試點實證" }
       desc:
-        en: "Authentic classroom impact shared by pilot schools, their teachers and students."
+        en: "Explore authentic implementation stories and classroom successes shared by our pilot schools and peer facilitators"
         zh: "由試點學校、教師及學生分享真實課堂成效。"
 
 # ---- Impact at a glance (Home page, yellow/navy split section) -------------
@@ -72,21 +73,44 @@ days:
   - day: 1
     date: { en: "26 August 2026 (Wednesday)", zh: "2026年8月26日（星期三）" }
     time: { en: "Full day", zh: "全日" }
-    audience: { en: "All schools", zh: "所有學校" }
+    audience: { en: "JC GoAI Network Schools (Cohort 1&2) - both primary and secondary schools ", zh: "所有學校" }
+    venue:
+      - kind: link
+        text: { en: "Yasumoto International Academic Park (YIA)", zh: "宇森國際學術園（YIA）" }
+        url: "https://www.google.com/maps/search/?api=1&query=Yasumoto+International+Academic+Park,+Chinese+University+of+Hong+Kong"
+      - kind: text
+        text: { en: " Lecture Theatres 1 & 2", zh: " 第1及2演講廳" }
     focus:
       en: "Project's L&T Resources overview, pedagogy, international and local perspectives on AI education, and successful implementation cases."
       zh: "計劃學與教資源概覽、教學法、人工智能教育的國際及本地觀點，以及成功實踐案例。"
   - day: 2
     date: { en: "27 August 2026 (Thursday)", zh: "2026年8月27日（星期四）" }
     time: { en: "9:30am – 4:45pm", zh: "上午9:30至下午4:45" }
-    audience: { en: "Primary schools only", zh: "只限小學" }
+    audience: { en: "JC GoAI Network Schools (Cohort 1&2) - Primary schools only", zh: "只限小學" }
+    venue:
+      - kind: link
+        text: { en: "Wu Ho Man Yuen Building (WMY)", zh: "胡文美教學樓（WMY）" }
+        url: "https://www.google.com/maps/search/?api=1&query=Wu+Ho+Man+Yuen+Building,+Chinese+University+of+Hong+Kong"
+      - kind: text
+        text: { en: " Classrooms", zh: " 課室" }
     focus:
       en: "Dive deep into the L&T Resources of \"AI Foundations\" and \"AI + Subjects\" and related pedagogy."
       zh: "深入認識「人工智能基礎」及「人工智能＋學科」的學與教資源及相關教學法。"
   - day: 3
     date: { en: "28 August 2026 (Friday)", zh: "2026年8月28日（星期五）" }
     time: { en: "9:30am – 4:45pm", zh: "上午9:30至下午4:45" }
-    audience: { en: "All schools", zh: "所有學校" }
+    audience: { en: "JC GoAI Network Schools (Cohort 1&2) - both primary and secondary schools ", zh: "所有學校" }
+    venue:
+      - kind: link
+        text: { en: "Wu Ho Man Yuen Building (WMY)", zh: "胡文美教學樓（WMY）" }
+        url: "https://www.google.com/maps/search/?api=1&query=Wu+Ho+Man+Yuen+Building,+Chinese+University+of+Hong+Kong"
+      - kind: text
+        text: { en: " & ", zh: "及" }
+      - kind: link
+        text: { en: "Yasumoto International Academic Park (YIA)", zh: "宇森國際學術園（YIA）" }
+        url: "https://www.google.com/maps/search/?api=1&query=Yasumoto+International+Academic+Park,+Chinese+University+of+Hong+Kong"
+      - kind: text
+        text: { en: " Classrooms", zh: " 課室" }
     focus:
       en: "Continuation of the \"AI Foundations\" and \"AI + Subjects\" deep dive, covering secondary subject modules."
       zh: "延續「人工智能基礎」及「人工智能＋學科」的深入探討，並涵蓋中學學科模組。"

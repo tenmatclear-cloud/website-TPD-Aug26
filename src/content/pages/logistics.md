@@ -6,33 +6,37 @@
 title: { en: "Logistics", zh: "活動須知" }
 
 intro:
-  en: "Use this page to prepare for registration, daily check-in, transport, lunch, and campus access."
-  zh: "請參閱本頁準備登記、每日簽到、交通、午膳及校園進入安排。"
+  en: "Use this page to prepare for transport, daily check-in, lunch, campus entry, and enquiries."
+  zh: "請參閱本頁了解交通、每日簽到、午膳、校園進入及查詢安排。"
 
 items:
-  - title: { en: "Bring Your Own Device", zh: "請自備電子裝置" }
-    body:
-      en: "The workshop is interactive and most materials will be shared online. Participants are encouraged to bring a laptop or tablet, charger, and power bank."
-      zh: "工作坊設計重視互動，大部分材料將於網上分享。建議參加者攜帶手提電腦或平板電腦、充電器及外置充電器。"
-  - title: { en: "Check-in and Certificates", zh: "登記及出席證書" }
-    body:
-      en: "Participants should check in each day. Certificate arrangements and check-in locations will be confirmed closer to the workshop."
-      zh: "參加者須每日登記。證書安排及登記地點將於工作坊前確認。"
   - title: { en: "Transport", zh: "交通" }
     body:
-      en: "Public transport is recommended because campus parking is limited. Venue details and campus access instructions will be shared before the event."
-      zh: "由於校園泊車位有限，建議乘搭公共交通工具前往。場地資料及校園進入安排將於活動前公布。"
+      en: "Please utilize public transportation, as campus parking is limited and reservations will not be provided."
+      zh: "由於校園泊車位有限且不設預留車位，請盡量乘搭公共交通工具前往。"
+
+  - title: { en: "Check-in and Certificates", zh: "登記及出席證書" }
+    body:
+      en: "To receive the workshop attendance certificate, participants must check in by 2:15 pm each day. Digital certificates will be sent to your registered email address after the workshop concludes."
+      zh: "如欲領取工作坊出席證書，參加者須於每日下午2:15前完成登記。電子證書將於工作坊結束後寄送至你的登記電郵地址。"
+
   - title: { en: "Lunch", zh: "午膳" }
     body:
-      en: "Lunch arrangements will be confirmed. Participants may also use campus canteens and restaurants."
-      zh: "午膳安排有待確認。參加者亦可自行使用校園飯堂及餐廳。"
+      en: "Please arrange your own lunch. A variety of canteens on campus and near the MTR station is available for your convenience."
+      zh: "請自行安排午膳。校園內及港鐵站附近均有各式食肆可供選擇。"
+
+  - title: { en: "Campus Entry", zh: "校園進入" }
+    body:
+      en: "To enter the CUHK campus, please present one of the following at the security checkpoint:\n\nYour HKID card  OR\nA visitor QR code, which will be sent to your registered email address 3 days prior to the event."
+      zh: "進入香港中文大學校園時，請於保安檢查站出示以下其中一項：\n\n你的香港身份證  或\n訪客二維碼（活動前3天將寄送至你的登記電郵地址）。"
+
   - title: { en: "Enquiry", zh: "查詢" }
     variant: highlight
     columns:
       - label: { en: "Primary Schools", zh: "小學" }
         name: "Ms. Vanessa Kiu"
-        email: "vanessakiu@cuhk.edu.hk"
+        phone: "+852 9032 0794"
       - label: { en: "Secondary Schools", zh: "中學" }
         name: "Ms. Didy Wan"
-        email: "didywan@cuhk.edu.hk"
+        phone: "+852 6324 8054"
 ---

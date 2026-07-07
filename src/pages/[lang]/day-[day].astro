@@ -49,6 +49,22 @@ const isDayOne = day === 1;
             <dt>{localize(ui.audience, lang)}</dt>
             <dd>{localize(summary.audience, lang)}</dd>
           </div>
+          <div>
+            <dt>{localize(ui.venue, lang)}</dt>
+            <dd>
+              {
+                summary.venue.map((segment) =>
+                  segment.kind === 'link' ? (
+                    <a href={segment.url} target="_blank" rel="noopener noreferrer">
+                      {localize(segment.text, lang)}
+                    </a>
+                  ) : (
+                    localize(segment.text, lang)
+                  ),
+                )
+              }
+            </dd>
+          </div>
         </dl>
       </aside>
     </div>

@@ -85,12 +85,14 @@ sessions:
     duration: "45 mins"
     tracks:
       - audience: { en: "Primary Schools", zh: "小學" }
+        room: "LT1"
         title: { en: "Successful Implementation Cases and Good Practices of AI Applications in L&T", zh: "人工智能融入學與教的成功實踐案例及良好示範" }
         speakers: { en: "Ms. LAU Wai Chi (St. Patrick's School), Ms. SO Jessica Tsz Shan (Fuk Wing Street Government Primary School)", zh: "Ms. LAU Wai Chi (St. Patrick's School), Ms. SO Jessica Tsz Shan (Fuk Wing Street Government Primary School)" }
         abstract:
           en: "Representatives from pilot schools share authentic evidence of classroom impact, showcasing student projects and \"lessons learned\" from their implementation journeys. By highlighting both the successes and the hurdles of integrating AI into L&T, the session offers a grounded, peer-to-peer perspective on what works."
           zh: "試點學校代表分享具體的課堂成效，展示學生作品並分享推行過程中的「經驗與教訓」。透過呈現人工智能融入學與教的成功與挑戰，本環節提供貼地的同儕視角，說明哪些做法行之有效。"
       - audience: { en: "Secondary Schools", zh: "中學" }
+        room: "LT2"
         title: { en: "Successful Implementation Cases and Good Practices of AI Applications in L&T", zh: "人工智能融入學與教的成功實踐案例及良好示範" }
         speakers: { en: "Mr. SZE Yu Chun (The HKMA K S Lo College), Mr. SIU Kam Kuen (Wah Yan College, Hong Kong)", zh: "Mr. SZE Yu Chun (The HKMA K S Lo College), Mr. SIU Kam Kuen (Wah Yan College, Hong Kong)" }
         abstract:
@@ -101,12 +103,14 @@ sessions:
     duration: "45 mins"
     tracks:
       - audience: { en: "Primary Schools", zh: "小學" }
+        room: "LT1"
         title: { en: "Whole-school Approach to AI Applications", zh: "全校參與的人工智能應用" }
         speakers: { en: "Mr. Andy LI (The Salvation Army Tin Ka Ping School), Ms. LOK Hoi Yan and Ms. LAW Siu Tung (Shanghai Alumni Primary School)", zh: "Mr. Andy LI (The Salvation Army Tin Ka Ping School), Ms. LOK Hoi Yan and Ms. LAW Siu Tung (Shanghai Alumni Primary School)" }
         abstract:
           en: "Cultivating a future-ready school ecosystem requires visionary leadership and holistic coordination. School principals share successful strategic frameworks and actionable insights on adopting a whole-school approach to AI integration — covering teacher empowerment, student and parent support, and resource allocation — offering school leaders a high-level roadmap to prepare all stakeholders for the future of education."
           zh: "培育面向未來的校園生態，需要具遠見的領導及全面的統籌。學校校長將分享推行全校參與人工智能的成功策略框架及可行建議，涵蓋教師增能、學生與家長支援及資源分配，為學校領導提供高層次藍圖，協助各持份者迎接教育的未來。"
       - audience: { en: "Secondary Schools", zh: "中學" }
+        room: "LT2"
         title: { en: "Whole-school Approach to AI Applications", zh: "全校參與的人工智能應用" }
         speakers: { en: "Mr. CHAN Cheung Wai (Queen's College), Mr. CHU Ka Tim (Shatin Pui Ying College)", zh: "Mr. CHAN Cheung Wai (Queen's College), Mr. CHU Ka Tim (Shatin Pui Ying College)" }
         abstract:
@@ -117,9 +121,11 @@ sessions:
     duration: "10 mins"
     tracks:
       - audience: { en: "Primary Schools", zh: "小學" }
+        room: "LT1"
         title: { en: "Introduction to the GenAI Tools Platform", zh: "生成式人工智能工具平台簡介" }
-        speakers: { en: "FoEng representative", zh: "香港中文大學工程學院代表" }
+        speakers: { en: "CUHK representative", zh: "香港中文大學代表" }
       - audience: { en: "Secondary Schools", zh: "中學" }
+        room: "LT2"
         title: { en: "Introduction to Parent Education", zh: "家長教育簡介" }
         speakers: { en: "Mr. Tenma WONG — Instructional Designer, JC GoAI", zh: "黃偉強先生 — 賽馬會人工智能教育計劃教學設計師" }
 
@@ -127,12 +133,14 @@ sessions:
     duration: "30 mins"
     tracks:
       - audience: { en: "Primary Schools", zh: "小學" }
+        room: "LT1"
         title: { en: "Math & Science Education × AI: Strategies for Meaningful Integration", zh: "數學與科學教育 × 人工智能：有意義融合的策略" }
         speakers: { en: "Prof. NG Oi Lam (CUHK), Prof. CHU Ming Chung (CUHK)", zh: "Prof. NG Oi Lam (CUHK), Prof. CHU Ming Chung (CUHK)" }
         abstract:
           en: "How JC GoAI L&T resources leverage AI to deepen mathematical and scientific understanding. We explore how AI tools are strategically embedded to enhance problem-solving, data analysis, scientific inquiry, and logical reasoning — ensuring AI serves as a powerful scaffold for these subjects."
           zh: "本環節展示計劃學與教資源如何運用人工智能深化數學與科學理解，探討如何策略性地嵌入人工智能工具，提升解難、數據分析、科學探究及邏輯推理能力，讓人工智能成為這些學科的有力支架。"
       - audience: { en: "Secondary Schools", zh: "中學" }
+        room: "LT2"
         title: { en: "Language Education × AI: Strategies for Meaningful Integration", zh: "語文教育 × 人工智能：有意義融合的策略" }
         speakers: { en: "Prof. POON Ming Kay (CUHK), Ms. GAN Haiyun, Rikee (CUHK)", zh: "Prof. POON Ming Kay (CUHK), Ms. GAN Haiyun, Rikee (CUHK)" }
         abstract:
@@ -143,12 +151,14 @@ sessions:
     duration: "30 mins"
     tracks:
       - audience: { en: "Primary Schools", zh: "小學" }
+        room: "LT1"
         title: { en: "The Power of Peer Coaching: Transforming AI Education through Shared Expertise", zh: "同儕教練的力量：以共享專業轉化人工智能教育" }
         speakers: { en: "Ms. YIU Po Fun (Ling To Catholic Primary School)", zh: "Ms. YIU Po Fun (Ling To Catholic Primary School)" }
         abstract:
           en: "Celebrating the evolution from resource adoption to teacher-led innovation. Experienced peer facilitators share how they support pilot school teachers through collaborative coaching — showing how teachers can adapt ready-made lessons to suit their students, or develop entirely new AI-integrated lessons from scratch. This \"bottom-up\" approach highlights the teacher as an innovator."
           zh: "本環節彰顯由採用資源邁向教師主導創新的演進。資深同儕促進者分享如何透過協作教練支援試點學校教師，示範教師如何調適既有課節以切合學生需要，甚至從零開始設計全新的人工智能融入課節。這種「由下而上」的取向突顯教師作為創新者的角色。"
       - audience: { en: "Secondary Schools", zh: "中學" }
+        room: "LT2"
         title: { en: "The Power of Peer Coaching: Transforming AI Education through Shared Expertise", zh: "同儕教練的力量：以共享專業轉化人工智能教育" }
         speakers: { en: "Dr. HUNG Chiu Lung (QESOSA Tong Kwok Wah Secondary School), Mr. YEUNG Chun Sing (Shatin Pui Ying College)", zh: "Dr. HUNG Chiu Lung (QESOSA Tong Kwok Wah Secondary School), Mr. YEUNG Chun Sing (Shatin Pui Ying College)" }
         abstract:
@@ -159,11 +169,13 @@ sessions:
     duration: "10 mins"
     tracks:
       - audience: { en: "Primary Schools", zh: "小學" }
+        room: "LT1"
         title: { en: "Introduction to Parent Education", zh: "家長教育簡介" }
         speakers: { en: "Mr. Tenma WONG — Instructional Designer, JC GoAI", zh: "黃偉強先生 — 賽馬會人工智能教育計劃教學設計師" }
       - audience: { en: "Secondary Schools", zh: "中學" }
+        room: "LT2"
         title: { en: "Introduction to the GenAI Tools Platform", zh: "生成式人工智能工具平台簡介" }
-        speakers: { en: "FoEng representative", zh: "香港中文大學工程學院代表" }
+        speakers: { en: "CUHK representative", zh: "香港中文大學代表" }
 
   - time: "4:50pm – 4:55pm"
     duration: "5 mins"

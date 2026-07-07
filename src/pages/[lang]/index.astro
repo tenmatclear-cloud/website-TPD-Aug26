@@ -5,7 +5,6 @@ import { localize, pageTitles, pathFor, ui } from '@content/i18n';
 import {
   featureAccents,
   features,
-  impact,
   activeLanguages,
   takeaways,
   workshop,
@@ -47,26 +46,6 @@ const lang = Astro.params.lang as Lang;
             </article>
           ))
         }
-      </div>
-    </section>
-
-    <!-- Impact at a glance: yellow / navy split -->
-    <section class="split-section split-section-impact">
-      <div class="split-section-intro">
-        <span class="eyebrow eyebrow-dark">{localize(impact.eyebrow, lang)}</span>
-        <h2>{localize(impact.title, lang)}</h2>
-      </div>
-      <div class="dark">
-        <div class="stat-grid">
-          {
-            impact.stats.map((stat) => (
-              <div class="stat">
-                <span class="stat-value">{stat.value}</span>
-                <span class="stat-label">{localize(stat.label, lang)}</span>
-              </div>
-            ))
-          }
-        </div>
       </div>
     </section>
 
