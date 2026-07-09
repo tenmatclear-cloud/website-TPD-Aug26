@@ -80,7 +80,16 @@ const showWorkshopMeta = page === 'media';
                   ))}
                 </div>
               ) : (
-                item.body && <p>{localize(item.body, lang)}</p>
+                <>
+                  {item.body && <p>{localize(item.body, lang)}</p>}
+                  {item.points && (
+                    <ul class="info-points">
+                      {item.points.map((point) => (
+                        <li>{localize(point, lang)}</li>
+                      ))}
+                    </ul>
+                  )}
+                </>
               )}
               {item.links ? (
                 <div class="resource-links">

@@ -27,8 +27,13 @@ items:
 
   - title: { en: "Campus Entry", zh: "校園進入" }
     body:
-      en: "To enter the CUHK campus, please present one of the following at the security checkpoint:\n\nYour HKID card  OR\nA visitor QR code, which will be sent to your registered email address 3 days prior to the event."
-      zh: "進入香港中文大學校園時，請於保安檢查站出示以下其中一項：\n\n你的香港身份證  或\n訪客二維碼（活動前3天將寄送至你的登記電郵地址）。"
+      en: "To enter the CUHK campus, please present one of the following at the security checkpoint:"
+      zh: "進入香港中文大學校園時，請於保安檢查站出示以下其中一項："
+    points:
+      - en: "Your HKID card"
+        zh: "你的香港身份證"
+      - en: "A visitor QR code, which will be sent to your registered email address 3 days prior to the event"
+        zh: "訪客二維碼（活動前3天將寄送至你的登記電郵地址）"
 
   - title: { en: "Enquiry", zh: "查詢" }
     variant: highlight

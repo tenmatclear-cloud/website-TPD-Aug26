@@ -768,6 +768,18 @@ h3 {
   white-space: pre-line;
 }
 
+.info-points {
+  margin: 10px 0 0;
+  padding-left: 1.25rem;
+  color: var(--color-text-secondary);
+  display: grid;
+  gap: 6px;
+}
+
+.info-points li {
+  padding-left: 0.15rem;
+}
+
 .resource-link {
   display: inline-flex;
   width: fit-content;
@@ -856,7 +868,6 @@ h3 {
   margin-top: 6px;
   color: var(--color-accent-blue);
   font-size: 0.92rem;
-}
   font-weight: 600;
 }
 
