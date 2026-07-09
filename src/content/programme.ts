@@ -75,6 +75,7 @@ export type InfoLink = {
 export type InfoItem = {
   title: LocalizedText;
   body?: LocalizedText;
+  points?: LocalizedText[];
   columns?: InfoColumn[];
   href?: string;
   linkLabel?: LocalizedText;
