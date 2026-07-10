@@ -827,6 +827,25 @@ h3 {
   color: #b34700;
 }
 
+.info-item-note {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid color-mix(in srgb, var(--color-accent-orange), white 55%);
+  color: var(--color-accent-orange);
+}
+
+.info-item-note h4 {
+  margin: 0 0 8px;
+  color: var(--color-accent-orange);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.info-item-note p {
+  margin: 0;
+  color: var(--color-accent-orange);
+}
+
 .info-item-highlight {
   border-color: color-mix(in srgb, var(--color-primary), white 72%);
   border-left: 8px solid var(--color-primary);
@@ -882,9 +901,45 @@ h3 {
   padding: 44px 0;
 }
 
+.footer-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px 36px;
+}
+
+.footer-logo {
+  display: block;
+  width: auto;
+  height: 48px;
+  object-fit: contain;
+}
+
+.footer-logo-goai {
+  height: 66px;
+}
+
+.footer-logo-hkjc {
+  height: 44px;
+}
+
+.footer-logo-edb {
+  height: 48px;
+}
+
+.footer-logo-cuhk {
+  height: 42px;
+}
+
+.footer-logo-mit {
+  height: 40px;
+}
+
 .footer-inner p {
-  margin: 12px 0 0;
+  margin: 20px 0 0;
   color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .footer-bar {
@@ -953,11 +1008,6 @@ h3 {
   font-weight: 600;
 }
 
-.footer-logo {
-  height: 66px;
-  width: auto;
-}
-
 @media (max-width: 980px) {
   .header-inner {
     flex-direction: row;
@@ -965,6 +1015,34 @@ h3 {
     justify-content: space-between;
     gap: 12px;
     padding: 0;
+  }
+
+  .footer-logos {
+    gap: 22px 28px;
+  }
+
+  .footer-logo {
+    height: 40px;
+  }
+
+  .footer-logo-goai {
+    height: 56px;
+  }
+
+  .footer-logo-hkjc {
+    height: 38px;
+  }
+
+  .footer-logo-edb {
+    height: 40px;
+  }
+
+  .footer-logo-cuhk {
+    height: 36px;
+  }
+
+  .footer-logo-mit {
+    height: 34px;
   }
 
   .brand-link {
@@ -1073,5 +1151,33 @@ h3 {
 
   .nav {
     font-size: 0.88rem;
+  }
+
+  .footer-logos {
+    gap: 18px 20px;
+  }
+
+  .footer-logo {
+    height: 36px;
+  }
+
+  .footer-logo-goai {
+    height: 52px;
+  }
+
+  .footer-logo-hkjc {
+    height: 34px;
+  }
+
+  .footer-logo-edb {
+    height: 36px;
+  }
+
+  .footer-logo-cuhk {
+    height: 32px;
+  }
+
+  .footer-logo-mit {
+    height: 30px;
   }
 }

@@ -53,7 +53,7 @@ modules:
     lessons: { en: "Lessons 7–12", zh: "第7至12課" }
     room: "WMY 402"
     facilitators:
-      - "Mr. Tasneem BURGHLEH (MIT RAISE)"
+      - "Ms. Tasneem BURGHLEH (MIT RAISE)"
       - "Mr. CHOW Tsz Chun (HKUGA Primary School)"
       - "Mr. LEE Ka Wo (Diocesan Girls' Junior School)"
 

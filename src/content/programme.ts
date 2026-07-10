@@ -72,6 +72,11 @@ export type InfoLink = {
   note?: LocalizedText;
 };
 
+export type InfoWarning = {
+  title: LocalizedText;
+  body: LocalizedText;
+};
+
 export type InfoItem = {
   title: LocalizedText;
   body?: LocalizedText;
@@ -80,6 +85,7 @@ export type InfoItem = {
   href?: string;
   linkLabel?: LocalizedText;
   links?: InfoLink[];
+  warning?: InfoWarning;
   variant?: 'warning' | 'highlight';
 };
 
@@ -159,6 +165,7 @@ export const workshop = {
   venue: home.venue as LocalizedText,
   audience: home.audience as LocalizedText,
   heroIntro: home.heroIntro as LocalizedText,
+  showEdbLogo: home.showEdbLogo !== false,
 };
 
 export const features = home.features as FeatureSection;

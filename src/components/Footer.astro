@@ -10,13 +10,67 @@ type Props = {
 const { lang, currentPath = '' } = Astro.props;
 const normalizedPath = currentPath.replace(/^\/|\/$/g, '');
 const showLanguageSwitcher = activeLanguages.length > 1;
+
+const partnerLogos = [
+  {
+    src: '/brand/1_HKJC/JCGoAI.png',
+    alt: localize(workshop.projectName, lang),
+    width: 2703,
+    height: 1522,
+    className: 'footer-logo footer-logo-goai',
+  },
+  {
+    src: '/brand/1_HKJC/HKJC.png',
+    alt: 'The Hong Kong Jockey Club Charities Trust',
+    width: 2076,
+    height: 441,
+    className: 'footer-logo footer-logo-hkjc',
+  },
+  ...(workshop.showEdbLogo
+    ? [
+        {
+          src: '/brand/2_EDB/edb.png',
+          alt: 'Education Bureau',
+          width: 1815,
+          height: 462,
+          className: 'footer-logo footer-logo-edb',
+        },
+      ]
+    : []),
+  {
+    src: '/brand/3_CUHK/CUHK%20Full%20Logo-Horizontal_CMYK_Full%20colour.png',
+    alt: 'The Chinese University of Hong Kong',
+    width: 2363,
+    height: 415,
+    className: 'footer-logo footer-logo-cuhk',
+  },
+  {
+    src: '/brand/4_MIT/RAISE_sub-brand_lockup_two-level_rgb_black-and-silver-gray.png',
+    alt: 'MIT RAISE Initiative',
+    width: 21232,
+    height: 3211,
+    className: 'footer-logo footer-logo-mit',
+  },
+];
 ---
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <img class="footer-logo" src="/brand/goai-logo.png" alt={localize(workshop.projectName, lang)} width="352" height="200" />
+    <div class="footer-logos">
+      {
+        partnerLogos.map((logo) => (
+          <img
+            class={logo.className}
+            src={logo.src}
+            alt={logo.alt}
+            width={logo.width}
+            height={logo.height}
+          />
+        ))
+      }
+    </div>
     <p>
-      {localize(workshop.title, lang)} · {localize(workshop.dateRange, lang)} · {localize(workshop.venue, lang)}
+      {localize(workshop.title, lang)} · {localize(workshop.dateRange, lang)}
     </p>
     {
       showLanguageSwitcher && (

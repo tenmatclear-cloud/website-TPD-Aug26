@@ -8,10 +8,14 @@
 
 # ---- Workshop identity (shown in the header, hero, and footer) -------------
 projectName: { en: "JC GoAI", zh: "JC GoAI" }
-title: { en: "Teacher Professional Development Workshop", zh: "教師專業發展工作坊" }
+title: { en: "Teacher Professional Development Workshop 2026", zh: "教師專業發展工作坊 2026" }
 dateRange: { en: "26–28 August 2026", zh: "2026年8月26日至28日" }
 venue: { en: "The Chinese University of Hong Kong", zh: "香港中文大學" }
 audience: { en: "Open exclusively to teachers and principals from JC GoAI network schools (Cohort 1&2)", zh: "賽馬會人工智能教育計劃網絡學校（第一期及第二期）——包括小學及中學" }
+
+# ---- Footer logos ----------------------------------------------------------
+# Set to false to hide the Education Bureau logo in the site footer.
+showEdbLogo: false
 
 heroIntro:
   en: "Empowering Hong Kong educators to integrate AI meaningfully through hands-on design, expert-led pedagogy, and collaborative peer learning."

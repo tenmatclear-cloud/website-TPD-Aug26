@@ -117,6 +117,12 @@ const showWorkshopMeta = page === 'media';
                   )
                 )
               )}
+              {item.warning && (
+                <div class="info-item-note">
+                  <h4>{localize(item.warning.title, lang)}</h4>
+                  <p>{localize(item.warning.body, lang)}</p>
+                </div>
+              )}
             </article>
           ))
         }
