@@ -138,7 +138,7 @@ sessions:
         title: { en: "Math & Science Education × AI: Strategies for Meaningful Integration", zh: "數學與科學教育 × 人工智能：有意義融合的策略" }
         speakers: { en: "Prof. NG Oi Lam (CUHK), Prof. CHU Ming Chung (CUHK)", zh: "Prof. NG Oi Lam (CUHK), Prof. CHU Ming Chung (CUHK)" }
         abstract:
-          en: "How JC GoAI L&T resources leverage AI to deepen mathematical and scientific understanding. We explore how AI tools are strategically embedded to enhance problem-solving, data analysis, scientific inquiry, and logical reasoning — ensuring AI serves as a powerful scaffold for these subjects."
+          en: "This session highlights how JC GoAI L&T resources leverage AI to deepen both mathematical and scientific understanding. We explore how AI tools are strategically embedded to enhance problem-solving, data analysis, scientific inquiry, and logical reasoning — ensuring AI serves as a powerful scaffold for these subjects."
           zh: "本環節展示計劃學與教資源如何運用人工智能深化數學與科學理解，探討如何策略性地嵌入人工智能工具，提升解難、數據分析、科學探究及邏輯推理能力，讓人工智能成為這些學科的有力支架。"
       - audience: { en: "Secondary Schools", zh: "中學" }
         room: "LT2"
@@ -156,14 +156,14 @@ sessions:
         title: { en: "The Power of Peer Coaching: Transforming AI Education through Shared Expertise", zh: "同儕教練的力量：以共享專業轉化人工智能教育" }
         speakers: { en: "Ms. YIU Po Fun (Ling To Catholic Primary School)", zh: "Ms. YIU Po Fun (Ling To Catholic Primary School)" }
         abstract:
-          en: "Celebrating the evolution from resource adoption to teacher-led innovation. Experienced peer facilitators share how they support pilot school teachers through collaborative coaching — showing how teachers can adapt ready-made lessons to suit their students, or develop entirely new AI-integrated lessons from scratch. This \"bottom-up\" approach highlights the teacher as an innovator."
+          en: "The session celebrates the evolution from resource adoption to teacher-led innovation. Experienced peer facilitators share how they support pilot school teachers through collaborative coaching — showing how teachers can adapt ready-made lessons to suit their students, or develop entirely new AI-integrated lessons from scratch. This \"bottom-up\" approach highlights the teacher as an innovator."
           zh: "本環節彰顯由採用資源邁向教師主導創新的演進。資深同儕促進者分享如何透過協作教練支援試點學校教師，示範教師如何調適既有課節以切合學生需要，甚至從零開始設計全新的人工智能融入課節。這種「由下而上」的取向突顯教師作為創新者的角色。"
       - audience: { en: "Secondary Schools", zh: "中學" }
         room: "LT2"
         title: { en: "The Power of Peer Coaching: Transforming AI Education through Shared Expertise", zh: "同儕教練的力量：以共享專業轉化人工智能教育" }
         speakers: { en: "Dr. HUNG Chiu Lung (QESOSA Tong Kwok Wah Secondary School), Mr. YEUNG Chun Sing (Shatin Pui Ying College)", zh: "Dr. HUNG Chiu Lung (QESOSA Tong Kwok Wah Secondary School), Mr. YEUNG Chun Sing (Shatin Pui Ying College)" }
         abstract:
-          en: "Celebrating the evolution from resource adoption to teacher-led innovation. Experienced peer facilitators share how they support pilot school teachers through collaborative coaching — showing how teachers can adapt ready-made lessons to suit their students, or develop entirely new AI-integrated lessons from scratch. This \"bottom-up\" approach highlights the teacher as an innovator."
+          en: "The session celebrates the evolution from resource adoption to teacher-led innovation. Experienced peer facilitators share how they support pilot school teachers through collaborative coaching — showing how teachers can adapt ready-made lessons to suit their students, or develop entirely new AI-integrated lessons from scratch. This \"bottom-up\" approach highlights the teacher as an innovator."
           zh: "本環節彰顯由採用資源邁向教師主導創新的演進。資深同儕促進者分享如何透過協作教練支援試點學校教師，示範教師如何調適既有課節以切合學生需要，甚至從零開始設計全新的人工智能融入課節。這種「由下而上」的取向突顯教師作為創新者的角色。"
 
   - time: "4:40pm – 4:50pm"
