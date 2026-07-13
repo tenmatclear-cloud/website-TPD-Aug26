@@ -80,6 +80,7 @@ export type InfoWarning = {
 export type InfoItem = {
   title: LocalizedText;
   body?: LocalizedText;
+  note?: LocalizedText;
   points?: LocalizedText[];
   columns?: InfoColumn[];
   href?: string;

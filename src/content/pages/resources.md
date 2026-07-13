@@ -14,6 +14,9 @@ items:
     body:
       en: "Designed to support teachers and students in using generative AI in a safe, purposeful, and educationally meaningful way."
       zh: "前往 GoAI 對話平台，探索支援學與教的人工智能工具。"
+    note:
+      en: "Accounts are created on a school-wide basis. If you do not have a registered account, please contact jcgoai-platform@cuhk.edu.hk for assistance."
+      zh: "帳戶以全校為單位開設。如尚未登記帳戶，請聯絡 jcgoai-platform@cuhk.edu.hk 尋求協助。"
     href: "https://chat.jcgoai.hk/"
     linkLabel: { en: "Open GoAI Platform", zh: "前往 GoAI 平台" }
 

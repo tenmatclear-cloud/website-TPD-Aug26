@@ -82,6 +82,21 @@ const showWorkshopMeta = page === 'media';
               ) : (
                 <>
                   {item.body && <p>{localize(item.body, lang)}</p>}
+                  {item.note && (
+                    <p class="info-item-inline-note">
+                      {localize(item.note, lang)
+                        .split(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/)
+                        .map((part) =>
+                          part.includes('@') ? (
+                            <a class="info-item-inline-note-email" href={`mailto:${part}`}>
+                              {part}
+                            </a>
+                          ) : (
+                            part
+                          ),
+                        )}
+                    </p>
+                  )}
                   {item.points && (
                     <ul class="info-points">
                       {item.points.map((point) => (
