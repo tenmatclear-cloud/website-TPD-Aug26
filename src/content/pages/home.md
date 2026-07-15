@@ -15,7 +15,7 @@ audience: { en: "Open exclusively to teachers and principals from JC GoAI networ
 
 # ---- Footer logos ----------------------------------------------------------
 # Set to false to hide the Education Bureau logo in the site footer.
-showEdbLogo: false
+showEdbLogo: true
 
 heroIntro:
   en: "Empowering Hong Kong educators to integrate AI meaningfully through hands-on design, expert-led pedagogy, and collaborative peer learning."
