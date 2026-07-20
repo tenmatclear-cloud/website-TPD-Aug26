@@ -1,5 +1,5 @@
 ---
-import { activeLanguages, workshop, type Lang } from '@content/programme';
+import { activeLanguages, slidoUrl, workshop, type Lang } from '@content/programme';
 import { localize, navItems, pathFor, ui } from '@content/i18n';
 
 type Props = {
@@ -13,6 +13,8 @@ const normalizedPath = currentPath.replace(/^\/|\/$/g, '');
 const openMenuLabel = 'Open menu';
 const closeMenuLabel = 'Close menu';
 const showLanguageSwitcher = activeLanguages.length > 1;
+const askLabel = localize(ui.askQuestion, lang);
+const askShortLabel = localize(ui.askQuestionShort, lang);
 ---
 
 <header class="site-header">
@@ -41,6 +43,15 @@ const showLanguageSwitcher = activeLanguages.length > 1;
       }
     </nav>
 
+    <a
+      class="header-cta header-cta--desktop"
+      href={slidoUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {askLabel}
+    </a>
+
     {
       showLanguageSwitcher && (
         <div class="language-switcher" aria-label={localize(ui.language, lang)}>
@@ -56,6 +67,15 @@ const showLanguageSwitcher = activeLanguages.length > 1;
         </div>
       )
     }
+
+    <a
+      class="header-cta header-cta--compact"
+      href={slidoUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {askShortLabel}
+    </a>
 
     <button
       class="menu-toggle"
@@ -93,6 +113,14 @@ const showLanguageSwitcher = activeLanguages.length > 1;
         })
       }
     </nav>
+    <a
+      class="header-cta header-cta--drawer"
+      href={slidoUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {askLabel}
+    </a>
   </aside>
 
 <script>

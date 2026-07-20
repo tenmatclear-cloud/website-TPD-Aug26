@@ -41,6 +41,8 @@ export const ui: Record<string, LocalizedText> = {
   backHome: { en: 'Back to home', zh: '返回首頁' },
   language: { en: 'Language', zh: '語言' },
   currentLanguage: { en: 'Current language', zh: '目前語言' },
+  askQuestion: { en: 'Ask a question', zh: '即時提問' },
+  askQuestionShort: { en: 'Ask', zh: '提問' },
 };
 
 export const pageTitles: Record<string, LocalizedText> = {

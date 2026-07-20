@@ -12,6 +12,10 @@ export type Lang = 'en' | 'zh-hk';
 // Every bilingual value in the markdown is written as { en: "...", zh: "..." }.
 export type LocalizedText = { en: string; zh: string };
 
+/** Shared Slido event URL (header CTA + logistics Live Q&A). Keep in sync with logistics.md `href`. */
+export const slidoUrl =
+  'https://app.sli.do/event/dkjWcaAkEsGeuZ1YuGSPkM/live/questions';
+
 export type Track = {
   audience: LocalizedText;
   title: LocalizedText;
@@ -193,7 +197,10 @@ export const programmeDays: Record<1 | 2 | 3, ProgrammeDay> = {
 // ---- Static content pages --------------------------------------------------
 function infoPage(slug: string): { title: LocalizedText; intro: LocalizedText; items: InfoItem[] } {
   const fm = frontmatter(slug);
-  return { title: fm.title, intro: fm.intro, items: fm.items };
+  const items = (fm.items as InfoItem[]).map((item) =>
+    item.href?.includes('sli.do') ? { ...item, href: slidoUrl } : item,
+  );
+  return { title: fm.title as LocalizedText, intro: fm.intro as LocalizedText, items };
 }
 
 export const staticPages = {
