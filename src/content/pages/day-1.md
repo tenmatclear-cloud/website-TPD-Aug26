@@ -52,9 +52,9 @@ sessions:
     duration: "40 mins"
     title: { en: "Global Trends, Practices, and Future Developments in AI Education", zh: "人工智能教育的全球趨勢、實踐及未來發展" }
     speakers: { en: "Prof. Cynthia BREAZEAL — Co-Principal Investigator of JC GoAI; Director of MIT Responsible AI for Social Empowerment and Education (RAISE) Initiative", zh: "Cynthia BREAZEAL 教授 — 賽馬會人工智能教育計劃共同首席研究員；麻省理工學院「負責任人工智能促進社會賦能與教育（RAISE）」計劃總監" }
-    note: { en: , zh: "暫定題目" }
+    note: { en: "Tentative title", zh: "暫定題目" }
     abstract:
-      en: "Prof. Breazeal explores the evolving global landscape of educational AI applications. Participants will be inspired by exemplary international practices and gain a clearer understanding of how to transform teaching and learning with AI, ensuring schools are prepared to navigate and embrace the technological shifts ahead."
+      en: "(Tentative) Prof. Breazeal explores the evolving global landscape of educational AI applications. Participants will be inspired by exemplary international practices and gain a clearer understanding of how to transform teaching and learning with AI, ensuring schools are prepared to navigate and embrace the technological shifts ahead."
       zh: "（暫定）Breazeal 教授將探討教育人工智能應用不斷演變的全球面貌。參加者將從卓越的國際實踐中獲得啟發，更清晰地理解如何以人工智能轉化學與教，讓學校準備好迎接未來的科技轉變。"
 
   - time: "11:00am – 11:40am"
