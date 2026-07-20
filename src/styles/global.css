@@ -89,6 +89,13 @@ img {
   margin: 0 auto;
 }
 
+.header-end {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-left: auto;
+}
+
 .brand-link {
   display: flex;
   align-items: center;
@@ -1110,20 +1117,13 @@ h3 {
     line-clamp: 2;
   }
 
-  .header-inner > .nav {
-    display: none;
-  }
-
-  .header-inner > .language-switcher {
-    display: none;
-  }
-
-  .header-cta--desktop {
+  .header-end {
     display: none;
   }
 
   .header-cta--compact {
     display: inline-flex;
+    margin-left: auto;
   }
 
   .header-cta--drawer {

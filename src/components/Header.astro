@@ -27,46 +27,48 @@ const askShortLabel = localize(ui.askQuestionShort, lang);
       </span>
     </a>
 
-    <nav class="nav" aria-label="Main navigation">
+    <div class="header-end">
+      <nav class="nav" aria-label="Main navigation">
+        {
+          navItems
+            .filter((item) => !item.hidden)
+            .map((item) => {
+            const itemPath = item.href;
+            const isCurrent = itemPath === normalizedPath || (!itemPath && !normalizedPath);
+            return (
+              <a href={pathFor(lang, itemPath)} aria-current={isCurrent ? 'page' : undefined}>
+                {localize(item.label, lang)}
+              </a>
+            );
+          })
+        }
+      </nav>
+
+      <a
+        class="header-cta header-cta--desktop"
+        href={slidoUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {askLabel}
+      </a>
+
       {
-        navItems
-          .filter((item) => !item.hidden)
-          .map((item) => {
-          const itemPath = item.href;
-          const isCurrent = itemPath === normalizedPath || (!itemPath && !normalizedPath);
-          return (
-            <a href={pathFor(lang, itemPath)} aria-current={isCurrent ? 'page' : undefined}>
-              {localize(item.label, lang)}
-            </a>
-          );
-        })
+        showLanguageSwitcher && (
+          <div class="language-switcher" aria-label={localize(ui.language, lang)}>
+            {activeLanguages.map((language) => (
+              <a
+                href={pathFor(language.code, normalizedPath)}
+                lang={language.code === 'zh-hk' ? 'zh-Hant-HK' : 'en'}
+                aria-current={language.code === lang ? 'true' : undefined}
+              >
+                {language.shortLabel}
+              </a>
+            ))}
+          </div>
+        )
       }
-    </nav>
-
-    <a
-      class="header-cta header-cta--desktop"
-      href={slidoUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {askLabel}
-    </a>
-
-    {
-      showLanguageSwitcher && (
-        <div class="language-switcher" aria-label={localize(ui.language, lang)}>
-          {activeLanguages.map((language) => (
-            <a
-              href={pathFor(language.code, normalizedPath)}
-              lang={language.code === 'zh-hk' ? 'zh-Hant-HK' : 'en'}
-              aria-current={language.code === lang ? 'true' : undefined}
-            >
-              {language.shortLabel}
-            </a>
-          ))}
-        </div>
-      )
-    }
+    </div>
 
     <a
       class="header-cta header-cta--compact"
