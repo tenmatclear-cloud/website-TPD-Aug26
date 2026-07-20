@@ -9,7 +9,8 @@ These Word files are **editorial reference only** — the live site reads from
 |---|---|
 | `en/` | English programme drafts (official source of truth for the website) |
 | `zh/` | Chinese programme drafts (add here when English is finalised) |
-| `archive/` | Superseded drafts |
+
+Superseded drafts live in `_archive/doc/`.
 
 ## Workflow
 

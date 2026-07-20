@@ -10,5 +10,5 @@
     }
   },
   "include": ["src/**/*", "astro.config.mjs", "**/*.astro"],
-  "exclude": ["dist", "node_modules", "TPD_ClaudeDesign_v2", "doc"]
+  "exclude": ["dist", "node_modules", "_archive", "doc"]
 }
