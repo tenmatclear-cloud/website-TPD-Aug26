@@ -49,6 +49,6 @@ items:
     body:
       en: "Please refer to the access instructions and password sent by the project team before the workshop."
       zh: "請參閱計劃團隊於工作坊前發出的登入指引及課程密碼。"
-    href: "https://goaiforteachers.org"
+    href: "https://forteachers.jcgoai.hk"
     linkLabel: { en: "Open online courses", zh: "前往網上課程" }
 ---
