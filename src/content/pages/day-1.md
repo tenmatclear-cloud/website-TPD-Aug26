@@ -35,7 +35,12 @@ sessions:
     title: { en: "Welcoming Message and Project Overview", zh: "歡迎辭及計劃概覽" }
     speakers: { en: "Ir. Daniel LAI, BBS, JP — Programme Director of JC GoAI", zh: "黎達強工程師，BBS，JP — 賽馬會人工智能教育計劃總監" }
 
-  - time: "9:25am – 9:50am"
+- time: "9:25am - 9:30am"
+    duration: "5 mins"
+    title: { en: "Speech of Thanks", zh: "致謝辭" }
+    speakers: { en: "Ms. LAM Wing-yee, Sierra — Chief Curriculum Development Officer (Technology Education)", zh: "林詠儀女士 — 課程發展主任（科技教育）" }
+
+  - time: "9:30am – 9:55am"
     duration: "25 mins"
     title: { en: "Overview of JC GoAI Learning and Teaching Resources and Design Principles", zh: "賽馬會人工智能教育計劃學與教資源及設計原則概覽" }
     speakers: { en: "Prof. MENG Mei Ling, Helen — Co-Principal Investigator of JC GoAI; Patrick Huen Wing Ming Professor of Systems Engineering & Engineering Management, CUHK", zh: "蒙美玲教授 — 賽馬會人工智能教育計劃共同首席研究員；香港中文大學禤永明系統工程與工程管理學講座教授" }
@@ -43,7 +48,7 @@ sessions:
       en: "This session provides a comprehensive overview of the Project's multifaceted approach to advancing AI education. Prof. Meng will delineate the foundational design principles of our L&T Resources, detailing how they span diverse disciplines to support teachers in integrating AI meaningfully into practice. Participants will gain insights into the resource structure — both \"AI Foundations\" and \"AI + Subjects\" modules — and the pedagogical frameworks that keep these resources academically rigorous yet practically feasible for the classroom."
       zh: "本環節全面概覽計劃推動人工智能教育的多元取向。蒙教授將闡述學與教資源的基礎設計原則，說明資源如何橫跨不同學科，協助教師有意義地將人工智能融入教學。參加者將了解資源結構（包括「人工智能基礎」及「人工智能＋學科」模組），以及確保資源兼具學術嚴謹與課堂可行性的教學框架。"
 
-  - time: "9:50am – 10:15am"
+  - time: "9:55am – 10:20am"
     duration: "25 mins"
     title: { en: "From Policy to Practice: Implementing AI Education Under the New Blueprint", zh: "從政策到實踐：在新藍圖下推行人工智能教育" }
     speakers: { en: "Prof. CHEUNG Chi-keung, Alan — Co-Principal Investigator of JC GoAI, Dean of Education & Professor, Department of Educational Administration and Policy, CUHK", zh: "張志強教授 — 賽馬會人工智能教育計劃共同首席研究員；香港中文大學教育學院院長及教育行政與政策學系教授" }
@@ -51,18 +56,13 @@ sessions:
       en: "(TBC)"
       zh: "（待定）"
 
-  - time: "10:15am – 10:55am"
+  - time: "10:20am – 11:00am"
     duration: "40 mins"
     title: { en: "Global Trends, Practices, and Future Developments in AI Education", zh: "人工智能教育的全球趨勢、實踐及未來發展" }
     speakers: { en: "Prof. Cynthia BREAZEAL — Co-Principal Investigator of JC GoAI; Director of MIT Responsible AI for Social Empowerment and Education (RAISE) Initiative", zh: "Cynthia BREAZEAL 教授 — 賽馬會人工智能教育計劃共同首席研究員；麻省理工學院「負責任人工智能促進社會賦能與教育（RAISE）」計劃總監" }
     abstract:
       en: "(Tentative) Prof. Breazeal explores the evolving global landscape of educational AI applications. Participants will be inspired by exemplary international practices and gain a clearer understanding of how to transform teaching and learning with AI, ensuring schools are prepared to navigate and embrace the technological shifts ahead."
       zh: "（暫定）Breazeal 教授將探討教育人工智能應用不斷演變的全球面貌。參加者將從卓越的國際實踐中獲得啟發，更清晰地理解如何以人工智能轉化學與教，讓學校準備好迎接未來的科技轉變。"
-
-  - time: "10:55am – 11:00am"
-    duration: "5 mins"
-    title: { en: "Speech of Thanks", zh: "致謝辭" }
-    speakers: { en: "Ms. LAM Wing-yee, Sierra — Chief Curriculum Development Officer (Technology Education)", zh: "林詠儀女士 — 課程發展主任（科技教育）" }
 
   - time: "11:00am – 11:40am"
     duration: "40 mins"
