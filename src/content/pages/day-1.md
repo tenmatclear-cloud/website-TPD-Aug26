@@ -95,7 +95,7 @@ sessions:
       - audience: { en: "Primary Schools", zh: "小學" }
         room: "LT1"
         title: { en: "Successful Implementation Cases and Good Practices of AI Applications in L&T", zh: "人工智能融入學與教的成功實踐案例及良好示範" }
-        speakers: { en: "Ms. LAU Wai Chi (St. Patrick's School), Ms. SO Jessica Tsz Shan (Fuk Wing Street Government Primary School)", zh: "Ms. LAU Wai Chi (St. Patrick's School), Ms. SO Jessica Tsz Shan (Fuk Wing Street Government Primary School)" }
+        speakers: { en: "Ms. LAU Wai Chi (St. Patrick's School), Ms. SO Jessica Tsz Shan (Erudite Government Primary School)", zh: "Ms. LAU Wai Chi (St. Patrick's School), Ms. SO Jessica Tsz Shan (Erudite Government Primary School)" }
         abstract:
           en: "Representatives from pilot schools share authentic evidence of classroom impact, showcasing student projects and \"lessons learned\" from their implementation journeys. By highlighting both the successes and the hurdles of integrating AI into L&T, the session offers a grounded, peer-to-peer perspective on what works."
           zh: "試點學校代表分享具體的課堂成效，展示學生作品並分享推行過程中的「經驗與教訓」。透過呈現人工智能融入學與教的成功與挑戰，本環節提供貼地的同儕視角，說明哪些做法行之有效。"
