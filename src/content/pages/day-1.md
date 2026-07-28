@@ -35,7 +35,7 @@ sessions:
     title: { en: "Welcoming Message and Project Overview", zh: "歡迎辭及計劃概覽" }
     speakers: { en: "Ir. Daniel LAI, BBS, JP — Programme Director of JC GoAI", zh: "黎達強工程師，BBS，JP — 賽馬會人工智能教育計劃總監" }
 
-- time: "9:25am - 9:30am"
+  - time: "9:25am - 9:30am"
     duration: "5 mins"
     title: { en: "Speech of Thanks", zh: "致謝辭" }
     speakers: { en: "Ms. LAM Wing-yee, Sierra — Chief Curriculum Development Officer (Technology Education)", zh: "林詠儀女士 — 課程發展主任（科技教育）" }
