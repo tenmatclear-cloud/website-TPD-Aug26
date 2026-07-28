@@ -46,7 +46,7 @@ sessions:
   - time: "9:50am – 10:15am"
     duration: "25 mins"
     title: { en: "From Policy to Practice: Implementing AI Education Under the New Blueprint", zh: "從政策到實踐：在新藍圖下推行人工智能教育" }
-    speakers: { en: "Prof. CHEUNG Chi-keung, Alan — Dean of Education & Professor, Department of Educational Administration and Policy, CUHK", zh: "張志強教授 — 香港中文大學教育學院院長及教育行政與政策學系教授" }
+    speakers: { en: "Prof. CHEUNG Chi-keung, Alan — Co-Principal Investigator of JC GoAI, Dean of Education & Professor, Department of Educational Administration and Policy, CUHK", zh: "張志強教授 — 賽馬會人工智能教育計劃共同首席研究員；香港中文大學教育學院院長及教育行政與政策學系教授" }
     abstract:
       en: "(TBC)"
       zh: "（待定）"
