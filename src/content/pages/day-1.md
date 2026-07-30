@@ -143,7 +143,7 @@ sessions:
       - audience: { en: "Primary Schools", zh: "小學" }
         room: "LT1"
         title: { en: "Math & Science Education × AI: Strategies for Meaningful Integration", zh: "數學與科學教育 × 人工智能：有意義融合的策略" }
-        speakers: { en: "Prof. NG Oi Lam (CUHK), Prof. CHU Ming Chung (CUHK)", zh: "Prof. NG Oi Lam (CUHK), Prof. CHU Ming Chung (CUHK)" }
+        speakers: { en: "Prof. CHU Ming Chung (CUHK), Prof. NG Oi Lam (CUHK)", zh: "Prof. CHU Ming Chung (CUHK), Prof. NG Oi Lam (CUHK)"}
         abstract:
           en: "This session highlights how JC GoAI L&T resources leverage AI to deepen both mathematical and scientific understanding. We explore how AI tools are strategically embedded to enhance problem-solving, data analysis, scientific inquiry, and logical reasoning — ensuring AI serves as a powerful scaffold for these subjects."
           zh: "本環節展示計劃學與教資源如何運用人工智能深化數學與科學理解，探討如何策略性地嵌入人工智能工具，提升解難、數據分析、科學探究及邏輯推理能力，讓人工智能成為這些學科的有力支架。"
