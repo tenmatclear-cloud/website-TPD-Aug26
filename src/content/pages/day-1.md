@@ -53,7 +53,7 @@ sessions:
     title: { en: "From Policy to Practice: Implementing AI Education Under the New Blueprint", zh: "從政策到實踐：在新藍圖下推行人工智能教育" }
     speakers: { en: "Prof. CHEUNG Chi-keung, Alan — Co-Principal Investigator of JC GoAI, Dean of Education & Professor, Department of Educational Administration and Policy, CUHK", zh: "張志強教授 — 賽馬會人工智能教育計劃共同首席研究員；香港中文大學教育學院院長及教育行政與政策學系教授" }
     abstract:
-      en: "(TBC)"
+      en: "This session provides a strategic overview of bridging AI educational policy with sustainable classroom practice under the new Blueprint. Prof. Cheung will examine practical pathways for translating high-level policy frameworks into effective school-level implementation. Emphasizing human-centred AI, evidence-informed innovation, purposeful pedagogical design, and learner agency, the presentation argues that AI should enhance—rather than replace—human thinking and professional judgement. Participants will gain insights into the opportunities, challenges, and educational implications of AI integration, and consider how schools can balance technological innovation with the fundamental purposes of education."
       zh: "（待定）"
 
   - time: "10:20am – 11:00am"
@@ -72,7 +72,7 @@ sessions:
   - time: "11:40am – 12:35pm"
     duration: "55 mins"
     title: { en: "The Great AI Exchange: Cultivating International Perspectives for Local Success", zh: "人工智能教育交流：以國際視野促進本地實踐" }
-    speakers: { en: "Introductory presentations by Dr. Andrés F. SALAZAR GÓMEZ (MIT RAISE) and Prof. CHAI Ching Sing (Associate Dean (Postgraduate Studies), Faculty of Education, CUHK). Panel discussion moderated by Ms. Allison POSEY (MIT RAISE), with panellists Prof. MENG Mei Ling Helen, Prof. CHAI Ching Sing, Prof. Cynthia BREAZEAL, and Dr. Andrés F. SALAZAR GÓMEZ.", zh: "引言報告：Andrés F. SALAZAR GÓMEZ 博士（麻省理工 RAISE）及謝錫金教授（香港中文大學教育學院副院長（研究院課程））。專題討論由 Allison POSEY 女士（麻省理工 RAISE）主持，討論嘉賓包括蒙美玲教授、謝錫金教授、Cynthia BREAZEAL 教授及 Andrés F. SALAZAR GÓMEZ 博士。" }
+    speakers: { en: "Introductory presentations by Dr. Andrés F. SALAZAR GÓMEZ (MIT RAISE) and Prof. CHAI Ching Sing (Associate Dean (Postgraduate Studies), Faculty of Education, CUHK). Panel discussion moderated by Ms. Allison POSEY (MIT RAISE), with panellists Prof. MENG Mei Ling Helen, Prof. CHAI Ching Sing, Prof. CHIU Kin Fung Thomas(Associate Professor, Department of Curriculum and Instruction, CUHK), Prof. Cynthia BREAZEAL, and Dr. Andrés F. SALAZAR GÓMEZ.", zh: "引言報告：Andrés F. SALAZAR GÓMEZ 博士（麻省理工 RAISE）及謝錫金教授（香港中文大學教育學院副院長（研究院課程））。專題討論由 Allison POSEY 女士（麻省理工 RAISE）主持，討論嘉賓包括蒙美玲教授、謝錫金教授、Cynthia BREAZEAL 教授及 Andrés F. SALAZAR GÓMEZ 博士。" }
     abstract:
       en: "This high-level session bridges global research with Hong Kong's implementation realities. Following short research presentations, a moderated panel synthesises international evidence with local case studies — identifying universal best practices and addressing the unique challenges of the local landscape. By facilitating direct exchange between global experts and local researchers, the session keeps the Project's goals grounded in both academic rigour and practical feasibility."
       zh: "本高層次環節連結全球研究與香港的推行實況。在簡短的研究報告後，由主持人帶領的專題討論將綜合國際證據與本地案例，歸納普遍適用的最佳實踐，並回應本地獨有的挑戰。透過促成全球專家與本地研究人員的直接交流，本環節確保計劃目標兼顧學術嚴謹與實踐可行。"
