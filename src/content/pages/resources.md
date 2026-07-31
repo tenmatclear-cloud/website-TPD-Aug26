@@ -47,7 +47,7 @@ items:
 
   - title: { en: "Teacher Self-paced Online Courses (Certificates upon completion!)", zh: "教師自學網上課程" }
     body:
-      en: "The two online courses - "Generative AI for Educators" and "AI Literacy for Educators" are now available! All teachers are highly recommended to complete these courses prior to the workshop. How to access: Create account with your email, after logging in, enter the global password “goai” and complete the survey.Remember to complete the self-paced online AI courses before the workshop."
+      en: "The two self-paced online courses - "Generative AI for Educators" and "AI Literacy for Educators" are now available! All teachers are highly recommended to complete these courses prior to the workshop. How to access: Create account with your email, after logging in, enter the global password “goai” and complete the survey.Remember to complete the self-paced online AI courses before the workshop."
       zh: "請參閱計劃團隊於工作坊前發出的登入指引及課程密碼。"
     href: "https://forteachers.jcgoai.hk"
     linkLabel: { en: "Open online courses", zh: "前往網上課程" }
