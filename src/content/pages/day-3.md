@@ -50,7 +50,7 @@ modules:
 
   - title: { en: "TechEd P6 (Cohort 1)", zh: "科技教育 小六（第一期）" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 7–12", zh: "第7至12課" }
+    lessons: { en: "Lessons 1-6", zh: "第1至6課" }
     room: "WMY 402"
     facilitators:
       - "Ms. Tasneem BURGHLEH (MIT RAISE)"
@@ -59,7 +59,7 @@ modules:
 
   - title: { en: "TechEd P6 (Cohort 2)", zh: "科技教育 小六（第二期）" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 1–6", zh: "第1至6課" }
+    lessons: { en: "Lessons 7-12", zh: "第7至12課" }
     room: "WMY 404"
     facilitators:
       - "Mr. Selim TEZEL (MIT RAISE)"
