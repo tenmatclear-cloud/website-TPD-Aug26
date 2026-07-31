@@ -50,21 +50,21 @@ modules:
 
   - title: { en: "TechEd P6 (Cohort 1)", zh: "科技教育 小六（第一期）" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 1-6", zh: "第1至6課" }
-    room: "WMY 402"
-    facilitators:
-      - "Ms. Tasneem BURGHLEH (MIT RAISE)"
-      - "Mr. CHOW Tsz Chun (HKUGA Primary School)"
-      - "Mr. LEE Ka Wo (Diocesan Girls' Junior School)"
-
-  - title: { en: "TechEd P6 (Cohort 2)", zh: "科技教育 小六（第二期）" }
-    audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 7-12", zh: "第7至12課" }
-    room: "WMY 404"
+    room: "WMY 402"
     facilitators:
       - "Mr. Selim TEZEL (MIT RAISE)"
       - "Mr. MUNG Wai Lun (Fung Kai No.1 Primary School)"
       - "Mr. WONG Chi Yan (Fung Kai No.1 Primary School)"
+
+  - title: { en: "TechEd P6 (Cohort 2)", zh: "科技教育 小六（第二期）" }
+    audience: { en: "Primary", zh: "小學" }
+    lessons: { en: "Lessons 1-6", zh: "第7至12課" }
+    room: "WMY 404"
+    facilitators:
+      - "Ms. Tasneem BURGHLEH (MIT RAISE)"
+      - "Mr. CHOW Tsz Chun (HKUGA Primary School)"
+      - "Mr. LEE Ka Wo (Diocesan Girls' Junior School)"
 
   - title: { en: "Chinese S1", zh: "中國語文 中一" }
     audience: { en: "Secondary", zh: "中學" }
