@@ -45,9 +45,9 @@ items:
         en: "These resources are provided for professional development purposes and should not be published or distributed outside eligible participating schools."
         zh: "本資源只供專業發展用途，不應向合資格參與學校以外的人士或機構發布或分發。"
 
-  - title: { en: "Teacher Self-paced Online Courses", zh: "教師自學網上課程" }
+  - title: { en: "Teacher Self-paced Online Courses (Certificates upon completion!)", zh: "教師自學網上課程" }
     body:
-      en: "Please refer to the access instructions and password sent by the project team before the workshop."
+      en: "The two online courses - "Generative AI for Educators" and "AI Literacy for Educators" are now available! All teachers are highly recommended to complete these courses prior to the workshop. How to access: Create account with your email, after logging in, enter the global password “goai” and complete the survey.Remember to complete the self-paced online AI courses before the workshop."
       zh: "請參閱計劃團隊於工作坊前發出的登入指引及課程密碼。"
     href: "https://forteachers.jcgoai.hk"
     linkLabel: { en: "Open online courses", zh: "前往網上課程" }
