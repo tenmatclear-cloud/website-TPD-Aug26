@@ -29,11 +29,11 @@ schedule:
 modules:
   - title: { en: "TechEd P4", zh: "科技教育 小四" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 1–6", zh: "第1至6課" }
     room: "WMY 407"
     facilitators:
       - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
       - "Ms. YIU Po Fun (Ling To Catholic Primary School)"
+      - "Note that this group will be scheduled for 9:30am-1:00pm(AM session) & 2:15pm-4:45pm(PM session)."
 
   - title: { en: "TechEd P5 (Cohort 1)", zh: "科技教育 小五（第一期）" }
     audience: { en: "Primary", zh: "小學" }
