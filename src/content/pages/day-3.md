@@ -26,7 +26,6 @@ schedule:
 modules:
   - title: { en: "TechEd P4", zh: "科技教育 小四" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 7-12", zh: "第7至12課" }
     room: "WMY 407"
     facilitators:
       - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
