@@ -62,7 +62,7 @@ modules:
 
   - title: { en: "TechEd P6 (Cohort 2)", zh: "科技教育 小六（第二期）" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 7–12", zh: "第7至12課" }
+    lessons: { en: "Lessons 7–20", zh: "第7至20課" }
     room: "WMY 404"
     facilitators:
       - "Mr. Selim TEZEL (MIT RAISE)"
