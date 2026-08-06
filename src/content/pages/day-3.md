@@ -36,7 +36,7 @@ modules:
     lessons: { en: "Lessons 8–12", zh: "第7至12課" }
     room: "WMY 502"
     facilitators:
-      - "Ms. Maya (MIT RAISE)"
+      - "Ms. Maya RAJAN (MIT RAISE)"
       - "Mr. CHEUNG Tin Yau (CCC Ming Yin College)"
 
   - title: { en: "TechEd P5 (Cohort 2)", zh: "科技教育 小五（第二期）" }
@@ -50,7 +50,7 @@ modules:
   - title: { en: "TechEd P6 (Cohort 1)", zh: "科技教育 小六（第一期）" }
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 7-20", zh: "第7至20課" }
-    room: "WMY 402"
+    room: "WMY 404"
     facilitators:
       - "Mr. Selim TEZEL (MIT RAISE)"
       - "Mr. MUNG Wai Lun (Fung Kai No.1 Primary School)"
@@ -59,7 +59,7 @@ modules:
   - title: { en: "TechEd P6 (Cohort 2)", zh: "科技教育 小六（第二期）" }
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 1-6", zh: "第1至6課" }
-    room: "WMY 404"
+    room: "WMY 402"
     facilitators:
       - "Ms. Tasneem BURGHLEH (MIT RAISE)"
       - "Mr. CHOW Tsz Chun (HKUGA Primary School)"
