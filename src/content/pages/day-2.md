@@ -48,7 +48,7 @@ modules:
     lessons: { en: "Lessons 8–12", zh: "第7至12課" }
     room: "WMY 504"
     facilitators:
-      - "Ms. Maya (MIT RAISE)"
+      - "Ms. Maya RAJAN (MIT RAISE)"
       - "Mr. CHEUNG Tin Yau (CCC Ming Yin College)"
 
   - title: { en: "TechEd P6 (Cohort 1)", zh: "科技教育 小六（第一期）" }
