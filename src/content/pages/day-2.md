@@ -75,6 +75,7 @@ modules:
     facilitators:
       - "Dr. Andrés Felipe SALAZAR GÓMEZ (MIT RAISE)"
       - "Mr. WONG Chun Kei (Ling To Catholic Primary School)"
+      - "Ms. LAW Siu Tung (Shanghai Alumni Primary School)"
 
   - title: { en: "Science P4", zh: "科學科 小四" }
     audience: { en: "Primary", zh: "小學" }
