@@ -91,6 +91,7 @@ modules:
     facilitators:
       - "Prof. POON Ming Kay (CUHK)"
       - "Mr. HO Wai Kit (Tuen Mun Catholic Secondary School)"
+      - "Ms. LAU Wai Chi (Sam Shui Natives Association Huen King Wing School)"
 
   - title: { en: "Math P5", zh: "數學 小五" }
     audience: { en: "Primary", zh: "小學" }
