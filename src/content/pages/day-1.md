@@ -66,7 +66,7 @@ sessions:
 
   - time: "11:00am – 11:40am"
     duration: "40 mins"
-    title: { en: "Networking Break", zh: "交流小休" }
+    title: { en: "Group Photo & Networking Break", zh: "交流小休" }
     note: { en: "Light refreshments will be provided.", zh: "將提供簡便茶點。" }
 
   - time: "11:40am – 12:35pm"
@@ -80,7 +80,7 @@ sessions:
   - time: "12:35pm – 12:45pm"
     duration: "10 mins"
     title: { en: "Appreciation for Project's Peer Facilitators", zh: "答謝計劃同儕促進者" }
-    note: { en: "Includes certificate presentation and group photo.", zh: "包括證書頒發及大合照。" }
+    note: { en: "Includes certificate presentation.", zh: "包括證書頒發及大合照。" }
 
   - time: "12:45pm – 2:00pm"
     duration: "75 mins"
