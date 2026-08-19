@@ -32,7 +32,7 @@ modules:
     room: "WMY 407"
     facilitators:
       - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
-      - "Ms. YIU Po Fun (Ling To Catholic Primary School)"
+      - "Ms. YIU Po Fun, Annie (Ling To Catholic Primary School)"
       - "Mr. Julian CHAN (CUHK)"
 
   - title: { en: "TechEd P4 (Group 2)", zh: "科技教育 小五（第一期）" }
@@ -41,8 +41,8 @@ modules:
     room: "WMY 402"
     facilitators:
       - "Ms. Tasneem BURGHLEH (MIT RAISE)"
-      - "Mr. CHOW Tsz Chun (HKUGA Primary School)"
-      - "Mr. LEE Ka Wo (Diocesan Girls' Junior School)"
+      - "Mr. CHOW Tsz Chun, Oscar (HKUGA Primary School)"
+      - "Mr. LEE Ka Wo, Jacky (Diocesan Girls' Junior School)"
 
   - title: { en: "TechEd P5 (Group 1)", zh: "科技教育 小五（第一期）" }
     audience: { en: "Primary", zh: "小學" }
@@ -50,7 +50,7 @@ modules:
     room: "WMY 502"
     facilitators:
       - "Mr. Philip TAN (MIT RAISE)"
-      - "Ms. CHENG Yuen Ting (St. Mary's Canossian School)"
+      - "Ms. CHENG Yuen Ting, Emily (St. Mary's Canossian School)"
 
   - title: { en: "TechEd P5 (Group 2)", zh: "科技教育 小五（第二期）" }
     audience: { en: "Primary", zh: "小學" }
@@ -58,22 +58,22 @@ modules:
     room: "WMY 504"
     facilitators:
       - "Ms. Maya RAJAN (MIT RAISE)"
-      - "Mr. CHEUNG Tin Yau (CCC Ming Yin College)"
+      - "Mr. CHEUNG Tin Yau, Andy (CCC Ming Yin College)"
 
   - title: { en: "Humanities P4", zh: "人文科 小四" }
     audience: { en: "Primary", zh: "小學" }
     room: "WMY 405"
     facilitators:
       - "Dr. Andrés Felipe SALAZAR GÓMEZ (MIT RAISE)"
-      - "Mr. WONG Chun Kei (Ling To Catholic Primary School)"
-      - "Ms. LAW Siu Tung (Shanghai Alumni Primary School)"
+      - "Mr. WONG Chun Kei, Jerry (Ling To Catholic Primary School)"
+      - "Ms. LAW Siu Tung, Elliott (Shanghai Alumni Primary School)"
 
   - title: { en: "Science P4", zh: "科學科 小四" }
     audience: { en: "Primary", zh: "小學" }
     room: "WMY 408"
     facilitators:
       - "Ms. Allison POSEY & Ms. Sarah WHARTON (MIT RAISE)"
-      - "Ms. LI Ting Ting (The Salvation Army Tin Ka Ping School)"
+      - "Ms. LI Ting Ting, Tinky (The Salvation Army Tin Ka Ping School)"
       - "Mr. SZE Yu Chun (The HKMA K S Lo College)"
 
   - title: { en: "Chinese P5", zh: "中國語文 小五" }
@@ -81,22 +81,22 @@ modules:
     room: "WMY 403"
     facilitators:
       - "Prof. POON Ming Kay (CUHK)"
-      - "Mr. HO Wai Kit (Tuen Mun Catholic Secondary School)"
-      - "Ms. LAU Wai Chi (Sam Shui Natives Association Huen King Wing School)"
+      - "Mr. HO Wai Kit, Horus (Tuen Mun Catholic Secondary School)"
+      - "Ms. LAU Wai Chi, Regene (Sam Shui Natives Association Huen King Wing School)"
 
   - title: { en: "Math P5", zh: "數學 小五" }
     audience: { en: "Primary", zh: "小學" }
     room: "WMY 406"
     facilitators:
-      - "Mr. Robert PARK (MIT RAISE)"
-      - "Ms. TANG Pui Yuk (Sham Shui Po Government Primary School)"
-      - "Ms. SO Jessica Tsz Shan (Fuk Wing Street Government Primary School)"
+      - "Mr. Robert PARKS (MIT RAISE)"
+      - "Ms. TANG Pui Yuk, Judy (Sham Shui Po Government Primary School)"
+      - "Ms. SO Tsz Shan, Jessica (Erudite Government Primary School)"
 
   - title: { en: "English P6", zh: "英國語文 小六" }
     audience: { en: "Primary", zh: "小學" }
     room: "WMY 506"
     facilitators:
       - "Mr. John MASLA (MIT RAISE)"
-      - "Mr. CHU Jason (Yaumati Catholic Primary School)"
-      - "Ms. CHAN Wai Yan (The Salvation Army Tin Ka Ping School)"
+      - "Mr. Jason CHU (Yaumati Catholic Primary School)"
+      - "Ms. CHAN Wai Yan, Vivienne (The Salvation Army Tin Ka Ping School)"
 ---
