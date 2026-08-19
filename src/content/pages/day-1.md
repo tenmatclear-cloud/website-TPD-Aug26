@@ -84,7 +84,7 @@ sessions:
 
   - time: "12:45pm – 2:00pm"
     duration: "75 mins"
-    title: { en: "Lunch break", zh: "午膳" }
+    title: { en: "Lunch Break", zh: "午膳" }
     href: "https://maps.app.goo.gl/Jzfg2HNreHZ9m7Y88"
     linkLabel: { en: "Lunch Options", zh: "tbc" }
 
