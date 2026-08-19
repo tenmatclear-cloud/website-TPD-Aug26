@@ -62,7 +62,7 @@ modules:
     room: "YIA 502"
     facilitators:
       - "Prof. POON Ming Kay (CUHK)"
-      - "Mr. HO Chun Kit, Horus (Tak Sun Secondary School)"
+      - "Mr. HO Chun Kit, Joe (Tak Sun Secondary School)"
       - "Ms. LAW Sin Yan, Mary (QESOSA Tong Kwok Wah Secondary School)"
 
   - title: { en: "Citizenship, Economics and Society S1", zh: "公民、經濟與社會 中一" }
