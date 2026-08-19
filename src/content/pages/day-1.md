@@ -95,14 +95,14 @@ sessions:
       - audience: { en: "Primary Schools", zh: "小學" }
         room: "LT1"
         title: { en: "Successful Implementation Cases and Good Practices of AI Applications in L&T", zh: "人工智能融入學與教的成功實踐案例及良好示範" }
-        speakers: { en: "Ms. LAU Wai Chi (Sam Shui Natives Association Huen King Wing School), Ms. SO Jessica Tsz Shan (Erudite Government Primary School)", zh: "Ms. LAU Wai Chi (Sam Shui Natives Association Huen King Wing School), Ms. SO Jessica Tsz Shan (Erudite Government Primary School)" }
+        speakers: { en: "Ms. LAU Wai Chi, Regene (Sam Shui Natives Association Huen King Wing School), Ms. SO Tsz Shan, Jessica (Erudite Government Primary School)", zh: "Ms. LAU Wai Chi (Sam Shui Natives Association Huen King Wing School), Ms. SO Tsz Shan (Erudite Government Primary School)" }
         abstract:
           en: "Representatives from pilot schools share authentic evidence of classroom impact, showcasing student projects and \"lessons learned\" from their implementation journeys. By highlighting both the successes and the hurdles of integrating AI into L&T, the session offers a grounded, peer-to-peer perspective on what works."
           zh: "試點學校代表分享具體的課堂成效，展示學生作品並分享推行過程中的「經驗與教訓」。透過呈現人工智能融入學與教的成功與挑戰，本環節提供貼地的同儕視角，說明哪些做法行之有效。"
       - audience: { en: "Secondary Schools", zh: "中學" }
         room: "LT2"
         title: { en: "Successful Implementation Cases and Good Practices of AI Applications in L&T", zh: "人工智能融入學與教的成功實踐案例及良好示範" }
-        speakers: { en: "Mr. SZE Yu Chun (The HKMA K S Lo College), Mr. SIU Kam Kuen (Wah Yan College, Hong Kong)", zh: "Mr. SZE Yu Chun (The HKMA K S Lo College), Mr. SIU Kam Kuen (Wah Yan College, Hong Kong)" }
+        speakers: { en: "Mr. SZE Yu Chun (The HKMA K S Lo College), Mr. SIU Kam Kuen, KK (Wah Yan College, Hong Kong)", zh: "Mr. SZE Yu Chun (The HKMA K S Lo College), Mr. SIU Kam Kuen (Wah Yan College, Hong Kong)" }
         abstract:
           en: "Representatives from pilot schools share authentic evidence of classroom impact, showcasing student projects and \"lessons learned\" from their implementation journeys. By highlighting both the successes and the hurdles of integrating AI into L&T, the session offers a grounded, peer-to-peer perspective on what works."
           zh: "試點學校代表分享具體的課堂成效，展示學生作品並分享推行過程中的「經驗與教訓」。透過呈現人工智能融入學與教的成功與挑戰，本環節提供貼地的同儕視角，說明哪些做法行之有效。"
@@ -113,7 +113,7 @@ sessions:
       - audience: { en: "Primary Schools", zh: "小學" }
         room: "LT1"
         title: { en: "Whole-school Approach to AI Applications", zh: "全校參與的人工智能應用" }
-        speakers: { en: "Principal Andy LI (The Salvation Army Tin Ka Ping School), Principal LOK Hoi Yan and Ms. LAW Siu Tung (Shanghai Alumni Primary School)", zh: "Mr. Andy LI (The Salvation Army Tin Ka Ping School), Ms. LOK Hoi Yan and Ms. LAW Siu Tung (Shanghai Alumni Primary School)" }
+        speakers: { en: "Principal Andy LI (The Salvation Army Tin Ka Ping School), Principal LOK Hoi Yan and Ms. LAW Siu Tung (Shanghai Alumni Primary School)", zh: "Mr. Andy LI (The Salvation Army Tin Ka Ping School), Ms. LOK Hoi Yan and Ms. LAW Siu Tung, Elliott (Shanghai Alumni Primary School)" }
         abstract:
           en: "Cultivating a future-ready school ecosystem requires visionary leadership and holistic coordination. School principals share successful strategic frameworks and actionable insights on adopting a whole-school approach to AI integration — covering teacher empowerment, student and parent support, and resource allocation — offering school leaders a high-level roadmap to prepare all stakeholders for the future of education."
           zh: "培育面向未來的校園生態，需要具遠見的領導及全面的統籌。學校校長將分享推行全校參與人工智能的成功策略框架及可行建議，涵蓋教師增能、學生與家長支援及資源分配，為學校領導提供高層次藍圖，協助各持份者迎接教育的未來。"
