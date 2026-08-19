@@ -84,7 +84,9 @@ sessions:
 
   - time: "12:45pm – 2:00pm"
     duration: "75 mins"
-    title: { en: "Lunch", zh: "午膳" }
+    title: { en: "Lunch break", zh: "午膳" }
+    href: "https://maps.app.goo.gl/Jzfg2HNreHZ9m7Y88"
+    linkLabel: { en: "Lunch Options", zh: "tbc" }
 
   - heading: { en: "PM Session — Mastering Classroom Implementation", zh: "下午環節 — 掌握課堂實踐" }
     note: { en: "Conducted in Cantonese", zh: "以廣東話進行" }
