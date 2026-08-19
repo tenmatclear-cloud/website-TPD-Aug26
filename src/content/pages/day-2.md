@@ -35,7 +35,7 @@ modules:
       - "Ms. YIU Po Fun (Ling To Catholic Primary School)"
       - "Mr. Julian CHAN (CUHK)
 
- - title: { en: "TechEd P4 (Group 2)", zh: "科技教育 小六（第一期）" }
+  - title: { en: "TechEd P4 (Group 2)", zh: "科技教育 小五（第一期）" }
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 7–12", zh: "第1至6課" }
     room: "WMY 402"
