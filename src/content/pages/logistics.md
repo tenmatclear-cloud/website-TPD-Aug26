@@ -42,9 +42,9 @@ items:
       en: "Wi-Fi will be available at the workshop venues. Connect using the details below."
       zh: "工作坊場地將提供 Wi-Fi。請使用以下資料連接（詳情將於活動前確認）。"
     points:
-      - en: "Wi-Fi Name: CUguest"
+      - en: "Wi-Fi Name:CUguest"
         zh: "XX"   
-      - en: "Identity: Conference Guests"
+      - en: "Identity:Conference Guests"
         zh: "XX"
       - en: "User ID:jcgoai"
         zh: "XX"
