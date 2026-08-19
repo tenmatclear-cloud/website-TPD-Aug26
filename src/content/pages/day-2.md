@@ -33,7 +33,7 @@ modules:
     facilitators:
       - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
       - "Ms. YIU Po Fun (Ling To Catholic Primary School)"
-      - "Mr. Julian CHAN (CUHK)
+      - "Mr. Julian CHAN (CUHK)"
 
   - title: { en: "TechEd P4 (Group 2)", zh: "科技教育 小五（第一期）" }
     audience: { en: "Primary", zh: "小學" }
