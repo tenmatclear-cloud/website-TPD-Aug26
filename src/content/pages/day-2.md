@@ -35,15 +35,6 @@ modules:
       - "Ms. YIU Po Fun (Ling To Catholic Primary School)"
       - "Mr. Julian CHAN (CUHK)
 
-  - title: { en: "TechEd P4 (Group 2)", zh: "科技教育 小五（第一期）" }
-    audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 7–12", zh: "第1至6課" }
-    room: "WMY 402"
-    facilitators:
-      - "Ms. Tasneem BURGHLEH (MIT RAISE)"
-      - "Mr. CHOW Tsz Chun (HKUGA Primary School)"
-      - "Mr. LEE Ka Wo (Diocesan Girls' Junior School)"
-
   - title: { en: "TechEd P5 (Group 1)", zh: "科技教育 小五（第一期）" }
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 1–7", zh: "第1至6課" }
