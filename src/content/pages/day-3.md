@@ -29,8 +29,8 @@ modules:
     room: "WMY 407"
     facilitators:
       - "Ms. Tasneem BURGHLEH (MIT RAISE)"
-      - "Mr. CHOW Tsz Chun (HKUGA Primary School)"
-      - "Mr. LEE Ka Wo (Diocesan Girls' Junior School)"
+      - "Mr. CHOW Tsz Chun, Oscar (HKUGA Primary School)"
+      - "Mr. LEE Ka Wo, Jacky (Diocesan Girls' Junior School)"
 
   - title: { en: "TechEd P4 (Group 2)", zh: "科技教育 小六（第二期）" }
     audience: { en: "Primary", zh: "小學" }
@@ -38,7 +38,7 @@ modules:
     room: "WMY 402"
     facilitators:
       - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
-      - "Ms. YIU Po Fun (Ling To Catholic Primary School)"
+      - "Ms. YIU Po Fun, Annie (Ling To Catholic Primary School)"
       - "Mr. Julian CHAN (CUHK)"
   
   - title: { en: "TechEd P5 (Group 1)", zh: "科技教育 小五（第一期）" }
@@ -47,7 +47,7 @@ modules:
     room: "WMY 502"
     facilitators:
       - "Ms. Maya RAJAN (MIT RAISE)"
-      - "Mr. CHEUNG Tin Yau (CCC Ming Yin College)"
+      - "Mr. CHEUNG Tin Yau, Andy (CCC Ming Yin College)"
 
   - title: { en: "TechEd P5 (Group 2)", zh: "科技教育 小五（第二期）" }
     audience: { en: "Primary", zh: "小學" }
@@ -55,31 +55,31 @@ modules:
     room: "WMY 504"
     facilitators:
       - "Mr. Philip TAN (MIT RAISE)"
-      - "Ms. CHENG Yuen Ting (St. Mary's Canossian School)"
+      - "Ms. CHENG Yuen Ting, Emily (St. Mary's Canossian School)"
 
   - title: { en: "Chinese S1", zh: "中國語文 中一" }
     audience: { en: "Secondary", zh: "中學" }
     room: "YIA 502"
     facilitators:
       - "Prof. POON Ming Kay (CUHK)"
-      - "Mr. HO Chun Kit (Tak Sun Secondary School)"
-      - "Ms. LAW Sin Yan (QESOSA Tong Kwok Wah Secondary School)"
+      - "Mr. HO Chun Kit, Horus (Tak Sun Secondary School)"
+      - "Ms. LAW Sin Yan, Mary (QESOSA Tong Kwok Wah Secondary School)"
 
   - title: { en: "Citizenship, Economics and Society S1", zh: "公民、經濟與社會 中一" }
     audience: { en: "Secondary", zh: "中學" }
     room: "WMY 507"
     facilitators:
       - "Ms. Allison POSEY (MIT RAISE)"
-      - "Dr. HUNG Chiu Lung (QESOSA Tong Kwok Wah Secondary School)"
-      - "Mr. YEUNG Chun Sing (Shatin Pui Ying College)"
+      - "Dr. HUNG Chiu Lung, Frankie (QESOSA Tong Kwok Wah Secondary School)"
+      - "Mr. YEUNG Chun Sing, Chris (Shatin Pui Ying College)"
 
   - title: { en: "Math S2", zh: "數學 中二" }
     audience: { en: "Secondary", zh: "中學" }
     room: "YIA 503"
     facilitators:
-      - "Mr. Robert PARK (MIT RAISE)"
-      - "Mr. HA Chi Hung (True Light School of Hong Kong)"
-      - "Mr. LAM Chun Lung (The HKMA K S Lo College)"
+      - "Mr. Robert PARKS (MIT RAISE)"
+      - "Mr. HA Chi Hung, Henry (True Light School of Hong Kong)"
+      - "Mr. LAM Chun Lung, Mike (The HKMA K S Lo College)"
 
   - title: { en: "Science S2", zh: "科學科 中二" }
     audience: { en: "Secondary", zh: "中學" }
@@ -87,20 +87,20 @@ modules:
     facilitators:
       - "Ms. Sarah WHARTON (MIT RAISE)"
       - "Mr. Brendan DOHERTY (Diocesan Girls' School)"
-      - "Ms. CHIM Yan Ming (Lock Tao Secondary School)"
+      - "Ms. CHIM Yan Ming, Jimmy (Lock Tao Secondary School)"
 
   - title: { en: "English S3", zh: "英國語文 中三" }
     audience: { en: "Secondary", zh: "中學" }
     room: "WMY 505"
     facilitators:
       - "Mr. John MASLA (MIT RAISE)"
-      - "Mr. LAI Yat Kin (Salesian English School)"
-      - "Ms. CHEUNG Wai Shan (Lock Tao Secondary School)"
+      - "Mr. LAI Yat Kin, Martin (Salesian English School)"
+      - "Ms. CHEUNG Wai Shan, Eveline (Lock Tao Secondary School)"
 
   - title: { en: "Visual Arts S3 + Project", zh: "視覺藝術 中三＋專題" }
     audience: { en: "Secondary", zh: "中學" }
     room: "WMY 406"
     facilitators:
       - "Dr. Andrés Felipe SALAZAR GÓMEZ (MIT RAISE)"
-      - "Mr. SIU Kam Kuen (Wah Yan College, Hong Kong)"
+      - "Mr. SIU Kam Kuen, KK (Wah Yan College, Hong Kong)"
 ---
