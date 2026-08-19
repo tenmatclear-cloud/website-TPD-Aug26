@@ -38,7 +38,7 @@ sessions:
   - time: "9:25am - 9:30am"
     duration: "5 mins"
     title: { en: "Speech of Thanks", zh: "致謝辭" }
-    speakers: { en: "Ms. LAM Wing-yee, Sierra — Chief Curriculum Development Officer (Technology Education)", zh: "林詠儀女士 — 課程發展主任（科技教育）" }
+    speakers: { en: "Ms. LAM Wing-yee, Sierra — Chief Curriculum Development Officer (Technology Education), Education Bureau", zh: "林詠儀女士 — 課程發展主任（科技教育）" }
 
   - time: "9:30am – 9:55am"
     duration: "25 mins"
@@ -72,7 +72,7 @@ sessions:
   - time: "11:40am – 12:35pm"
     duration: "55 mins"
     title: { en: "The Great AI Exchange: Cultivating International Perspectives for Local Success", zh: "人工智能教育交流：以國際視野促進本地實踐" }
-    speakers: { en: "Introductory presentations by Dr. Andrés F. SALAZAR GÓMEZ (MIT RAISE) and Prof. CHAI Ching Sing (Associate Dean (Postgraduate Studies), Faculty of Education, CUHK). Panel discussion moderated by Ms. Allison POSEY (MIT RAISE), with panellists Prof. MENG Mei Ling Helen, Prof. CHAI Ching Sing, Prof. CHIU Kin Fung Thomas(Associate Professor, Department of Curriculum and Instruction, CUHK), Prof. Cynthia BREAZEAL, and Dr. Andrés F. SALAZAR GÓMEZ.", zh: "引言報告：Andrés F. SALAZAR GÓMEZ 博士（麻省理工 RAISE）及謝錫金教授（香港中文大學教育學院副院長（研究院課程））。專題討論由 Allison POSEY 女士（麻省理工 RAISE）主持，討論嘉賓包括蒙美玲教授、謝錫金教授、Cynthia BREAZEAL 教授及 Andrés F. SALAZAR GÓMEZ 博士。" }
+    speakers: { en: "Introductory presentations by Dr. Andrés F. SALAZAR GÓMEZ (MIT RAISE) and Prof. CHAI Ching Sing (Associate Dean (Postgraduate Studies), Faculty of Education, CUHK). Panel discussion moderated by Ms. Allison POSEY (MIT RAISE), with panellists Prof. MENG Mei Ling Helen, Prof. CHAI Ching Sing, Prof. CHIU Kin Fung Thomas(Director, Centre for Learning Enhancement And Research; Associate Professor, Department of Curriculum and Instruction, CUHK), Prof. Cynthia BREAZEAL, and Dr. Andrés F. SALAZAR GÓMEZ.", zh: "引言報告：Andrés F. SALAZAR GÓMEZ 博士（麻省理工 RAISE）及謝錫金教授（香港中文大學教育學院副院長（研究院課程））。專題討論由 Allison POSEY 女士（麻省理工 RAISE）主持，討論嘉賓包括蒙美玲教授、謝錫金教授、Cynthia BREAZEAL 教授及 Andrés F. SALAZAR GÓMEZ 博士。" }
     abstract:
       en: "This high-level session bridges global research with Hong Kong's implementation realities. Following short research presentations, a moderated panel synthesises international evidence with local case studies — identifying universal best practices and addressing the unique challenges of the local landscape. By facilitating direct exchange between global experts and local researchers, the session keeps the Project's goals grounded in both academic rigour and practical feasibility."
       zh: "本高層次環節連結全球研究與香港的推行實況。在簡短的研究報告後，由主持人帶領的專題討論將綜合國際證據與本地案例，歸納普遍適用的最佳實踐，並回應本地獨有的挑戰。透過促成全球專家與本地研究人員的直接交流，本環節確保計劃目標兼顧學術嚴謹與實踐可行。"
@@ -113,14 +113,14 @@ sessions:
       - audience: { en: "Primary Schools", zh: "小學" }
         room: "LT1"
         title: { en: "Whole-school Approach to AI Applications", zh: "全校參與的人工智能應用" }
-        speakers: { en: "Mr. Andy LI (The Salvation Army Tin Ka Ping School), Ms. LOK Hoi Yan and Ms. LAW Siu Tung (Shanghai Alumni Primary School)", zh: "Mr. Andy LI (The Salvation Army Tin Ka Ping School), Ms. LOK Hoi Yan and Ms. LAW Siu Tung (Shanghai Alumni Primary School)" }
+        speakers: { en: "Principal Andy LI (The Salvation Army Tin Ka Ping School), Principal LOK Hoi Yan and Ms. LAW Siu Tung (Shanghai Alumni Primary School)", zh: "Mr. Andy LI (The Salvation Army Tin Ka Ping School), Ms. LOK Hoi Yan and Ms. LAW Siu Tung (Shanghai Alumni Primary School)" }
         abstract:
           en: "Cultivating a future-ready school ecosystem requires visionary leadership and holistic coordination. School principals share successful strategic frameworks and actionable insights on adopting a whole-school approach to AI integration — covering teacher empowerment, student and parent support, and resource allocation — offering school leaders a high-level roadmap to prepare all stakeholders for the future of education."
           zh: "培育面向未來的校園生態，需要具遠見的領導及全面的統籌。學校校長將分享推行全校參與人工智能的成功策略框架及可行建議，涵蓋教師增能、學生與家長支援及資源分配，為學校領導提供高層次藍圖，協助各持份者迎接教育的未來。"
       - audience: { en: "Secondary Schools", zh: "中學" }
         room: "LT2"
         title: { en: "Whole-school Approach to AI Applications", zh: "全校參與的人工智能應用" }
-        speakers: { en: "Mr. CHAN Cheung Wai (Queen's College), Mr. CHU Ka Tim (Shatin Pui Ying College)", zh: "Mr. CHAN Cheung Wai (Queen's College), Mr. CHU Ka Tim (Shatin Pui Ying College)" }
+        speakers: { en: "Principal CHAN Cheung Wai (Queen's College), Principal CHU Ka Tim (Shatin Pui Ying College)", zh: "Mr. CHAN Cheung Wai (Queen's College), Mr. CHU Ka Tim (Shatin Pui Ying College)" }
         abstract:
           en: "Cultivating a future-ready school ecosystem requires visionary leadership and holistic coordination. School principals share successful strategic frameworks and actionable insights on adopting a whole-school approach to AI integration — covering teacher empowerment, student and parent support, and resource allocation — offering school leaders a high-level roadmap to prepare all stakeholders for the future of education."
           zh: "培育面向未來的校園生態，需要具遠見的領導及全面的統籌。學校校長將分享推行全校參與人工智能的成功策略框架及可行建議，涵蓋教師增能、學生與家長支援及資源分配，為學校領導提供高層次藍圖，協助各持份者迎接教育的未來。"
@@ -131,7 +131,7 @@ sessions:
       - audience: { en: "Primary Schools", zh: "小學" }
         room: "LT1"
         title: { en: "Introduction to the GenAI Tools Platform", zh: "生成式人工智能工具平台簡介" }
-        speakers: { en: "CUHK representative", zh: "香港中文大學代表" }
+        speakers: { en: "CUHK representative (Pre-recorded video)", zh: "香港中文大學代表" }
       - audience: { en: "Secondary Schools", zh: "中學" }
         room: "LT2"
         title: { en: "Introduction to Parent Education", zh: "家長教育簡介" }
@@ -183,7 +183,7 @@ sessions:
       - audience: { en: "Secondary Schools", zh: "中學" }
         room: "LT2"
         title: { en: "Introduction to the GenAI Tools Platform", zh: "生成式人工智能工具平台簡介" }
-        speakers: { en: "CUHK representative", zh: "香港中文大學代表" }
+        speakers: { en: "CUHK representative (Pre-recorded video)", zh: "香港中文大學代表" }
 
   - time: "4:50pm – 4:55pm"
     duration: "5 mins"
