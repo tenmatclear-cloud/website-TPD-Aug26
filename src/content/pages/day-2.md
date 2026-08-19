@@ -28,6 +28,7 @@ schedule:
 
 modules:
   - title: { en: "TechEd P4 (Group 1)", zh: "科技教育 小四" }
+    lessons: { en: "Lessons 1–6", zh: "第1至6課" }
     audience: { en: "Primary", zh: "小學" }
     room: "WMY 407"
     facilitators:
