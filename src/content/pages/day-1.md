@@ -170,7 +170,7 @@ sessions:
       - audience: { en: "Secondary Schools", zh: "中學" }
         room: "LT2"
         title: { en: "The Power of Peer Coaching: Transforming AI Education through Shared Expertise", zh: "同儕教練的力量：以共享專業轉化人工智能教育" }
-        speakers: { en: "Dr. HUNG Chiu Lung (QESOSA Tong Kwok Wah Secondary School), Mr. YEUNG Chun Sing (Shatin Pui Ying College)", zh: "Dr. HUNG Chiu Lung (QESOSA Tong Kwok Wah Secondary School), Mr. YEUNG Chun Sing (Shatin Pui Ying College)" }
+        speakers: { en: "Dr. HUNG Chiu Lung, Frankie (QESOSA Tong Kwok Wah Secondary School), Mr. YEUNG Chun Sing (Shatin Pui Ying College)", zh: "Dr. HUNG Chiu Lung (QESOSA Tong Kwok Wah Secondary School), Mr. YEUNG Chun Sing, Chris (Shatin Pui Ying College)" }
         abstract:
           en: "The session celebrates the evolution from resource adoption to teacher-led innovation. Experienced peer facilitators share how they support pilot school teachers through collaborative coaching — showing how teachers can adapt ready-made lessons to suit their students, or develop entirely new AI-integrated lessons from scratch. This \"bottom-up\" approach highlights the teacher as an innovator."
           zh: "本環節彰顯由採用資源邁向教師主導創新的演進。資深同儕促進者分享如何透過協作教練支援試點學校教師，示範教師如何調適既有課節以切合學生需要，甚至從零開始設計全新的人工智能融入課節。這種「由下而上」的取向突顯教師作為創新者的角色。"
