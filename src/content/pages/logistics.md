@@ -32,7 +32,7 @@ items:
     points:
       - en: "Your HKID card"
         zh: "你的香港身份證"
-      - en: "A visitor QR code, which will be sent to your registered email address 3 days prior to the event"
+      - en: "A visitor QR code, which will be sent to your registered email address 1-3 days prior to the event"
         zh: "訪客二維碼（活動前3天將寄送至你的登記電郵地址）"
 
   - title: { en: "Venue Wi-Fi", zh: "場地 Wi-Fi" }
