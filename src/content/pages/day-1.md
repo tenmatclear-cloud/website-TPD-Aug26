@@ -154,7 +154,7 @@ sessions:
         title: { en: "Language Education × AI: Strategies for Meaningful Integration", zh: "語文教育 × 人工智能：有意義融合的策略" }
         speakers: { en: "Prof. POON Ming Kay (CUHK), Ms. GAN Haiyun, Rikee (CUHK)", zh: "Prof. POON Ming Kay (CUHK), Ms. GAN Haiyun, Rikee (CUHK)" }
         abstract:
-          en: "How JC GoAI L&T resources integrate AI to support language proficiency. We showcase strategies that use AI to facilitate writing, reading, and communication — ensuring AI serves as a scaffold for developing critical literacy and creative expression."
+          en: "This session highlights how JC GoAI L&T resources integrate AI to support language proficiency. We showcase strategies that use AI to facilitate writing, reading, and communication — ensuring AI serves as a scaffold for developing critical literacy and creative expression."
           zh: "本環節展示計劃學與教資源如何融入人工智能以支援語文能力，呈現運用人工智能促進寫作、閱讀及溝通的策略，讓人工智能成為培養批判素養與創意表達的支架。"
 
   - time: "4:10pm – 4:40pm"
