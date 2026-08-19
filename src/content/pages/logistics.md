@@ -1,4 +1,4 @@
----
+<img width="468" height="50" alt="image" src="https://github.com/user-attachments/assets/b9005b9d-31c0-41ad-be22-d745f3e8c543" />---
 # ============================================================================
 #  LOGISTICS PAGE (活動須知)
 # ============================================================================
@@ -24,6 +24,8 @@ items:
     body:
       en: "Please arrange your own lunch. A variety of canteens on campus and near the MTR station is available for your convenience."
       zh: "請自行安排午膳。校園內及港鐵站附近均有各式食肆可供選擇。"
+    href: "https://maps.app.goo.gl/Jzfg2HNreHZ9m7Y88"
+    linkLabel: { en: "Lunch Options", zh: "XX" }
 
   - title: { en: "Campus Entry", zh: "校園進入" }
     body:
@@ -32,18 +34,22 @@ items:
     points:
       - en: "Your HKID card"
         zh: "你的香港身份證"
-      - en: "A visitor QR code, which will be sent to your registered email address 1-3 days prior to the event"
+      - en: "A visitor QR code will be sent to your registered email address separately 1-3 day(s) prior to the event"
         zh: "訪客二維碼（活動前3天將寄送至你的登記電郵地址）"
 
   - title: { en: "Venue Wi-Fi", zh: "場地 Wi-Fi" }
     body:
-      en: "Wi-Fi will be available at the workshop venues. Connect using the details below (to be confirmed closer to the event)."
+      en: "Wi-Fi will be available at the workshop venues. Connect using the details below."
       zh: "工作坊場地將提供 Wi-Fi。請使用以下資料連接（詳情將於活動前確認）。"
     points:
-      - en: "Network (SSID): TBC"
-        zh: "網絡名稱（SSID）：待定"
-      - en: "Password: TBC"
-        zh: "密碼：待定"
+      - en: "Wi-Fi Name: CUguest"
+        zh: "XX"   
+      - en: "Identity: Conference Guests"
+        zh: "XX"
+      - en: "User ID:jcgoai"
+        zh: "XX"
+      - en: "Password:tpd2026"
+        zh: "XX"
 
   - title: { en: "Live Q&A", zh: "即時提問" }
     body:
