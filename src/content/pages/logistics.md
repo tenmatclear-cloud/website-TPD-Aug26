@@ -25,7 +25,7 @@ items:
       en: "Please arrange your own lunch. A variety of canteens on campus and near the MTR station is available for your convenience."
       zh: "請自行安排午膳。校園內及港鐵站附近均有各式食肆可供選擇。"
     href: "https://maps.app.goo.gl/Jzfg2HNreHZ9m7Y88"
-    linkLabel: { en: "Lunch Options", zh: "XX" }
+    linkLabel: { en: "Lunch Options", zh: "tbc" }
 
   - title: { en: "Campus Entry", zh: "校園進入" }
     body:
@@ -43,13 +43,13 @@ items:
       zh: "工作坊場地將提供 Wi-Fi。請使用以下資料連接（詳情將於活動前確認）。"
     points:
       - en: "Wi-Fi Name: CUguest"
-        zh: "XX"
+        zh: "tbc"
       - en: "Identity: Conference Guests"
-        zh: "XX"
+        zh: "tbc"
       - en: "User ID: jcgoai"
-        zh: "XX"
+        zh: "tbc"
       - en: "Password: tpd2026"
-        zh: "XX"
+        zh: "tbc"
 
   - title: { en: "Live Q&A", zh: "即時提問" }
     body:
