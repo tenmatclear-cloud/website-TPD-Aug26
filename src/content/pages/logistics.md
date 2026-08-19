@@ -24,7 +24,6 @@ items:
     body:
       en: "Please arrange your own lunch. A variety of canteens on campus and near the MTR station is available for your convenience."
       zh: "請自行安排午膳。校園內及港鐵站附近均有各式食肆可供選擇。"
-    linkLabel: { en: "tbc", zh: "tbc" }
 
   - title: { en: "Campus Entry", zh: "校園進入" }
     body:
@@ -39,16 +38,7 @@ items:
   - title: { en: "Venue Wi-Fi", zh: "場地 Wi-Fi" }
     body:
       en: "Wi-Fi will be available at the workshop venues. Connect using the details below."
-      zh: "工作坊場地將提供 Wi-Fi。請使用以下資料連接（詳情將於活動前確認）。"
-    points:
-      - en: "Wi-Fi Name: CUguest"
-        zh: "tbc"
-      - en: "Identity: Conference Guests"
-        zh: "tbc"
-      - en: "User ID: jcgoai"
-        zh: "tbc"
-      - en: "Password: tpd2026"
-        zh: "tbc"
+      zh: "工作坊場地將提供 Wi-Fi。（詳情將於活動前確認）。"
 
   - title: { en: "Live Q&A", zh: "即時提問" }
     body:
