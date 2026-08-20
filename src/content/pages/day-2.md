@@ -54,14 +54,15 @@ modules:
       - "Mr. Philip TAN (MIT RAISE)"
       - "Ms. CHENG Yuen Ting, Emily (St. Mary's Canossian School)"
 
-  - title: { en: "TechEd P5 (Group 2)", zh: "科技教育 小五（第二期）" }
+  - title: { en: "TechEd P5 (Group 2) + TechEd P6 Preview", zh: "科技教育 小五（第二期）" }
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 8–12 & TechEd P6 Preview", zh: "第7至12課" }
     room: "WMY 504"
     facilitators:
+      - "TechEd P5 (Lessons 8-12)"
       - "Ms. Maya RAJAN (MIT RAISE)"
       - "Mr. CHEUNG Tin Yau, Andy (CCC Ming Yin College)"
-    title: { en: "TechEd P6 Preview", zh: "科技教育 小五（第二期）" }
+      - "TechEd P6 Preview"
       - "Mr. Selim TEZEL (MIT RAISE)"
       - "Mr. MUNG Wai Lun, Terry (Fung Kai No. 1 Primary School)"
       - "Mr. WONG Chi Yan, Astom (Fung Kai No. 1 Primary School)"
