@@ -6,10 +6,15 @@
 title: { en: "Logistics", zh: "活動須知" }
 
 intro:
-  en: "Use this page to prepare for transport, daily check-in, lunch, campus entry, venue Wi-Fi, live Q&A, and enquiries."
+  en: "Use this page to prepare for what to bring to the workshop, transport, daily check-in, lunch, campus entry, venue Wi-Fi, live Q&A, and enquiries."
   zh: "請參閱本頁了解交通、每日簽到、午膳、校園進入、場地 Wi-Fi、即時提問及查詢安排。"
 
 items:
+  - title: { en: "Bring Your Own Device ", zh: "交通" }
+    body:
+      en: "For Day 2 & Day 3 subject training participants: Please remember to bring your fully charged laptop (REQUIRED for all TechEd Training) and/or tablet to the workshop, along with a charger and a power bank. Power outlets in the venues may be limited, so having your own backup power ensures you remain connected throughout the day!"
+      zh: "TBC"
+    
   - title: { en: "Transport", zh: "交通" }
     body:
       en: "Please utilize public transportation, as campus parking is limited and reservations will not be provided."
