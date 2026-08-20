@@ -16,7 +16,7 @@ goals:
     zh: "探討常見的推行挑戰，並共同尋找切實可行的方案，確保課堂順利推展。"
 
 schedule:
-  - time: "9:30am – 12:30pm"
+  - time: "9:30am – 12:30pm (Registration starts at 9:30am)"
     label: { en: "AM session", zh: "上午環節" }
   - time: "12:30pm – 1:45pm"
     label: { en: "Lunch break", zh: "午膳時間" }
@@ -29,26 +29,29 @@ modules:
     lessons: { en: "Lessons 7–12", zh: "第1至6課" }
     room: "WMY 407"
     facilitators:
-      - "Ms. Tasneem BURGHLEH (MIT RAISE)"
-      - "Mr. CHOW Tsz Chun, Oscar (HKUGA Primary School)"
-      - "Mr. LEE Ka Wo, Jacky (Diocesan Girls' Junior School)"
-
-  - title: { en: "TechEd P4 (Group 2)", zh: "科技教育 小六（第二期）" }
-    audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 1-6", zh: "第1至6課" }
-    room: "WMY 402"
-    facilitators:
       - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
       - "Ms. YIU Po Fun, Annie (Ling To Catholic Primary School)"
       - "Mr. Julian CHAN (CUHK)"
-  
+
+  - title: { en: "TechEd P4 (Group 2)", zh: "科技教育 小六（第二期）" }
+    audience: { en: "Primary", zh: "小學" }
+    lessons: { en: "Lessons 1-6 & TechEd P5 Preview", zh: "第1至6課" }
+    room: "WMY 402"
+    facilitators:
+      - "Ms. Tasneem BURGHLEH (MIT RAISE)"
+      - "Mr. CHOW Tsz Chun, Oscar (HKUGA Primary School)"
+      - "Mr. LEE Ka Wo, Jacky (Diocesan Girls' Junior School)"
+        
   - title: { en: "TechEd P5 (Group 1)", zh: "科技教育 小五（第一期）" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 8–12", zh: "第7至12課" }
+    lessons: { en: "Lessons 8–12 & TechEd P6 Preview", zh: "第7至12課" }
     room: "WMY 502"
     facilitators:
       - "Ms. Maya RAJAN (MIT RAISE)"
       - "Mr. CHEUNG Tin Yau, Andy (CCC Ming Yin College)"
+      - "Mr. Selim TEZEL (MIT RAISE)"
+      - "Mr. MUNG Wai Lun, Terry (Fung Kai No.1 Primary School)"
+      - "Mr. woNG Chi Yan, Astom (Fung Kai No.1 Primary School)"
 
   - title: { en: "TechEd P5 (Group 2)", zh: "科技教育 小五（第二期）" }
     audience: { en: "Primary", zh: "小學" }
