@@ -42,9 +42,9 @@ modules:
       - "Mr. CHOW Tsz Chun, Oscar (HKUGA Primary School)"
       - "Mr. LEE Ka Wo, Jacky (Diocesan Girls' Junior School)"
         
-  - title: { en: "TechEd P5 (Group 1)", zh: "科技教育 小五（第一期）" }
+  - title: { en: "TechEd P5 (Group 1) + TechEd P6 Preview", zh: "科技教育 小五（第一期）" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 8–12 & TechEd P6 Preview", zh: "第7至12課" }
+    lessons: { en: "TechEd P5 Lessons 8–12 & TechEd P6 Preview", zh: "第7至12課" }
     room: "WMY 502"
     facilitators:
       - "Ms. Maya RAJAN (MIT RAISE)"
