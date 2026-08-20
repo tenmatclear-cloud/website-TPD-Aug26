@@ -12,7 +12,7 @@ intro:
 items:
   - title: { en: "Bring Your Own Device ", zh: "交通" }
     body:
-      en: "For Day 2 & Day 3 subject training participants: Please remember to bring your fully charged laptop (REQUIRED for all TechEd Training) and/or tablet to the workshop, along with a charger and a power bank. Power outlets in the venues may be limited, so having your own backup power ensures you remain connected throughout the day!"
+      en: "For Day 2 & Day 3 subject training participants: Please remember to bring your fully charged laptop (REQUIRED for all TechEd Training) to the workshop, along with a charger and a power bank. Power outlets in the venues may be limited, so having your own backup power ensures you remain connected throughout the day!"
       zh: "TBC"
     
   - title: { en: "Transport", zh: "交通" }
