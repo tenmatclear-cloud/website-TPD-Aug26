@@ -51,7 +51,7 @@ modules:
       - "Mr. CHEUNG Tin Yau, Andy (CCC Ming Yin College)"
       - "Mr. Selim TEZEL (MIT RAISE)"
       - "Mr. MUNG Wai Lun, Terry (Fung Kai No.1 Primary School)"
-      - "Mr. woNG Chi Yan, Astom (Fung Kai No.1 Primary School)"
+      - "Mr. WONG Chi Yan, Astom (Fung Kai No.1 Primary School)"
 
   - title: { en: "TechEd P5 (Group 2)", zh: "科技教育 小五（第二期）" }
     audience: { en: "Primary", zh: "小學" }
