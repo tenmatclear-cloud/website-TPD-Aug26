@@ -16,7 +16,7 @@ goals:
     zh: "探討常見的推行挑戰，並共同尋找切實可行的方案，確保課堂順利推展。"
 
 schedule:
-  - time: "9:30am – 12:30pm (Registration starts at 9:30am)"
+  - time: "9:30am – 12:30pm (Registration starts at 9:15am)"
     label: { en: "AM session", zh: "上午環節" }
   - time: "12:30pm – 1:45pm"
     label: { en: "Lunch break", zh: "午膳時間" }
