@@ -19,7 +19,7 @@ goals:
 
 # Daily timetable (shared by Days 2 and 3)
 schedule:
-  - time: "9:30am – 12:30pm"
+  - time: "9:30am – 12:30pm (Registration starts at 9:15am)"
     label: { en: "AM session", zh: "上午環節" }
   - time: "12:30pm – 1:45pm"
     label: { en: "Lunch break", zh: "午膳時間" }
