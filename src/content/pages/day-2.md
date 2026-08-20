@@ -32,18 +32,19 @@ modules:
     audience: { en: "Primary", zh: "小學" }
     room: "WMY 407"
     facilitators:
-      - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
-      - "Ms. YIU Po Fun, Annie (Ling To Catholic Primary School)"
-      - "Mr. Julian CHAN (CUHK)"
+      - "Ms. Tasneem BURGHLEH (MIT RAISE)"
+      - "Mr. CHOW Tsz Chun, Oscar (HKUGA Primary School)"
+      - "Mr. LEE Ka Wo, Jacky (Diocesan Girls' Junior School)"
+
 
   - title: { en: "TechEd P4 (Group 2)", zh: "科技教育 小五（第一期）" }
     audience: { en: "Primary", zh: "小學" }
     lessons: { en: "Lessons 7–12", zh: "第1至6課" }
     room: "WMY 402"
     facilitators:
-      - "Ms. Tasneem BURGHLEH (MIT RAISE)"
-      - "Mr. CHOW Tsz Chun, Oscar (HKUGA Primary School)"
-      - "Mr. LEE Ka Wo, Jacky (Diocesan Girls' Junior School)"
+      - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
+      - "Ms. YIU Po Fun, Annie (Ling To Catholic Primary School)"
+      - "Mr. Julian CHAN (CUHK)"
 
   - title: { en: "TechEd P5 (Group 1)", zh: "科技教育 小五（第一期）" }
     audience: { en: "Primary", zh: "小學" }
@@ -55,11 +56,14 @@ modules:
 
   - title: { en: "TechEd P5 (Group 2)", zh: "科技教育 小五（第二期）" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 8–12", zh: "第7至12課" }
+    lessons: { en: "Lessons 8–12 & TechEd P6 Preview", zh: "第7至12課" }
     room: "WMY 504"
     facilitators:
       - "Ms. Maya RAJAN (MIT RAISE)"
       - "Mr. CHEUNG Tin Yau, Andy (CCC Ming Yin College)"
+      - "Mr. Selim TEZEL (MIT RAISE)"
+      - "Mr. MUNG Wai Lun, Terry (Fung Kai No. 1 Primary School)"
+      - "Mr. WONG Chi Yan, Astom (Fung Kai No. 1 Primary School)"
 
   - title: { en: "Humanities P4", zh: "人文科 小四" }
     audience: { en: "Primary", zh: "小學" }
