@@ -89,7 +89,7 @@ days:
       zh: "計劃學與教資源概覽、教學法、人工智能教育的國際及本地觀點，以及成功實踐案例。"
   - day: 2
     date: { en: "27 August 2026 (Thursday)", zh: "2026年8月27日（星期四）" }
-    time: { en: "9:30am – 4:45pm", zh: "上午9:30至下午4:45" }
+    time: { en: "9:30am – 4:45pm (Check-in available: 09:15am-2:15pm）", zh: "上午9:30至下午4:45" }
     audience: { en: "JC GoAI Network Schools (Cohort 1&2) - Primary schools only", zh: "只限小學" }
     venue:
       - kind: link
@@ -102,7 +102,7 @@ days:
       zh: "深入認識「人工智能基礎」及「人工智能＋學科」的學與教資源及相關教學法。"
   - day: 3
     date: { en: "28 August 2026 (Friday)", zh: "2026年8月28日（星期五）" }
-    time: { en: "9:30am – 4:45pm", zh: "上午9:30至下午4:45" }
+    time: { en: "9:30am – 4:45pm (Check-in available: 09:15am-2:15pm）", zh: "上午9:30至下午4:45" }
     audience: { en: "JC GoAI Network Schools (Cohort 1&2) - both primary and secondary schools ", zh: "所有學校" }
     venue:
       - kind: link
