@@ -61,7 +61,7 @@ sessions:
     title: { en: "Global Trends, Practices, and Future Developments in AI Education", zh: "人工智能教育的全球趨勢、實踐及未來發展" }
     speakers: { en: "Prof. Cynthia BREAZEAL — Co-Principal Investigator of JC GoAI; Director of MIT Responsible AI for Social Empowerment and Education (RAISE) Initiative", zh: "Cynthia BREAZEAL 教授 — 賽馬會人工智能教育計劃共同首席研究員；麻省理工學院「負責任人工智能促進社會賦能與教育（RAISE）」計劃總監" }
     abstract:
-      en: "(Tentative) Prof. Breazeal explores the evolving global landscape of educational AI applications. Participants will be inspired by exemplary international practices and gain a clearer understanding of how to transform teaching and learning with AI, ensuring schools are prepared to navigate and embrace the technological shifts ahead."
+      en: "Prof. Breazeal explores the evolving global landscape of educational AI applications. Participants will be inspired by exemplary international practices and gain a clearer understanding of how to transform teaching and learning with AI, ensuring schools are prepared to navigate and embrace the technological shifts ahead."
       zh: "（暫定）Breazeal 教授將探討教育人工智能應用不斷演變的全球面貌。參加者將從卓越的國際實踐中獲得啟發，更清晰地理解如何以人工智能轉化學與教，讓學校準備好迎接未來的科技轉變。"
 
   - time: "11:00am – 11:40am"
@@ -104,7 +104,7 @@ sessions:
       - audience: { en: "Secondary Schools", zh: "中學" }
         room: "LT2"
         title: { en: "Successful Implementation Cases and Good Practices of AI Applications in L&T", zh: "人工智能融入學與教的成功實踐案例及良好示範" }
-        speakers: { en: "Mr. SZE Yu Chun (The HKMA K S Lo College), Mr. SIU Kam Kuen, KK (Wah Yan College, Hong Kong)", zh: "Mr. SZE Yu Chun (The HKMA K S Lo College), Mr. SIU Kam Kuen (Wah Yan College, Hong Kong)" }
+        speakers: { en: "Mr. SZE Yu Chun,Felix (The HKMA K S Lo College), Mr. SIU Kam Kuen, KK (Wah Yan College, Hong Kong)", zh: "Mr. SZE Yu Chun (The HKMA K S Lo College), Mr. SIU Kam Kuen (Wah Yan College, Hong Kong)" }
         abstract:
           en: "Representatives from pilot schools share authentic evidence of classroom impact, showcasing student projects and \"lessons learned\" from their implementation journeys. By highlighting both the successes and the hurdles of integrating AI into L&T, the session offers a grounded, peer-to-peer perspective on what works."
           zh: "試點學校代表分享具體的課堂成效，展示學生作品並分享推行過程中的「經驗與教訓」。透過呈現人工智能融入學與教的成功與挑戰，本環節提供貼地的同儕視角，說明哪些做法行之有效。"
@@ -170,7 +170,7 @@ sessions:
       - audience: { en: "Secondary Schools", zh: "中學" }
         room: "LT2"
         title: { en: "The Power of Peer Coaching: Transforming AI Education through Shared Expertise", zh: "同儕教練的力量：以共享專業轉化人工智能教育" }
-        speakers: { en: "Dr. HUNG Chiu Lung, Frankie (QESOSA Tong Kwok Wah Secondary School), Mr. YEUNG Chun Sing (Shatin Pui Ying College)", zh: "Dr. HUNG Chiu Lung (QESOSA Tong Kwok Wah Secondary School), Mr. YEUNG Chun Sing, Chris (Shatin Pui Ying College)" }
+        speakers: { en: "Dr. HUNG Chiu Lung, Frankie (QESOSA Tong Kwok Wah Secondary School), Mr. YEUNG Chun Sing, Chris (Shatin Pui Ying College)", zh: "Dr. HUNG Chiu Lung (QESOSA Tong Kwok Wah Secondary School), Mr. YEUNG Chun Sing, Chris (Shatin Pui Ying College)" }
         abstract:
           en: "The session celebrates the evolution from resource adoption to teacher-led innovation. Experienced peer facilitators share how they support pilot school teachers through collaborative coaching — showing how teachers can adapt ready-made lessons to suit their students, or develop entirely new AI-integrated lessons from scratch. This \"bottom-up\" approach highlights the teacher as an innovator."
           zh: "本環節彰顯由採用資源邁向教師主導創新的演進。資深同儕促進者分享如何透過協作教練支援試點學校教師，示範教師如何調適既有課節以切合學生需要，甚至從零開始設計全新的人工智能融入課節。這種「由下而上」的取向突顯教師作為創新者的角色。"
