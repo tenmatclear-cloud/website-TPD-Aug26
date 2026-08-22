@@ -79,7 +79,7 @@ modules:
     facilitators:
       - "Ms. Allison POSEY & Ms. Sarah WHARTON (MIT RAISE)"
       - "Ms. LI Ting Ting, Tinky (The Salvation Army Tin Ka Ping School)"
-      - "Mr. SZE Yu Chun (The HKMA K S Lo College)"
+      - "Mr. SZE Yu Chun, Felix (The HKMA K S Lo College)"
 
   - title: { en: "Chinese P5", zh: "中國語文 小五" }
     audience: { en: "Primary", zh: "小學" }
