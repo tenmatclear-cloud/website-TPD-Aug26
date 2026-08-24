@@ -25,7 +25,7 @@ Avoid **Commit directly to the `main` branch** unless you are sure the change is
 
 | File | What it controls |
 |---|---|
-| `home.md` | Workshop name, dates, venue, audience line, hero intro, feature cards, impact stats, takeaways, Day 1–3 summary cards (date / time / audience / venue / focus), footer EDB logo toggle |
+| `home.md` | Workshop name, dates, venue, audience line, hero intro, feature cards, takeaways, Day 1–3 summary cards (date / time / audience / venue / focus), footer EDB logo toggle |
 | `day-1.md` | Day 1 intro, goals, and the full session-by-session agenda |
 | `day-2.md` | Day 2 intro, goals, daily timetable (`schedule`), primary-school module list |
 | `day-3.md` | Day 3 intro, goals, daily timetable (`schedule`), secondary + TechEd module list |
@@ -209,7 +209,7 @@ heroIntro:
   zh: "..."
 ```
 
-### Feature cards, impact stats, takeaways
+### Feature cards and takeaways
 
 `accent` on a feature card must be one of: `programme` (orange), `teachers` (green), `schools` (yellow).
 
@@ -224,11 +224,6 @@ features:
       desc:
         en: "..."
         zh: "..."
-
-impact:
-  stats:
-    - value: "3"
-      label: { en: "Workshop days", zh: "工作坊日數" }
 
 takeaways:
   items:

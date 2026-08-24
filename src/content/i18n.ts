@@ -43,6 +43,12 @@ export const ui: Record<string, LocalizedText> = {
   currentLanguage: { en: 'Current language', zh: '目前語言' },
   askQuestion: { en: 'Ask a question', zh: '即時提問' },
   askQuestionShort: { en: 'Ask', zh: '提問' },
+  openMenu: { en: 'Open menu', zh: 'Open menu' },
+  closeMenu: { en: 'Close menu', zh: 'Close menu' },
+  mainNav: { en: 'Main navigation', zh: 'Main navigation' },
+  mobileNav: { en: 'Menu', zh: 'Menu' },
+  workshopSummary: { en: 'Workshop summary', zh: 'Workshop summary' },
+  pageNotFound: { en: 'Page not found', zh: 'Page not found' },
 };
 
 export const pageTitles: Record<string, LocalizedText> = {

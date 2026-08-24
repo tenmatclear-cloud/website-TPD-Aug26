@@ -89,6 +89,14 @@ const { lang, sessions } = Astro.props;
                   <span class="tag tag-soft">{localize(session.note, lang)}</span>
                 </div>
               )}
+              {session.linkLabel &&
+                (session.href ? (
+                  <a class="resource-link" href={session.href} target="_blank" rel="noopener noreferrer">
+                    {localize(session.linkLabel, lang)}
+                  </a>
+                ) : (
+                  <span class="resource-link resource-link-pending">{localize(session.linkLabel, lang)}</span>
+                ))}
             </div>
           )}
         </article>

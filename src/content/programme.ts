@@ -37,6 +37,8 @@ export type Session = {
   room?: string;
   // A split (parallel Primary / Secondary) row:
   tracks?: Track[];
+  href?: string;
+  linkLabel?: LocalizedText;
 };
 
 export type ModuleSession = {
@@ -103,18 +105,10 @@ export type FeatureCard = {
   desc: LocalizedText;
 };
 
-export type ImpactStat = { value: string; label: LocalizedText };
-
 export type FeatureSection = {
   eyebrow: LocalizedText;
   title: LocalizedText;
   items: FeatureCard[];
-};
-
-export type ImpactSection = {
-  eyebrow: LocalizedText;
-  title: LocalizedText;
-  stats: ImpactStat[];
 };
 
 export type TakeawaysSection = {
@@ -174,7 +168,6 @@ export const workshop = {
 };
 
 export const features = home.features as FeatureSection;
-export const impact = home.impact as ImpactSection;
 export const takeaways = home.takeaways as TakeawaysSection;
 
 export const daySummaries = home.days as DaySummary[];

@@ -34,6 +34,28 @@ html {
   scroll-behavior: smooth;
 }
 
+:focus-visible {
+  outline: 3px solid var(--color-accent-yellow);
+  outline-offset: 3px;
+}
+
+.hero :focus-visible,
+.header-cta:focus-visible,
+.button.primary:focus-visible {
+  outline-color: var(--color-accent-gold);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .mobile-drawer,
+  .drawer-overlay {
+    transition: none;
+  }
+}
+
 body {
   margin: 0;
   color: var(--color-text-primary);
@@ -65,7 +87,8 @@ img {
   font-weight: 700;
 }
 
-.skip-link:focus {
+.skip-link:focus,
+.skip-link:focus-visible {
   transform: translateY(0);
 }
 
@@ -534,10 +557,6 @@ h3 {
   grid-template-columns: 1fr;
   overflow: hidden;
   border-radius: var(--radius-content);
-}
-
-.split-section-impact {
-  grid-template-columns: 1fr;
 }
 
 .split-section > div {
@@ -1023,43 +1042,6 @@ h3 {
   border-color: var(--color-primary);
   background: var(--color-primary);
   color: var(--color-accent-gold);
-}
-
-/* Ghost button on light surfaces (navy outline). */
-.button.ghost-dark {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
-}
-
-.button.ghost-dark:hover {
-  background: var(--color-primary);
-  color: var(--color-white);
-}
-
-/* Impact stats (right side of the yellow/navy split). */
-.stat-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 26px 20px;
-}
-
-.stat {
-  display: grid;
-  gap: 6px;
-}
-
-.stat-value {
-  font-family: var(--font-heading);
-  font-size: clamp(2rem, 4vw, 2.6rem);
-  font-weight: 800;
-  line-height: 1;
-  color: var(--color-white);
-}
-
-.stat-label {
-  color: rgb(255 255 255 / 0.82);
-  font-size: 0.95rem;
-  font-weight: 600;
 }
 
 @media (max-width: 980px) {

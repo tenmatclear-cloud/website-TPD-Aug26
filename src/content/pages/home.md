@@ -46,20 +46,6 @@ features:
         en: "Explore authentic implementation stories and classroom successes shared by our pilot schools and peer facilitators"
         zh: "由試點學校、教師及學生分享真實課堂成效。"
 
-# ---- Impact at a glance (Home page, yellow/navy split section) -------------
-impact:
-  eyebrow: { en: "Impact at a glance", zh: "成效概覽" }
-  title: { en: "Built for Hong Kong classrooms", zh: "為香港課堂而設" }
-  stats:
-    - value: "3"
-      label: { en: "Workshop days", zh: "工作坊日數" }
-    - value: "20+"
-      label: { en: "Subject modules", zh: "學科模組" }
-    - value: "P4–S3"
-      label: { en: "Year levels", zh: "適用年級" }
-    - value: "EN"
-      label: { en: "Official language", zh: "官方語言" }
-
 # ---- Takeaways (Home page, "What you'll take away" InfoPanels) -------------
 takeaways:
   eyebrow: { en: "Learning objectives", zh: "學習目標" }

@@ -20,7 +20,7 @@ const { lang } = Astro.props;
       </div>
     </div>
 
-    <aside class="hero-panel" aria-label="Workshop summary">
+    <aside class="hero-panel" aria-label={localize(ui.workshopSummary, lang)}>
       <dl>
         <div>
           <dt>{localize(ui.date, lang)}</dt>

@@ -1,13 +1,11 @@
 import { defineCollection } from 'astro:content';
-import { glob } from 'astro/loaders';
 
-// The editable page content lives in src/content/pages/*.md. The data is read in
-// src/content/programme.ts via import.meta.glob; this collection definition just
-// registers the folder with Astro (avoiding the auto-collection deprecation
-// warning). Frontmatter shape is intentionally unvalidated so editors can add
-// fields freely — see src/content/pages/README.md.
+// Registers `src/content/pages/` as a collection so Astro does not treat the
+// folder as an implicit auto-collection. Programme data is still read in
+// `programme.ts` via import.meta.glob — do not add a glob loader here or the
+// same files are ingested twice (duplicate IDs).
 const pages = defineCollection({
-  loader: glob({ pattern: '*.md', base: './src/content/pages' }),
+  type: 'content',
 });
 
 export const collections = { pages };

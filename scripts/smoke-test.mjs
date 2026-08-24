@@ -16,8 +16,8 @@ const LOCAL_PATHS = [
   '/en/resources/',
   '/en/logistics/',
   '/en/media/',
+  '/404.html',
   '/brand/JC-Project_AI-Logo_TC_EN.png',
-  '/brand/goai-logo.png',
 ];
 
 const EXTERNAL_URLS = [

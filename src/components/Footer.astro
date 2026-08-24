@@ -45,10 +45,10 @@ const partnerLogos = [
     className: 'footer-logo footer-logo-cuhk',
   },
   {
-    src: '/brand/4_MIT/RAISE_sub-brand_lockup_two-level_rgb_black-and-silver-gray.png',
+    src: '/brand/4_MIT/RAISE_lockup_web.png',
     alt: 'MIT RAISE Initiative',
-    width: 21232,
-    height: 3211,
+    width: 793,
+    height: 120,
     className: 'footer-logo footer-logo-mit',
   },
 ];
@@ -65,6 +65,8 @@ const partnerLogos = [
             alt={logo.alt}
             width={logo.width}
             height={logo.height}
+            loading="lazy"
+            decoding="async"
           />
         ))
       }
@@ -74,7 +76,7 @@ const partnerLogos = [
     </p>
     {
       showLanguageSwitcher && (
-        <div class="footer-language" aria-label={localize(ui.language, lang)}>
+        <nav class="footer-language" aria-label={localize(ui.language, lang)}>
           {activeLanguages.map((language) => (
             <a
               href={pathFor(language.code, normalizedPath)}
@@ -84,7 +86,7 @@ const partnerLogos = [
               {language.shortLabel}
             </a>
           ))}
-        </div>
+        </nav>
       )
     }
   </div>

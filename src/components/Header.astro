@@ -10,8 +10,10 @@ type Props = {
 const { lang, currentPath } = Astro.props;
 const normalizedPath = currentPath.replace(/^\/|\/$/g, '');
 
-const openMenuLabel = 'Open menu';
-const closeMenuLabel = 'Close menu';
+const openMenuLabel = localize(ui.openMenu, lang);
+const closeMenuLabel = localize(ui.closeMenu, lang);
+const mainNavLabel = localize(ui.mainNav, lang);
+const mobileNavLabel = localize(ui.mobileNav, lang);
 const showLanguageSwitcher = activeLanguages.length > 1;
 const askLabel = localize(ui.askQuestion, lang);
 const askShortLabel = localize(ui.askQuestionShort, lang);
@@ -28,7 +30,7 @@ const askShortLabel = localize(ui.askQuestionShort, lang);
     </a>
 
     <div class="header-end">
-      <nav class="nav" aria-label="Main navigation">
+      <nav class="nav" aria-label={mainNavLabel}>
         {
           navItems
             .filter((item) => !item.hidden)
@@ -55,7 +57,7 @@ const askShortLabel = localize(ui.askQuestionShort, lang);
 
       {
         showLanguageSwitcher && (
-          <div class="language-switcher" aria-label={localize(ui.language, lang)}>
+          <nav class="language-switcher" aria-label={localize(ui.language, lang)}>
             {activeLanguages.map((language) => (
               <a
                 href={pathFor(language.code, normalizedPath)}
@@ -65,7 +67,7 @@ const askShortLabel = localize(ui.askQuestionShort, lang);
                 {language.shortLabel}
               </a>
             ))}
-          </div>
+          </nav>
         )
       }
     </div>
@@ -100,7 +102,7 @@ const askShortLabel = localize(ui.askQuestionShort, lang);
       <span class="drawer-close-bar" aria-hidden="true"></span>
       <span class="drawer-close-bar" aria-hidden="true"></span>
     </button>
-    <nav class="nav mobile-nav" aria-label="Main navigation">
+    <nav class="nav mobile-nav" aria-label={mobileNavLabel}>
       {
         navItems
           .filter((item) => !item.hidden)
@@ -134,17 +136,24 @@ const askShortLabel = localize(ui.askQuestionShort, lang);
   if (toggle && drawer && overlay) {
     let transitioning = false;
 
+    const focusableSelector = 'a[href], button:not([disabled])';
+
+    const getFocusable = () =>
+      [...drawer.querySelectorAll<HTMLElement>(focusableSelector)].filter(
+        (el) => !el.hasAttribute('hidden') && el.getClientRects().length > 0,
+      );
+
     const openMenu = () => {
       drawer.hidden = false;
       overlay.hidden = false;
+      toggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
       requestAnimationFrame(() => {
         drawer.classList.add('is-open');
         overlay.classList.add('is-open');
+        const first = getFocusable()[0] ?? closeBtn;
+        first?.focus();
       });
-      toggle.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
-      const firstLink = drawer.querySelector<HTMLAnchorElement>('a');
-      if (firstLink) firstLink.focus();
     };
 
     const closeMenu = () => {
@@ -185,7 +194,23 @@ const askShortLabel = localize(ui.askQuestionShort, lang);
     });
 
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && isOpen()) closeMenu();
+      if (!isOpen()) return;
+      if (e.key === 'Escape') {
+        closeMenu();
+        return;
+      }
+      if (e.key !== 'Tab') return;
+      const nodes = getFocusable();
+      if (nodes.length === 0) return;
+      const first = nodes[0];
+      const last = nodes[nodes.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     });
   }
 </script>

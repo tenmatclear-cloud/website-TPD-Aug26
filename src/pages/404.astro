@@ -1,0 +1,25 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { localize, pathFor, ui } from '@content/i18n';
+import { workshop } from '@content/programme';
+
+const title = localize(ui.pageNotFound, 'en');
+---
+
+<BaseLayout
+  title={`${title} | ${localize(workshop.projectName, 'en')}`}
+  description={title}
+  lang="en"
+  currentPath="404"
+>
+  <section class="hero">
+    <div class="hero-inner hero-inner--solo">
+      <div>
+        <h1>{title}</h1>
+        <div class="hero-actions">
+          <a class="button primary" href={pathFor('en')}>{localize(ui.backHome, 'en')}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
