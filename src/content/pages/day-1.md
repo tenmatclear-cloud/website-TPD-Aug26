@@ -35,10 +35,10 @@ sessions:
     title: { en: "Welcoming Message and Project Overview", zh: "歡迎辭及計劃概覽" }
     speakers: { en: "Ir. Daniel LAI, BBS, JP — Programme Director of JC GoAI", zh: "黎達強工程師，BBS，JP — 賽馬會人工智能教育計劃總監" }
 
-  - time: "9:25am - 9:30am"
+  - time: "9:25am – 9:30am"
     duration: "5 mins"
     title: { en: "Speech of Thanks", zh: "致謝辭" }
-    speakers: { en: "Ms. LAM Wing-yee, Sierra — Chief Curriculum Development Officer (Technology Education), Education Bureau", zh: "林詠儀女士 — 課程發展主任（科技教育）" }
+    speakers: { en: "Ms. LAM Wing-yee, Sierra — Chief Curriculum Development Officer (Technology Education), Education Bureau", zh: "林詠儀女士 — 總課程發展主任（科技教育），教育局" }
 
   - time: "9:30am – 9:55am"
     duration: "25 mins"
@@ -51,10 +51,10 @@ sessions:
   - time: "9:55am – 10:20am"
     duration: "25 mins"
     title: { en: "From Policy to Practice: Implementing AI Education Under the New Blueprint", zh: "從政策到實踐：在新藍圖下推行人工智能教育" }
-    speakers: { en: "Prof. CHEUNG Chi-keung, Alan — Co-Investigator of JC GoAI, Dean of Education & Professor, Department of Educational Administration and Policy, CUHK", zh: "張志強教授 — 賽馬會人工智能教育計劃共同首席研究員；香港中文大學教育學院院長及教育行政與政策學系教授" }
+    speakers: { en: "Prof. CHEUNG Chi-keung, Alan — Co-Investigator of JC GoAI, Dean of Education & Professor, Department of Educational Administration and Policy, CUHK", zh: "張志強教授 — 賽馬會人工智能教育計劃協同研究員；香港中文大學教育學院院長及教育行政與政策學系教授" }
     abstract:
       en: "This session provides a strategic overview of bridging AI educational policy with sustainable classroom practice under the new Blueprint. Prof. Cheung will examine practical pathways for translating high-level policy frameworks into effective school-level implementation. Emphasizing human-centred AI, evidence-informed innovation, purposeful pedagogical design, and learner agency, the presentation argues that AI should enhance—rather than replace—human thinking and professional judgement. Participants will gain insights into the opportunities, challenges, and educational implications of AI integration, and consider how schools can balance technological innovation with the fundamental purposes of education."
-      zh: "（待定）"
+      zh: "本環節從策略層面概述如何在新藍圖下，將人工智能教育政策連結至可持續的課堂實踐。張教授將探討把高層次政策框架轉化為有效校本推行的可行路徑。講題強調以人為本的人工智能、有據可依的創新、有目的的教學設計，以及學習者能動性，並指出人工智能應增強——而非取代——人類思考與專業判斷。參加者將了解人工智能融入的機遇、挑戰及教育意涵，並思考學校如何在科技創新與教育根本目的之間取得平衡。"
 
   - time: "10:20am – 11:00am"
     duration: "40 mins"
@@ -62,17 +62,17 @@ sessions:
     speakers: { en: "Prof. Cynthia BREAZEAL — Co-Principal Investigator of JC GoAI; Director of MIT Responsible AI for Social Empowerment and Education (RAISE) Initiative", zh: "Cynthia BREAZEAL 教授 — 賽馬會人工智能教育計劃共同首席研究員；麻省理工學院「負責任人工智能促進社會賦能與教育（RAISE）」計劃總監" }
     abstract:
       en: "Prof. Breazeal explores the evolving global landscape of educational AI applications. Participants will be inspired by exemplary international practices and gain a clearer understanding of how to transform teaching and learning with AI, ensuring schools are prepared to navigate and embrace the technological shifts ahead."
-      zh: "（暫定）Breazeal 教授將探討教育人工智能應用不斷演變的全球面貌。參加者將從卓越的國際實踐中獲得啟發，更清晰地理解如何以人工智能轉化學與教，讓學校準備好迎接未來的科技轉變。"
+      zh: "Breazeal 教授將探討教育人工智能應用不斷演變的全球面貌。參加者將從卓越的國際實踐中獲得啟發，更清晰地理解如何以人工智能轉化學與教，讓學校準備好迎接未來的科技轉變。"
 
   - time: "11:00am – 11:40am"
     duration: "40 mins"
-    title: { en: "Group Photo & Networking Break", zh: "交流小休" }
+    title: { en: "Group Photo & Networking Break", zh: "大合照及交流小休" }
     note: { en: "Light refreshments will be provided.", zh: "將提供簡便茶點。" }
 
   - time: "11:40am – 12:35pm"
     duration: "55 mins"
     title: { en: "The Great AI Exchange: Cultivating International Perspectives for Local Success", zh: "人工智能教育交流：以國際視野促進本地實踐" }
-    speakers: { en: "Introductory presentations by Dr. Andrés F. SALAZAR GÓMEZ (MIT RAISE) and Prof. CHAI Ching Sing (Associate Dean (Postgraduate Studies), Faculty of Education, CUHK). Panel discussion moderated by Ms. Allison POSEY (MIT RAISE), with panellists Prof. MENG Mei Ling Helen, Prof. CHAI Ching Sing, Prof. CHIU Kin Fung Thomas(Director, Centre for Learning Enhancement And Research; Associate Professor, Department of Curriculum and Instruction, CUHK), Prof. Cynthia BREAZEAL, and Dr. Andrés F. SALAZAR GÓMEZ.", zh: "引言報告：Andrés F. SALAZAR GÓMEZ 博士（麻省理工 RAISE）及謝錫金教授（香港中文大學教育學院副院長（研究院課程））。專題討論由 Allison POSEY 女士（麻省理工 RAISE）主持，討論嘉賓包括蒙美玲教授、謝錫金教授、Cynthia BREAZEAL 教授及 Andrés F. SALAZAR GÓMEZ 博士。" }
+    speakers: { en: "Introductory presentations by Dr. Andrés F. SALAZAR GÓMEZ (MIT RAISE) and Prof. CHAI Ching Sing (Associate Dean (Postgraduate Studies), Faculty of Education, CUHK). Panel discussion moderated by Ms. Allison POSEY (MIT RAISE), with panellists Prof. MENG Mei Ling Helen, Prof. CHAI Ching Sing, Prof. CHIU Kin Fung Thomas (Director, Centre for Learning Enhancement And Research; Associate Professor, Department of Curriculum and Instruction, CUHK), Prof. Cynthia BREAZEAL, and Dr. Andrés F. SALAZAR GÓMEZ.", zh: "引言報告：Andrés F. SALAZAR GÓMEZ 博士（麻省理工 RAISE）及蔡清生教授（香港中文大學教育學院副院長（研究院課程））。專題討論由 Allison POSEY 女士（麻省理工 RAISE）主持，討論嘉賓包括蒙美玲教授、蔡清生教授、趙建豐教授（學能提升研究中心主任；課程與教學學系副教授）、Cynthia BREAZEAL 教授及 Andrés F. SALAZAR GÓMEZ 博士。" }
     abstract:
       en: "This high-level session bridges global research with Hong Kong's implementation realities. Following short research presentations, a moderated panel synthesises international evidence with local case studies — identifying universal best practices and addressing the unique challenges of the local landscape. By facilitating direct exchange between global experts and local researchers, the session keeps the Project's goals grounded in both academic rigour and practical feasibility."
       zh: "本高層次環節連結全球研究與香港的推行實況。在簡短的研究報告後，由主持人帶領的專題討論將綜合國際證據與本地案例，歸納普遍適用的最佳實踐，並回應本地獨有的挑戰。透過促成全球專家與本地研究人員的直接交流，本環節確保計劃目標兼顧學術嚴謹與實踐可行。"
@@ -80,13 +80,13 @@ sessions:
   - time: "12:35pm – 12:45pm"
     duration: "10 mins"
     title: { en: "Appreciation for Project's Peer Facilitators", zh: "答謝計劃同儕促進者" }
-    note: { en: "Includes certificate presentation.", zh: "包括證書頒發及大合照。" }
+    note: { en: "Includes certificate presentation.", zh: "包括證書頒發。" }
 
   - time: "12:45pm – 2:00pm"
     duration: "75 mins"
     title: { en: "Lunch Break", zh: "午膳" }
     href: "https://maps.app.goo.gl/Jzfg2HNreHZ9m7Y88"
-    linkLabel: { en: "Lunch Options", zh: "tbc" }
+    linkLabel: { en: "Lunch Options", zh: "午膳選擇" }
 
   - heading: { en: "PM Session — Mastering Classroom Implementation", zh: "下午環節 — 掌握課堂實踐" }
     note: { en: "Conducted in Cantonese", zh: "以廣東話進行" }
@@ -104,7 +104,7 @@ sessions:
       - audience: { en: "Secondary Schools", zh: "中學" }
         room: "LT2"
         title: { en: "Successful Implementation Cases and Good Practices of AI Applications in L&T", zh: "人工智能融入學與教的成功實踐案例及良好示範" }
-        speakers: { en: "Mr. SZE Yu Chun,Felix (The HKMA K S Lo College), Mr. SIU Kam Kuen, KK (Wah Yan College, Hong Kong)", zh: "Mr. SZE Yu Chun (The HKMA K S Lo College), Mr. SIU Kam Kuen (Wah Yan College, Hong Kong)" }
+        speakers: { en: "Mr. SZE Yu Chun, Felix (The HKMA K S Lo College), Mr. SIU Kam Kuen, KK (Wah Yan College, Hong Kong)", zh: "施宇俊先生（香港管理專業協會羅桂祥中學），蕭錦權先生（香港華仁書院）" }
         abstract:
           en: "Representatives from pilot schools share authentic evidence of classroom impact, showcasing student projects and \"lessons learned\" from their implementation journeys. By highlighting both the successes and the hurdles of integrating AI into L&T, the session offers a grounded, peer-to-peer perspective on what works."
           zh: "試點學校代表分享具體的課堂成效，展示學生作品並分享推行過程中的「經驗與教訓」。透過呈現人工智能融入學與教的成功與挑戰，本環節提供貼地的同儕視角，說明哪些做法行之有效。"
@@ -133,7 +133,7 @@ sessions:
       - audience: { en: "Primary Schools", zh: "小學" }
         room: "LT1"
         title: { en: "Introduction to the GenAI Tools Platform", zh: "生成式人工智能工具平台簡介" }
-        speakers: { en: "CUHK representative (Pre-recorded video)", zh: "香港中文大學代表" }
+        speakers: { en: "CUHK representative (Pre-recorded video)", zh: "香港中文大學代表（預錄影片）" }
       - audience: { en: "Secondary Schools", zh: "中學" }
         room: "LT2"
         title: { en: "Introduction to Parent Education", zh: "家長教育簡介" }
@@ -185,7 +185,7 @@ sessions:
       - audience: { en: "Secondary Schools", zh: "中學" }
         room: "LT2"
         title: { en: "Introduction to the GenAI Tools Platform", zh: "生成式人工智能工具平台簡介" }
-        speakers: { en: "CUHK representative (Pre-recorded video)", zh: "香港中文大學代表" }
+        speakers: { en: "CUHK representative (Pre-recorded video)", zh: "香港中文大學代表（預錄影片）" }
 
   - time: "4:50pm – 4:55pm"
     duration: "5 mins"

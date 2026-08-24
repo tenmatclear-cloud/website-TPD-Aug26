@@ -19,7 +19,7 @@ goals:
 
 # Daily timetable (shared by Days 2 and 3)
 schedule:
-  - time: "9:30am – 12:30pm (Check-in starts at 9:15am)"
+  - time: "9:30am – 12:30pm (Check-in starts at 9:15am; available until 2:15pm)"
     label: { en: "AM session", zh: "上午環節" }
   - time: "12:30pm – 1:45pm"
     label: { en: "Lunch break", zh: "午膳時間" }
@@ -27,8 +27,8 @@ schedule:
     label: { en: "PM session", zh: "下午環節" }
 
 modules:
-  - title: { en: "TechEd P4 (Group 1)", zh: "科技教育 小四" }
-    lessons: { en: "Lessons 1–6 & TechEd P5 Preview", zh: "第1至6課" }
+  - title: { en: "TechEd P4 (Group 1)", zh: "科技教育 小四（第一組）" }
+    lessons: { en: "Lessons 1–6 & TechEd P5 Preview", zh: "第1至6課及科技教育小五預覽" }
     audience: { en: "Primary", zh: "小學" }
     room: "WMY 407"
     facilitators:
@@ -37,33 +37,33 @@ modules:
       - "Mr. LEE Ka Wo, Jacky (Diocesan Girls' Junior School)"
 
 
-  - title: { en: "TechEd P4 (Group 2)", zh: "科技教育 小五（第一期）" }
+  - title: { en: "TechEd P4 (Group 2)", zh: "科技教育 小四（第二組）" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 7–12", zh: "第1至6課" }
+    lessons: { en: "Lessons 7–12", zh: "第7至12課" }
     room: "WMY 402"
     facilitators:
       - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
       - "Ms. YIU Po Fun, Annie (Ling To Catholic Primary School)"
       - "Mr. Julian CHAN (CUHK)"
 
-  - title: { en: "TechEd P5 (Group 1)", zh: "科技教育 小五（第一期）" }
+  - title: { en: "TechEd P5 (Group 1)", zh: "科技教育 小五（第一組）" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 1–7", zh: "第1至6課" }
+    lessons: { en: "Lessons 1–7", zh: "第1至7課" }
     room: "WMY 502"
     facilitators:
       - "Mr. Philip TAN (MIT RAISE)"
       - "Ms. CHENG Yuen Ting, Emily (St. Mary's Canossian School)"
 
-  - title: { en: "TechEd P5 (Group 2) + TechEd P6 Preview", zh: "科技教育 小五（第二期）" }
+  - title: { en: "TechEd P5 (Group 2) + TechEd P6 Preview", zh: "科技教育 小五（第二組）＋小六預覽" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "TechEd P5 Lessons 8–12 & TechEd P6 Preview", zh: "第7至12課" }
+    lessons: { en: "TechEd P5 Lessons 8–12 & TechEd P6 Preview", zh: "科技教育小五第8至12課及小六預覽" }
     room: "WMY 504"
     facilitators:
       - "Ms. Maya RAJAN (MIT RAISE)"
       - "Mr. CHEUNG Tin Yau, Andy (CCC Ming Yin College)"
       - "Mr. Selim TEZEL (MIT RAISE)"
-      - "Mr. MUNG Wai Lun, Terry (Fung Kai No. 1 Primary School)"
-      - "Mr. WONG Chi Yan, Astom (Fung Kai No. 1 Primary School)"
+      - "Mr. MUNG Wai Lun, Terry (Fung Kai No.1 Primary School)"
+      - "Mr. WONG Chi Yan, Astom (Fung Kai No.1 Primary School)"
 
   - title: { en: "Humanities P4", zh: "人文科 小四" }
     audience: { en: "Primary", zh: "小學" }

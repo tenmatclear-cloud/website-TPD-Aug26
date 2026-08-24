@@ -16,7 +16,7 @@ goals:
     zh: "探討常見的推行挑戰，並共同尋找切實可行的方案，確保課堂順利推展。"
 
 schedule:
-  - time: "9:30am – 12:30pm (Check-in starts at 9:15am)"
+  - time: "9:30am – 12:30pm (Check-in starts at 9:15am; available until 2:15pm)"
     label: { en: "AM session", zh: "上午環節" }
   - time: "12:30pm – 1:45pm"
     label: { en: "Lunch break", zh: "午膳時間" }
@@ -24,27 +24,27 @@ schedule:
     label: { en: "PM session", zh: "下午環節" }
 
 modules:
-  - title: { en: "TechEd P4 (Group 1)", zh: "科技教育 小四" }
+  - title: { en: "TechEd P4 (Group 1)", zh: "科技教育 小四（第一組）" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 7–12", zh: "第1至6課" }
+    lessons: { en: "Lessons 7–12", zh: "第7至12課" }
     room: "WMY 407"
     facilitators:
       - "Dr. Sharifa ALGHOWINEM (MIT RAISE)"
       - "Ms. YIU Po Fun, Annie (Ling To Catholic Primary School)"
       - "Mr. Julian CHAN (CUHK)"
 
-  - title: { en: "TechEd P4 (Group 2)", zh: "科技教育 小六（第二期）" }
+  - title: { en: "TechEd P4 (Group 2)", zh: "科技教育 小四（第二組）" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 1-6 & TechEd P5 Preview", zh: "第1至6課" }
+    lessons: { en: "Lessons 1–6 & TechEd P5 Preview", zh: "第1至6課及科技教育小五預覽" }
     room: "WMY 402"
     facilitators:
       - "Ms. Tasneem BURGHLEH (MIT RAISE)"
       - "Mr. CHOW Tsz Chun, Oscar (HKUGA Primary School)"
       - "Mr. LEE Ka Wo, Jacky (Diocesan Girls' Junior School)"
         
-  - title: { en: "TechEd P5 (Group 1) + TechEd P6 Preview", zh: "科技教育 小五（第一期）" }
+  - title: { en: "TechEd P5 (Group 1) + TechEd P6 Preview", zh: "科技教育 小五（第一組）＋小六預覽" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "TechEd P5 Lessons 8–12 & TechEd P6 Preview", zh: "第7至12課" }
+    lessons: { en: "TechEd P5 Lessons 8–12 & TechEd P6 Preview", zh: "科技教育小五第8至12課及小六預覽" }
     room: "WMY 502"
     facilitators:
       - "Ms. Maya RAJAN (MIT RAISE)"
@@ -53,9 +53,9 @@ modules:
       - "Mr. MUNG Wai Lun, Terry (Fung Kai No.1 Primary School)"
       - "Mr. WONG Chi Yan, Astom (Fung Kai No.1 Primary School)"
 
-  - title: { en: "TechEd P5 (Group 2)", zh: "科技教育 小五（第二期）" }
+  - title: { en: "TechEd P5 (Group 2)", zh: "科技教育 小五（第二組）" }
     audience: { en: "Primary", zh: "小學" }
-    lessons: { en: "Lessons 1–7", zh: "第1至6課" }
+    lessons: { en: "Lessons 1–7", zh: "第1至7課" }
     room: "WMY 504"
     facilitators:
       - "Mr. Philip TAN (MIT RAISE)"

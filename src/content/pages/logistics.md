@@ -7,13 +7,13 @@ title: { en: "Logistics", zh: "活動須知" }
 
 intro:
   en: "Use this page to prepare for what to bring to the workshop, transport, daily check-in, lunch, campus entry, venue Wi-Fi, live Q&A, and enquiries."
-  zh: "請參閱本頁了解交通、每日簽到、午膳、校園進入、場地 Wi-Fi、即時提問及查詢安排。"
+  zh: "請參閱本頁了解自備電腦、交通、每日簽到、午膳、校園進入、場地 Wi-Fi、即時提問及查詢安排。"
 
 items:
-  - title: { en: "Bring Your Own Device ", zh: "交通" }
+  - title: { en: "Bring Your Own Device", zh: "自備電腦" }
     body:
       en: "For Day 2 & Day 3 subject training participants: Please remember to bring your fully charged laptop (REQUIRED for all TechEd Training) to the workshop, along with a charger and a power bank. Power outlets in the venues may be limited, so having your own backup power ensures you remain connected throughout the day!"
-      zh: "TBC"
+      zh: "第二日及第三日學科培訓參加者：請攜帶已充滿電的手提電腦（所有科技教育培訓必須帶備），以及充電器及流動電源。場地插座可能有限，自備後備電源可確保全日保持連接。"
     
   - title: { en: "Transport", zh: "交通" }
     body:
@@ -30,7 +30,7 @@ items:
       en: "Please arrange your own lunch. A variety of canteens on campus and near the MTR station is available for your convenience."
       zh: "請自行安排午膳。校園內及港鐵站附近均有各式食肆可供選擇。"
     href: "https://maps.app.goo.gl/Jzfg2HNreHZ9m7Y88"
-    linkLabel: { en: "Lunch Options", zh: "tbc" }
+    linkLabel: { en: "Lunch Options", zh: "午膳選擇" }
 
   - title: { en: "Campus Entry", zh: "校園進入" }
     body:
@@ -39,22 +39,22 @@ items:
     points:
       - en: "Your HKID card"
         zh: "你的香港身份證"
-      - en: "A visitor QR code will be sent to your registered email address separately 1-3 day(s) prior to the event"
-        zh: "訪客二維碼（活動前3天將寄送至你的登記電郵地址）"
+      - en: "A visitor QR code will be sent to your registered email address separately 1–3 day(s) prior to the event"
+        zh: "訪客二維碼將於活動前1至3天另行寄送至你的登記電郵地址"
 
   - title: { en: "Venue Wi-Fi", zh: "場地 Wi-Fi" }
     body:
       en: "Wi-Fi will be available at the workshop venues. Connect using the details below."
-      zh: "工作坊場地將提供 Wi-Fi。（詳情將於活動前確認）。"
+      zh: "工作坊場地將提供 Wi-Fi。請使用以下資料連接。"
     points:
-      - en: "Wi-Fi Name:CUguest"
-        zh: "tbc"
-      - en: "Identity:Conference Guests"
-        zh: "tbc"
-      - en: "User ID:jcgoai"
-        zh: "tbc"
-      - en: "Password:tpd2026"
-        zh: "tbc"
+      - en: "Wi-Fi Name: CUguest"
+        zh: "Wi-Fi 名稱：CUguest"
+      - en: "Identity: Conference Guests"
+        zh: "身份：Conference Guests"
+      - en: "User ID: jcgoai"
+        zh: "用戶名稱：jcgoai"
+      - en: "Password: tpd2026"
+        zh: "密碼：tpd2026"
 
   - title: { en: "Live Q&A", zh: "即時提問" }
     body:
