@@ -42,7 +42,7 @@ sessions:
 
   - time: "9:30am – 9:55am"
     duration: "25 mins"
-    title: { en: "Overview of JC GoAI Learning and Teaching Resources and Design Principles", zh: "賽馬會人工智能教育計劃學與教資源及設計原則概覽" }
+    title: { en: "Operationalizing Human-centered AI Literacy Across Subjects in Hong Kong Schools", zh: "賽馬會人工智能教育計劃學與教資源及設計原則概覽" }
     speakers: { en: "Prof. MENG Mei Ling, Helen — Co-Principal Investigator of JC GoAI; Patrick Huen Wing Ming Professor of Systems Engineering & Engineering Management, CUHK", zh: "蒙美玲教授 — 賽馬會人工智能教育計劃共同首席研究員；香港中文大學禤永明系統工程與工程管理學講座教授" }
     abstract:
       en: "This session provides a comprehensive overview of the Project's multifaceted approach to advancing AI education. Prof. Meng will delineate the foundational design principles of our L&T Resources, detailing how they span diverse disciplines to support teachers in integrating AI meaningfully into practice. Participants will gain insights into the resource structure — both \"AI Foundations\" and \"AI + Subjects\" modules — and the pedagogical frameworks that keep these resources academically rigorous yet practically feasible for the classroom."
