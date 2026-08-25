@@ -7,13 +7,17 @@ type Props = {
 };
 
 const { lang } = Astro.props;
+// Chrome mobile concatenates the heading year with the next line ("2026 Empowering
+// Hong Kong") and treats it as a Maps/address entity. A zero-width non-joiner after
+// the year breaks that match without changing how the title looks or copies.
+const title = localize(workshop.title, lang).replace(/(20\d{2})/g, '$1\u200c');
 ---
 
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-copy" x-apple-data-detectors="false">
-      <h1 x-apple-data-detectors="false">{localize(workshop.title, lang)}</h1>
-      <p x-apple-data-detectors="false">{localize(workshop.heroIntro, lang)}</p>
+    <div class="hero-copy">
+      <h1>{title}</h1>
+      <p>{localize(workshop.heroIntro, lang)}</p>
       <div class="hero-actions">
         <a class="button primary" href={pathFor(lang, 'day-1')}>{localize(ui.viewProgramme, lang)}</a>
         <a class="button ghost" href={pathFor(lang, 'resources')}>{localize(pageTitles.resources, lang)}</a>

@@ -69,15 +69,6 @@ a {
   text-decoration: none;
 }
 
-/* Only neutralize Safari auto-links inside the home hero title/intro.
-   Intentional tel:, mailto:, and Google Maps links elsewhere are untouched. */
-.hero-copy a[x-apple-data-detectors] {
-  color: inherit !important;
-  text-decoration: none !important;
-  font-weight: inherit !important;
-  font-style: inherit !important;
-}
-
 img {
   display: block;
   max-width: 100%;
